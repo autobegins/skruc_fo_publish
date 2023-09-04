@@ -66,7 +66,7 @@ button {
 
 /* #FF8A00 */
 .btn-primary {
-  background: linear-gradient(70deg, #FF8A00 -1%, #F35B5B 10.64%, #fe532d 116.61%);
+  background: linear-gradient(70deg, #ff7d00 -1%, #F35B5B 37%, #fe532d 116.61%);
   color: #fff;
 }
 
