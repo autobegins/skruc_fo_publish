@@ -100,7 +100,12 @@ button{
   --color-primary--line: #50555C;
   --color-primary--bg: #50555C;
 
+  
+
 }
+/* #FF8A00 */
+.btn-primary{background: linear-gradient(70deg, #FF8A00 -1%, #F35B5B 10.64%, #fe532d 116.61%);color:#fff;}
+.btn-gray{background-color:var(--bg-gray);}
 
 
 .btn{color: var(--color-text)}
