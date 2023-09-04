@@ -4,79 +4,113 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, inital-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../../evpark/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+    <script src="../../js/include.js"></script>
 
   </head>
   <body>
-    <button class="btn">root</button>
-    <span class="spn">element</span>
-    <input class="frmInpt" placeholder="placeholder"/>
+    <div class="wrap">
+      <!-- headerWrap -->
+      <div class="header_wrap" w3-include-html="../include/header.html"></div>
+      <!-- headerWrap -->
 
-    <div class="box-input">
-      <input class="" type="text" placeholder="default"/>
-    </div>
-
-
-    <!-- login wrap -->
-    <div class="login_wrap">
-
-      <div class="form">
-
-        <div class="form-control">
-          <div class="form-control-label">
-            <span>아이디</span>
-          </div>
-          <div class="form-control-container">
-            <div class="form-control-content">
-              <div class="form-control-input">
-                <input type="search" placeholder="아이디 입력">
-                <button class="btnClear"></button>
+      <main style="height:800px;">
+        <aside w3-include-html="../include/aside.html"></aside>
+        <article>
+          <section class="product-list">
+            <div class="card">
+              <div class="card-thum">
+                <a href=""><img src="https://via.placeholder.com/333x208" alt="상품이미지"></a>
+              </div>
+              <div class="card-content">
+                <div class="title"><a href="">제품 이름</a></div>
+                <div class=""><span>2020년식</span><span>10,762km</span><span>경유</span></div>
+                <div class="">
+                  <div class="price">2,196만원</div>
+                  <div class="btn-box"><button class="primary">비교하기</button><button class="">상담하기</button></div>
+                </div>
               </div>
             </div>
-            <div class="error on">에러 메세지</div>
-          </div>
-        </div>
 
 
-        <div class="form-control">
-          <div class="form-control-label">
-            <span>비밀번호</span>
-          </div>
-          <div class="form-control-container">
-            <div class="form-control-content">
-              <div class="form-control-input">
-                <input type="search" placeholder="비밀번호 입력">
-                <button class="btnClear"></button>
+            <div class="card">
+              <div class="card-thum">
+                <a href=""><img src="https://via.placeholder.com/333x208" alt="상품이미지"></a>
+              </div>
+              <div class="card-content">
+                <div class="title"><a href="">제품 이름</a></div>
+                <div class=""><span>2020년식</span><span>10,762km</span><span>경유</span></div>
+                <div class="">
+                  <div class="price">2,196만원</div>
+                  <div class="btn-box"><button class=""><i class=""></i>비교하기</button><button class="">상담하기</button></div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
 
+            <div class="card">
+              <div class="card-thum">
+                <a href=""><img src="https://via.placeholder.com/333x208" alt="상품이미지"></a>
+              </div>
+              <div class="card-content">
+                <div class="title"><a href="">제품 이름</a></div>
+                <div class=""><span>2020년식</span><span>10,762km</span><span>경유</span></div>
+                <div class="">
+                  <div class="price">2,196만원</div>
+                  <div class="btn-box"><button class="">비교하기</button><button class="">상담하기</button></div>
+                </div>
+              </div>
+            </div>
 
-      </div>
+            <div class="card">
+              <div class="card-thum">
+                <a href=""><img src="https://via.placeholder.com/333x208" alt="상품이미지"></a>
+              </div>
+              <div class="card-content">
+                <div class="title"><a href="">제품 이름</a></div>
+                <div class=""><span>2020년식</span><span>10,762km</span><span>경유</span></div>
+                <div class="">
+                  <div class="price">2,196만원</div>
+                  <div class="btn-box"><button class="">비교하기</button><button class="">상담하기</button></div>
+                </div>
+              </div>
+            </div>
 
+            <div class="card">
+              <div class="card-thum">
+                <a href=""><img src="https://via.placeholder.com/333x208" alt="상품이미지"></a>
+              </div>
+              <div class="card-content">
+                <div class="title"><a href="">제품 이름</a></div>
+                <div class=""><span>2020년식</span><span>10,762km</span><span>경유</span></div>
+                <div class="">
+                  <div class="price">2,196만원</div>
+                  <div class="btn-box"><button class="">비교하기</button><button class="">상담하기</button></div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            section
+          </section>
+        </article>
+
+        <!-- quick -->
+        <article class="quick" w3-include-html="../include/quick.html"></article>
+        <!-- //quick -->
+      </main>
     
-
-    </div>
-    <!-- //login wrap -->
-
-
-    <!-- card -->
-    <div class="skr-card">
-      <div class="card_cover">
-        <a href="" title=""><img src="" class="product" alt="상품이미지"/></a>
-      </div>
-
-
+      <!-- footer -->
+      <footer w3-include-html="../include/footer.html"></footer>
+      <!-- //footer -->
     </div>
   </body>
 
-  <script>
-    var btnClear = document.querySelectorAll('.btnClear');
-    btnClear.forEach(function(btn){
-        btn.addEventListener('click', function(){
-            btn.parentNode.querySelector('input').value = "";
-        })
-    })
+ 
+  
+<script>
+  includeHTML();
 </script>
+ 
 </html>

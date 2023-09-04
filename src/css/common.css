@@ -86,4 +86,16 @@ button {
   border: none;
   color: var(--form-text);
   outline: 1px solid #fefefe;
+}
+
+.product-list {
+  display: flex;
+  gap: 40px 32px;
+  flex-wrap: wrap;
+}
+.product-list .card {
+  width: calc(33.3% - 21.3px);
+}
+.product-list .card .card-thum {
+  width: 100%;
 }/*# sourceMappingURL=common.css.map */

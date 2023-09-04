@@ -119,3 +119,19 @@ button{
 
 }
 
+
+
+.product-list{
+  display: flex;gap:40px 32px;flex-wrap:wrap;
+
+  .card{width:calc(33.3% - 21.3px);
+
+    .card-thum{width:100%;}
+  
+    .btn-box{
+
+
+      button{}
+    }
+  }
+}
