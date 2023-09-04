@@ -27,6 +27,7 @@
 }
 .wrap.login .login-sns p span {
   z-index: 1;
+  position: relative;
 }
 .wrap.login .login-sns p::before {
   content: "";
@@ -43,10 +44,10 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   display: inline-block;
   width: 113px;
-  height: 3px;
+  height: 7px;
   background-color: #fff;
 }
 .wrap.login .login-sns .sns-box {
@@ -123,6 +124,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  margin-top: 16px;
 }
 .wrap.login .login_wrap .login-more a {
   color: var(--txt-sub);

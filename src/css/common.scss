@@ -124,14 +124,19 @@ button{
 .product-list{
   display: flex;gap:40px 32px;flex-wrap:wrap;
 
-  .card{width:calc(33.3% - 21.3px);
+  .card-box, .card{width:calc(33.3% - 21.3px);
 
-    .card-thum{width:100%;}
+    
   
-    .btn-box{
+    
+  }
 
 
-      button{}
-    }
+  .card-thum{width:100%;}
+  .cards{display:flex;flex-flow: column-reverse;}
+
+  .btn-box{
+    display: flex;gap:0 10px;
+    button{width:calc(50% - 5px);background: red;padding:12px 16px;}
   }
 }
