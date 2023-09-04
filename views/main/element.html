@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../evpark/css/style.css">
+
+  </head>
+  <body>
+    <button class="btn">root</button>
+    <span class="spn">element</span>
+    <input class="frmInpt" placeholder="placeholder"/>
+
+    <div class="box-input">
+      <input class="" type="text" placeholder="default"/>
+    </div>
+
+
+    <!-- login wrap -->
+    <div class="login_wrap">
+
+      <div class="form">
+
+        <div class="form-control">
+          <div class="form-control-label">
+            <span>아이디</span>
+          </div>
+          <div class="form-control-container">
+            <div class="form-control-content">
+              <div class="form-control-input">
+                <input type="search" placeholder="아이디 입력">
+                <button class="btnClear"></button>
+              </div>
+            </div>
+            <div class="error on">에러 메세지</div>
+          </div>
+        </div>
+
+
+        <div class="form-control">
+          <div class="form-control-label">
+            <span>비밀번호</span>
+          </div>
+          <div class="form-control-container">
+            <div class="form-control-content">
+              <div class="form-control-input">
+                <input type="search" placeholder="비밀번호 입력">
+                <button class="btnClear"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    
+
+    </div>
+    <!-- //login wrap -->
+
+
+    <!-- card -->
+    <div class="skr-card">
+      <div class="card_cover">
+        <a href="" title=""><img src="" class="product" alt="상품이미지"/></a>
+      </div>
+
+
+    </div>
+  </body>
+
+  <script>
+    var btnClear = document.querySelectorAll('.btnClear');
+    btnClear.forEach(function(btn){
+        btn.addEventListener('click', function(){
+            btn.parentNode.querySelector('input').value = "";
+        })
+    })
+</script>
+</html>
