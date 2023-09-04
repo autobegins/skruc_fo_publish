@@ -121,19 +121,27 @@ button{
 
 
 
+.hide-txt{ position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;}
+
+
 .product-list{
   display: flex;gap:40px 32px;flex-wrap:wrap;
 
   .card-box, .card{width:calc(33.3% - 21.3px);
-
-    
-  
-    
   }
 
 
   .card-thum{width:100%;}
-  .cards{display:flex;flex-flow: column-reverse;}
+  .card-box.r-colm{
+    .cards{display:flex;flex-flow: column-reverse;}
+  }
 
   .btn-box{
     display: flex;gap:0 10px;

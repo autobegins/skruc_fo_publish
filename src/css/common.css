@@ -88,6 +88,17 @@ button {
   outline: 1px solid #fefefe;
 }
 
+.hide-txt {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
 .product-list {
   display: flex;
   gap: 40px 32px;
@@ -99,7 +110,7 @@ button {
 .product-list .card-thum {
   width: 100%;
 }
-.product-list .cards {
+.product-list .card-box.r-colm .cards {
   display: flex;
   flex-flow: column-reverse;
 }

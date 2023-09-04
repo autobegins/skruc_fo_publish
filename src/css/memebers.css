@@ -134,19 +134,20 @@
 .wrap.login .login_wrap .login-more a:first-child {
   font-weight: 700;
 }
-.wrap.login .login_wrap .login-more a + a {
-  padding-left: 33px;
+.wrap.login .login_wrap .login-more .bar {
   position: relative;
+  width: 33px;
 }
-.wrap.login .login_wrap .login-more a + a::before {
+.wrap.login .login_wrap .login-more .bar::before {
   content: "";
-  position: absolute;
-  left: 17px;
-  top: 50%;
-  transform: translateY(-50%);
+  display: inline-block;
   width: 1px;
   height: 14px;
   background-color: #D9D9D9;
+  position: absolute;
+  left: 17px;
+  top: 50%;
+  transform: translateY(-60%);
 }
 .wrap.login .form-control-input {
   display: flex;

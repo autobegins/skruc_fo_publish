@@ -79,8 +79,9 @@
       a{color: var(--txt-sub);font-size: 16px;line-height: 24px;
         &:first-child{font-weight: 700;}
       }
-      a+a{padding-left:33px;position:relative;
-        &::before{content: '';position: absolute;left:17px;top:50%;transform: translateY(-50%);width:1px;height:14px;background-color: #D9D9D9;}
+
+      .bar{position: relative;;width:33px;
+        &::before{content: '';display: inline-block;width: 1px;height: 14px;background-color: #D9D9D9;position: absolute;left:17px;top:50%;transform: translateY(-60%);}
       }
     }
     
