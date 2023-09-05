@@ -27,7 +27,7 @@
 main {
   width: 100%;
   max-width: 1194px;
-  margin: 0 auto;
+  margin: 40px auto;
   box-shadow: 0px 8px 6px 0px rgba(0, 0, 0, 0.2);
   display: flex;
   gap: 0 30px;
@@ -36,12 +36,14 @@ main aside {
   width: 276px;
   background: #888;
 }
+main article {
+  width: 1194px;
+}
 main aside + article {
   width: 888px;
 }
-main article {
-  width: 1194px;
-  background: #aaa;
+main section + section {
+  margin-top: 30px;
 }
 
 .quick {
@@ -52,14 +54,14 @@ main article {
   width: 120px;
   padding: 25px 14px 32px;
   border-radius: 12px;
-  border: 1px solid var(--gray-04, #D4D7DC);
-  background: #FFF;
+  border: 1px solid var(--gray-04, #d4d7dc);
+  background: #fff;
   box-shadow: 0px 8px 6px 0px rgba(0, 0, 0, 0.2);
 }
 
 footer {
   width: 100vw;
-  background-color: #ECEEF0;
+  background-color: #eceef0;
   margin-top: 120px;
   padding: 64px 0 50px;
 }
@@ -119,7 +121,7 @@ footer {
   display: block;
   margin-top: 2px;
   margin-bottom: 5px;
-  color: #E51837;
+  color: #e51837;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -151,13 +153,13 @@ footer {
   display: inline-block;
   width: 1px;
   height: 10px;
-  background-color: #B1B1B1;
+  background-color: #b1b1b1;
 }
 .footer-layer .contact-info.customer {
   margin-left: 95px;
 }
 .footer-layer .contact-info.customer a {
-  color: #16ACA5;
+  color: #16aca5;
 }
 .footer-layer .copyright {
   color: var(--txt-info);
@@ -191,7 +193,7 @@ footer {
   transform: translateY(-50%);
   width: 1px;
   height: 5px;
-  background: #50555C;
+  background: #50555c;
 }
 .company-info .info-detail {
   display: flex;
@@ -230,7 +232,7 @@ footer {
   display: inline-block;
   width: 1px;
   height: 10px;
-  background-color: #B5B9C0;
+  background-color: #b5b9c0;
 }
 .company-info .info-detail .rep-tel {
   font-weight: 600;
@@ -274,7 +276,7 @@ footer {
   margin: 4px 0 0 0px;
   cursor: pointer;
   border-radius: 10px;
-  background: #FFF;
+  background: #fff;
   box-shadow: 1px 6px 14px 0px rgba(0, 0, 0, 0.16);
 }
 .FamilySite ul a {
@@ -288,10 +290,10 @@ footer {
   padding-left: 13px;
   font-size: 12px;
   line-height: 24px;
-  color: #858B93;
+  color: #858b93;
 }
 .FamilySite.active ul li:hover {
-  background-color: #858B93;
+  background-color: #858b93;
   color: #fff;
 }
 
@@ -318,14 +320,16 @@ footer {
   transform: translate(-50%, -50%);
   width: 400px;
   max-height: 85vh;
-  background: #fff;
   border-radius: 16px;
+  overflow: hidden;
 }
 .pop-box .pop-header {
   width: 100%;
   display: flex;
   padding: 22px 30px;
-  border-bottom: 1px solid #ECEEF0;
+  border-bottom: 1px solid #eceef0;
+  border-radius: 16px 16px 0 0;
+  background: #fff;
 }
 .pop-box .pop-header .pop-close {
   width: 24px;
@@ -335,6 +339,10 @@ footer {
 }
 .pop-box .pop-content {
   padding: 30px 40px 40px;
+  border-radius: 0 0 16px 16px;
+  background-color: #fff;
+  height: calc(100% - 140px);
+  overflow-y: auto;
 }
 
 /*** pc ***/
@@ -388,7 +396,7 @@ footer {
   }
   footer .company-info .customer-group a + a::before {
     left: -7px;
-    background-color: #B5B9C0;
+    background-color: #b5b9c0;
     height: 8px;
   }
   footer .company-info .info-detail {
@@ -419,7 +427,9 @@ footer {
     margin-left: 8px;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Cpath d='M9.5 4.25L6 7.75L2.5 4.25' stroke='%2350555C' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   }
-  footer .company-info .info-detail address, footer .company-info .info-detail a, footer .company-info .info-detail p {
+  footer .company-info .info-detail address,
+  footer .company-info .info-detail a,
+  footer .company-info .info-detail p {
     margin-bottom: 0px;
   }
   footer .company-info .info-detail .br {
@@ -493,7 +503,7 @@ footer {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='18' viewBox='0 0 16 18' fill='none'%3E%3Cpath d='M5.66675 3.81518L10.3334 9.00036L5.66675 14.1855' stroke='%2350555C' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   }
   footer .footer-layer .link-group .FamilySite ul li + li {
-    border-top: 1px solid #F7F7F9;
+    border-top: 1px solid #f7f7f9;
   }
   footer .footer-layer .link-group .FamilySite .selected {
     padding: 6px 12px;
@@ -527,10 +537,10 @@ footer {
   }
   footer .footer-layer.layer2 .contact-info span {
     text-align: center;
-    color: #B5B9C0;
+    color: #b5b9c0;
   }
   footer .footer-layer.layer2 .contact-info span strong {
-    color: #B5B9C0;
+    color: #b5b9c0;
   }
   footer .footer-layer.layer2 .contact-info.customer {
     position: relative;
@@ -545,7 +555,7 @@ footer {
     left: -9px;
     width: calc(100% + 18px);
     height: 1px;
-    background-color: #F7F7F9;
+    background-color: #f7f7f9;
   }
   footer .FamilySite.active {
     z-index: 1;

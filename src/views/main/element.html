@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, inital-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
 
     <script src="../../js/include.js"></script>
-
   </head>
   <body>
     <div class="wrap">
@@ -15,41 +14,82 @@
       <div class="header_wrap" w3-include-html="../include/header.html"></div>
       <!-- headerWrap -->
 
-      <main style="min-height:800px;">
+      <main style="min-height: 800px">
         <aside w3-include-html="../include/aside.html"></aside>
         <article>
-          <section class="product-list">
-            <div class="card-box r-colm"  w3-include-html="../components/card1.html"></div>
-            <div class="card-box"  w3-include-html="../components/card1.html"></div>
-            <div class="card-box"  w3-include-html="../components/card1.html"></div>
-            <div class="card-box"  w3-include-html="../components/card1.html"></div>
-            <div class="card-box"  w3-include-html="../components/card1.html"></div>
-            <div class="card-box"  w3-include-html="../components/card1.html"></div>
-            <div class="card-box"  w3-include-html="../components/card1.html"></div>
-            <div class="card-box"  w3-include-html="../components/card1.html"></div>
-            <div class="card-box"  w3-include-html="../components/card1.html"></div>
-            <div class="card-box"  w3-include-html="../components/card1.html"></div>
-            <div class="card-box"  w3-include-html="../components/card1.html"></div>
+          <section>
+            <style></style>
+
+            <div class="check-radio">
+              <input type="checkbox" id="checkbox" />
+              <label for="checkbox">체크박스1</label>
+              <input type="checkbox" id="checkbox2" />
+              <label for="checkbox2">체크박스2</label>
+              <input type="checkbox" id="checkbox3" />
+              <label for="checkbox3">체크박스3</label>
+              <input type="checkbox" id="checkbox4" />
+              <label for="checkbox4">체크박스4</label>
+            </div>
+            <div class="check-radio">
+              <input type="radio" id="radio1" name="radio1" />
+              <label for="radio1">라디오1</label>
+              <input type="radio" id="radio2" name="radio1" />
+              <label for="radio2">라디오2</label>
+              <input type="radio" id="radio3" name="radio1" />
+              <label for="radio3">라디오3</label>
+              <input type="radio" id="radio4" name="radio1" />
+              <label for="radio4">라디오4</label>
+            </div>
+
+            <div class="check-radio col">
+              <input type="checkbox" id="checkbox21" />
+              <label for="checkbox21">체크박스1</label>
+              <input type="checkbox" id="checkbox22" />
+              <label for="checkbox22">체크박스2</label>
+              <input type="checkbox" id="checkbox23" />
+              <label for="checkbox23">체크박스3</label>
+              <input type="checkbox" id="checkbox24" />
+              <label for="checkbox24">체크박스4</label>
+            </div>
+            <div class="check-radio col">
+              <input type="radio" id="radio21" name="radio2" />
+              <label for="radio21">라디오1</label>
+              <input type="radio" id="radio22" name="radio2" />
+              <label for="radio22">라디오2</label>
+              <input type="radio" id="radio23" name="radio2" />
+              <label for="radio23">라디오3</label>
+              <input type="radio" id="radio24" name="radio2" />
+              <label for="radio24">라디오4</label>
+            </div>
           </section>
 
-        
+          <section class="product-list">
+            <div class="card-box" w3-include-html="../components/card1.html"></div>
+            <div class="card-box" w3-include-html="../components/card1.html"></div>
+            <div class="card-box" w3-include-html="../components/card1.html"></div>
+            <div class="card-box r-colm" w3-include-html="../components/card1.html"></div>
+            <div class="card-box r-colm" w3-include-html="../components/card1.html"></div>
+            <div class="card-box r-colm" w3-include-html="../components/card1.html"></div>
+            <div class="card-box" w3-include-html="../components/card1.html"></div>
+            <div class="card-box" w3-include-html="../components/card1.html"></div>
+            <div class="card-box" w3-include-html="../components/card1.html"></div>
+            <div class="card-box" w3-include-html="../components/card1.html"></div>
+            <div class="card-box" w3-include-html="../components/card1.html"></div>
+          </section>
         </article>
 
         <!-- quick -->
         <article class="quick" w3-include-html="../include/quick.html"></article>
         <!-- //quick -->
       </main>
-    
+
       <!-- footer -->
       <footer w3-include-html="../include/footer.html"></footer>
       <!-- //footer -->
     </div>
   </body>
 
- 
-  
-<script>
-  includeHTML();
-</script>
- 
+  <script>
+    includeHTML();
+  </script>
 </html>
