@@ -2,15 +2,15 @@
 
 /***** BBS *****/
 .align-left {
-  text-align: left !important
+  text-align: left !important;
 }
 
 .align-right {
-  text-align: right !important
+  text-align: right !important;
 }
 
 .align-center {
-  text-align: center !important
+  text-align: center !important;
 }
 
 .wrap.bbs {
@@ -57,11 +57,11 @@
 /* table style */
 .table-default {
   width: 100%;
-  border-top: 2px solid #000
+  border-top: 2px solid #000;
 }
 
 .table-default caption {
-  display: none
+  display: none;
 }
 
 .table-default thead th {
@@ -95,7 +95,7 @@
 }
 
 .table-default thead th:first-child {
-  border-left: none
+  border-left: none;
 }
 
 .table-default tbody th {
@@ -112,7 +112,7 @@
 }
 
 .table-default tbody th:last-child {
-  border-right: none
+  border-right: none;
 }
 
 .table-default tbody td {
@@ -128,7 +128,7 @@
 }
 
 .table-default tbody td:last-child {
-  border-right: none
+  border-right: none;
 }
 
 .table-default tbody td:last-child.tb_list {
@@ -136,7 +136,7 @@
 }
 
 .table-default tbody td.merge {
-  border-right: 0
+  border-right: 0;
 }
 
 .table-default.cnt-center th,
@@ -166,16 +166,16 @@
 }
 
 .table-default.tb-my {
-  border-top: 1px solid #666
+  border-top: 1px solid #666;
 }
 
 .table-default.tb-my tbody th,
 .table-default.tb-my thead th {
-  background: #f8f8f8
+  background: #f8f8f8;
 }
 
 .table-default.tb-longterm {
-  border-top: 1px solid #eb444b
+  border-top: 1px solid #eb444b;
 }
 
 .table-default.tb-longterm table {
@@ -184,7 +184,7 @@
 
 .table-default.tb-longterm tbody th,
 .table-default.tb-longterm thead th {
-  background: #fff8f9
+  background: #fff8f9;
 }
 
 .table-default02 {
@@ -196,7 +196,7 @@
 }
 
 .table-default02 table caption {
-  display: none
+  display: none;
 }
 
 .table-default02 table thead {
@@ -270,7 +270,7 @@
 }
 
 .table-default02 table tbody td:first-child {
-  border-left: none
+  border-left: none;
 }
 
 .table-default02 table tbody td.tac {
@@ -286,7 +286,7 @@
 }
 
 .table-default03 table caption {
-  display: none
+  display: none;
 }
 
 .table-default03 table tbody th {
@@ -674,7 +674,7 @@ span.status-cancel:before {
 }
 
 /* 공통 */
-.btn-primary {
+/* .btn-primary {
   background: linear-gradient(70deg, #ff7d00 -1%, #F35B5B 37%, #fe532d 116.61%);
   color: #fff;
 }
@@ -683,7 +683,6 @@ span.status-cancel:before {
   background-color: var(--bg-gray);
 }
 
-
 .btn {
   color: var(--color-text)
-}
+} */
