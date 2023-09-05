@@ -255,7 +255,7 @@
 }
 
 .table-default02 table tbody th:first-child {
-  border-left: none
+  border-left: none;
 }
 
 .table-default02 table tbody td {
