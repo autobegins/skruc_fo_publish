@@ -18,8 +18,6 @@
         <aside w3-include-html="../include/aside.html"></aside>
         <article>
           <section>
-            <style></style>
-
             <div class="check-radio">
               <input type="checkbox" id="checkbox" />
               <label for="checkbox">체크박스1</label>
@@ -41,25 +39,16 @@
               <label for="radio4">라디오4</label>
             </div>
 
-            <div class="check-radio col">
-              <input type="checkbox" id="checkbox21" />
-              <label for="checkbox21">체크박스1</label>
-              <input type="checkbox" id="checkbox22" />
-              <label for="checkbox22">체크박스2</label>
-              <input type="checkbox" id="checkbox23" />
-              <label for="checkbox23">체크박스3</label>
-              <input type="checkbox" id="checkbox24" />
-              <label for="checkbox24">체크박스4</label>
-            </div>
-            <div class="check-radio col">
-              <input type="radio" id="radio21" name="radio2" />
-              <label for="radio21">라디오1</label>
-              <input type="radio" id="radio22" name="radio2" />
-              <label for="radio22">라디오2</label>
-              <input type="radio" id="radio23" name="radio2" />
-              <label for="radio23">라디오3</label>
-              <input type="radio" id="radio24" name="radio2" />
-              <label for="radio24">라디오4</label>
+            <div class="check-radio col" w3-include-html="../components/checkbox.html"></div>
+            <div class="check-radio col" w3-include-html="../components/radio.html"></div>
+          </section>
+
+          <section>
+            <div class="wrap-textarea">
+              <div class="box-textarea md">
+                <textarea placeholder="textarea."></textarea>
+              </div>
+              <p class="txt-cnt"><span>0</span>/500</p>
             </div>
           </section>
 
