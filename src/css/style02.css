@@ -1,10 +1,9 @@
 @charset "UTF-8";
-@import url("reset.css");
-@import url("fonts.css");
-@import url("common.css");
-@import url("memebers.css");
-@import url("layout.css");
 /***** BBS *****/
+.flex {
+  display: flex;
+}
+
 .align-left {
   text-align: left !important;
 }
@@ -17,7 +16,7 @@
   text-align: center !important;
 }
 
-.wrap.bbs {
+.bbs {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -25,7 +24,7 @@
   justify-content: center;
   background: transparent;
 }
-.wrap.bbs .copyright {
+.bbs .copyright {
   width: 100%;
   text-align: center;
   color: #666;
@@ -35,7 +34,7 @@
   bottom: 42px;
   max-width: 1200px;
 }
-.wrap.bbs .bbs-wrap {
+.bbs .bbs-wrap {
   border-radius: 0;
   padding: 0;
   display: flex;
@@ -47,10 +46,10 @@
   background: transparent;
   margin-top: 60px;
 }
-.wrap.bbs .bbs-wrap .form {
+.bbs .bbs-wrap .form {
   width: 100%;
 }
-.wrap.bbs .bbs-wrap .form .form-control {
+.bbs .bbs-wrap .form .form-control {
   position: relative;
 }
 
@@ -147,10 +146,6 @@
   border-top: 1px solid #666;
 }
 
-.flex {
-  display: flex;
-}
-
 span.status-wait {
   color: #2cb8cb;
   min-width: 110px;
@@ -199,7 +194,7 @@ span.status-cancel:before {
 }
 
 /* table photo */
-.wrap.bbs.photo {
+.bbs.photo {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -207,7 +202,7 @@ span.status-cancel:before {
   justify-content: center;
   background: transparent;
 }
-.wrap.bbs.photo .bbs-wrap.photo {
+.bbs.photo .bbs-wrap.photo {
   border-radius: 0;
   padding: 0;
   display: flex;
@@ -219,46 +214,46 @@ span.status-cancel:before {
   background: transparent;
   margin-top: 23px;
 }
-.wrap.bbs.photo .bbs-wrap.photo .form {
+.bbs.photo .bbs-wrap.photo .form {
   width: 100%;
 }
-.wrap.bbs.photo .bbs-wrap.photo .form .form-control {
+.bbs.photo .bbs-wrap.photo .form .form-control {
   position: relative;
 }
-.wrap.bbs.photo .table-default tbody td {
+.bbs.photo .table-default tbody td {
   border-right: none;
   border-bottom: none;
   padding: 20px 8px 20px 9px;
   text-align: center;
   border-bottom: 1px solid #ddd;
 }
-.wrap.bbs.photo .table-default tbody td:first-child {
+.bbs.photo .table-default tbody td:first-child {
   padding-left: 8px;
 }
-.wrap.bbs.photo .table-default tbody td:last-child {
+.bbs.photo .table-default tbody td:last-child {
   padding-right: 9px;
 }
-.wrap.bbs.photo .btn-wrap {
+.bbs.photo .btn-wrap {
   width: 100%;
   display: flex;
   gap: 0 10px;
   margin-bottom: 23px;
   justify-content: space-between;
 }
-.wrap.bbs.photo .btn-wrap .btn-box {
+.bbs.photo .btn-wrap .btn-box {
   width: 100%;
   display: flex;
   gap: 0 6px;
   margin-top: 44px;
   justify-content: space-between;
 }
-.wrap.bbs.photo .btn-wrap .btn-box.left {
+.bbs.photo .btn-wrap .btn-box.left {
   justify-content: flex-start;
 }
-.wrap.bbs.photo .btn-wrap .btn-box.right {
+.bbs.photo .btn-wrap .btn-box.right {
   justify-content: flex-end;
 }
-.wrap.bbs.photo .btn-wrap .btn-box button {
+.bbs.photo .btn-wrap .btn-box button {
   width: auto;
   padding: 7px 11px 7px 13px;
   border-radius: 5px;
@@ -271,13 +266,13 @@ span.status-cancel:before {
   border: 1px solid #e7eaf0;
   height: 32px;
 }
-.wrap.bbs.photo .btn-wrap .btn-box .btn-default {
+.bbs.photo .btn-wrap .btn-box .btn-default {
   color: #858b93;
   background: #fff;
   border-color: var(--gray-03);
   border: 1px solid #e7eaf0;
 }
-.wrap.bbs.photo .btn-wrap .btn-box .btn-default.active {
+.bbs.photo .btn-wrap .btn-box .btn-default.active {
   color: #2e3033;
   background: #fff;
   border-color: var(--gray-03);
@@ -285,7 +280,7 @@ span.status-cancel:before {
   font-weight: 700;
   padding-left: 11px;
 }
-.wrap.bbs.photo .btn-wrap .btn-box .btn-default.active:before {
+.bbs.photo .btn-wrap .btn-box .btn-default.active:before {
   content: "";
   display: inline-block;
   background: center center no-repeat;
@@ -295,10 +290,10 @@ span.status-cancel:before {
   padding-right: 2px;
   vertical-align: middle;
 }
-.wrap.bbs.photo .btn-wrap .btn-box .btn-default.delete {
+.bbs.photo .btn-wrap .btn-box .btn-default.delete {
   padding-left: 7px;
 }
-.wrap.bbs.photo .btn-wrap .btn-box .btn-default.delete:before {
+.bbs.photo .btn-wrap .btn-box .btn-default.delete:before {
   content: "";
   display: inline-block;
   background: center center no-repeat;
@@ -308,7 +303,7 @@ span.status-cancel:before {
   padding-right: 4px;
   vertical-align: middle;
 }
-.wrap.bbs.photo table .btn-box {
+.bbs.photo table .btn-box {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -317,7 +312,7 @@ span.status-cancel:before {
   gap: 8px 0;
   margin-top: 0;
 }
-.wrap.bbs.photo table .btn-default.compare {
+.bbs.photo table .btn-default.compare {
   width: auto;
   padding: 7px 32px;
   border-radius: 8px;
@@ -330,7 +325,7 @@ span.status-cancel:before {
   border: 1px solid #b5b9c0;
   height: 46px;
 }
-.wrap.bbs.photo table .btn-default.reservation {
+.bbs.photo table .btn-default.reservation {
   width: auto;
   padding: 7px 32px;
   border-radius: 8px;
@@ -343,7 +338,7 @@ span.status-cancel:before {
   border: 1px solid #fa4e29;
   height: 46px;
 }
-.wrap.bbs.photo table .btn-default.icon-only {
+.bbs.photo table .btn-default.icon-only {
   width: auto;
   padding: 0;
   border-radius: 0;
@@ -355,10 +350,10 @@ span.status-cancel:before {
   border: none;
   height: 30px;
 }
-.wrap.bbs.photo table .btn-default.icon-only.closing {
+.bbs.photo table .btn-default.icon-only.closing {
   padding-left: 7px;
 }
-.wrap.bbs.photo table .btn-default.icon-only.closing:before {
+.bbs.photo table .btn-default.icon-only.closing:before {
   content: "";
   display: inline-block;
   background: center center no-repeat;
@@ -368,23 +363,23 @@ span.status-cancel:before {
   padding-right: 0;
   vertical-align: middle;
 }
-.wrap.bbs.photo table .goods-wrap {
+.bbs.photo table .goods-wrap {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 0;
 }
-.wrap.bbs.photo table .goods-wrap p {
+.bbs.photo table .goods-wrap p {
   display: inline-block;
 }
-.wrap.bbs.photo table .goods-wrap p.goods-title {
+.bbs.photo table .goods-wrap p.goods-title {
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
   color: #2e3033;
 }
-.wrap.bbs.photo table .goods-wrap p.goods-desc {
+.bbs.photo table .goods-wrap p.goods-desc {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -392,17 +387,17 @@ span.status-cancel:before {
   color: #858b93;
   margin-bottom: 18px;
 }
-.wrap.bbs.photo table .goods-wrap p.goods-price {
+.bbs.photo table .goods-wrap p.goods-price {
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
   color: var(--txt-defult);
   color: #2e3033;
 }
-.wrap.bbs.photo table .goods-wrap p.goods-price .number {
+.bbs.photo table .goods-wrap p.goods-price .number {
   font-weight: 700;
 }
-.wrap.bbs.photo table .goods-wrap .btn-primary {
+.bbs.photo table .goods-wrap .btn-primary {
   border-radius: 5px;
   background: linear-gradient(90deg, #f81840 0.18%, #ff4f04 64.49%, #ff8e26 99.97%);
   color: #fff;
@@ -411,7 +406,7 @@ span.status-cancel:before {
   line-height: 20px;
   padding: 0 8px;
 }
-.wrap.bbs.photo table .btn-group {
+.bbs.photo table .btn-group {
   width: 100%;
   display: flex;
   flex-direction: column;
