@@ -17,8 +17,8 @@
 }
 
 .bbs {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -195,12 +195,13 @@ span.status-cancel:before {
 
 /* table photo */
 .bbs.photo {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
   background: transparent;
+  flex-direction: column;
 }
 .bbs.photo .bbs-wrap.photo {
   border-radius: 0;
@@ -239,6 +240,7 @@ span.status-cancel:before {
   gap: 0 10px;
   margin-bottom: 23px;
   justify-content: space-between;
+  max-width: 1200px;
 }
 .bbs.photo .btn-wrap .btn-box {
   width: 100%;
@@ -464,6 +466,114 @@ span.status-cancel:before {
 }
 .checkbox-wrap span input[type=checkbox]:checked + label::after {
   opacity: 1;
+}
+
+.copyright {
+  width: 100vw;
+  text-align: center;
+  color: #666;
+  font-size: 11px;
+  line-height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 20px;
+}
+
+/* tab */
+.tab-wrap {
+  position: relative;
+  margin-top: 88px;
+}
+.tab-wrap .tab {
+  overflow: hidden;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+}
+.tab-wrap .tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 7px 0 20px;
+  transition: 0.3s;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 37px;
+  color: #d4d7dc;
+  border-bottom: 3px solid transparent;
+}
+.tab-wrap .tab button:hover {
+  background-color: transparent;
+}
+.tab-wrap .tab button.active {
+  box-sizing: border-box;
+  background-color: transparent;
+  font-weight: 700;
+  border-bottom: 3px solid #2e3033;
+  color: #2e3033;
+}
+.tab-wrap .tab-button-wrap {
+  display: flex;
+  max-width: 1200px;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 0 40px;
+}
+.tab-wrap .tabcontent-wrap {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.tab-wrap .tabcontent {
+  display: none;
+  padding: 0;
+  border: none;
+  border-top: none;
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+}
+.tab-wrap .tabcontent.active {
+  display: block;
+}
+.tab-wrap .tab-desc-wrap {
+  display: flex;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  background: #f7f7f9;
+  padding: 22px 0 24px;
+  justify-content: center;
+}
+.tab-wrap .tab-desc-wrap div:first-child {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 1200px;
+  width: 100%;
+}
+.tab-wrap .tab-desc-wrap strong {
+  color: #fa4e29;
+  padding-left: 5px;
+}
+.tab-wrap .tab-desc-wrap strong {
+  color: red;
+}
+.tab-wrap .tab-cont-wrap {
+  display: flex;
+  padding: 22px 0 24px;
+  justify-content: center;
+}
+.tab-wrap .tab-cont-wrap div:first-child {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 1200px;
+  width: 100%;
 }
 
 /* 공통 *//*# sourceMappingURL=style02.css.map */
