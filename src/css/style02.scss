@@ -2,15 +2,15 @@
 
 /***** BBS *****/
 .align-left {
-  text-align: left !important
+  text-align: left !important;
 }
 
 .align-right {
-  text-align: right !important
+  text-align: right !important;
 }
 
 .align-center {
-  text-align: center !important
+  text-align: center !important;
 }
 
 .wrap.bbs {
@@ -78,7 +78,7 @@
       position: relative;
 
       &:after {
-        content: '';
+        content: "";
         display: inline-block;
         clear: both;
         width: 1px;
@@ -142,12 +142,9 @@
         font-weight: bold;
       }
     }
-
-
   }
 
   &.cnt-center {
-
     th,
     td {
       text-align: center !important;
@@ -185,7 +182,7 @@
 
 span {
   &.status-wait {
-    color: #2CB8CB;
+    color: #2cb8cb;
     min-width: 110px;
   }
 
@@ -196,7 +193,7 @@ span {
 
   &.status-wait {
     &:before {
-      content: '';
+      content: "";
       display: inline-block;
       background: center center no-repeat;
       background-image: url("../img/bbs/ico_status_wait.png");
@@ -208,11 +205,11 @@ span {
   }
 
   &.status-confirm {
-    color: #EA002C;
+    color: #ea002c;
     min-width: 110px;
 
     &:before {
-      content: '';
+      content: "";
       display: inline-block;
       background: center center no-repeat;
       background-image: url("../img/bbs/ico_status_confirm.png");
@@ -224,11 +221,11 @@ span {
   }
 
   &.status-cancel {
-    color: #4E4BF3;
+    color: #4e4bf3;
     min-width: 110px;
 
     &:before {
-      content: '';
+      content: "";
       display: inline-block;
       background: center center no-repeat;
       background-image: url("../img/bbs/ico_status_cancel.png");
@@ -321,31 +318,31 @@ span {
             padding: 7px 11px 7px 13px;
             border-radius: 5px;
             color: var(--color-text);
-            color: #858B93;
+            color: #858b93;
             text-align: center;
             font-size: 14px;
             font-weight: 400;
             line-height: 1rem;
-            border: 1px solid #E7EAF0;
+            border: 1px solid #e7eaf0;
             height: 32px;
           }
 
           .btn-default {
-            color: #858B93;
+            color: #858b93;
             background: #fff;
             border-color: var(--gray-03);
-            border: 1px solid #E7EAF0;
+            border: 1px solid #e7eaf0;
 
             &.active {
-              color: #2E3033;
+              color: #2e3033;
               background: #fff;
               border-color: var(--gray-03);
-              border: 1px solid #B5B9C0;
+              border: 1px solid #b5b9c0;
               font-weight: 700;
               padding-left: 11px;
 
               &:before {
-                content: '';
+                content: "";
                 display: inline-block;
                 background: center center no-repeat;
                 background-image: url("../img/bbs/ico_check_on.png");
@@ -360,7 +357,7 @@ span {
               padding-left: 7px;
 
               &:before {
-                content: '';
+                content: "";
                 display: inline-block;
                 background: center center no-repeat;
                 background-image: url("../img/bbs/ico_btn_close.png");
@@ -390,12 +387,12 @@ span {
             padding: 7px 32px;
             border-radius: 8px;
             color: var(--txt-02);
-            color: #50555C;
+            color: #50555c;
             text-align: center;
             font-size: 16px;
             font-weight: 600;
             line-height: 1rem;
-            border: 1px solid #B5B9C0;
+            border: 1px solid #b5b9c0;
             height: 46px;
           }
 
@@ -404,12 +401,12 @@ span {
             padding: 7px 32px;
             border-radius: 8px;
             /* color:var(--txt-02); */
-            color: #FA4E29;
+            color: #fa4e29;
             text-align: center;
             font-size: 16px;
             font-weight: 600;
             line-height: 1rem;
-            border: 1px solid #FA4E29;
+            border: 1px solid #fa4e29;
             height: 46px;
           }
 
@@ -429,7 +426,7 @@ span {
               padding-left: 7px;
 
               &:before {
-                content: '';
+                content: "";
                 display: inline-block;
                 background: center center no-repeat;
                 background-image: url("../img/bbs/ico_btn_closing.png");
@@ -456,7 +453,7 @@ span {
               font-size: 18px;
               font-weight: 400;
               line-height: 30px;
-              color: #2E3033;
+              color: #2e3033;
             }
 
             &.goods-desc {
@@ -464,7 +461,7 @@ span {
               font-weight: 400;
               line-height: 24px;
               color: var(--gray-800);
-              color: #858B93;
+              color: #858b93;
               margin-bottom: 18px;
             }
 
@@ -473,7 +470,7 @@ span {
               font-weight: 700;
               line-height: 32px;
               color: var(--txt-defult);
-              color: #2E3033;
+              color: #2e3033;
 
               .number {
                 font-weight: 700;
@@ -483,14 +480,13 @@ span {
 
           .btn-primary {
             border-radius: 5px;
-            background: linear-gradient(90deg, #F81840 0.18%, #FF4F04 64.49%, #FF8E26 99.97%);
+            background: linear-gradient(90deg, #f81840 0.18%, #ff4f04 64.49%, #ff8e26 99.97%);
             color: #fff;
             font-size: 11px;
             font-weight: 600;
             line-height: 20px;
             padding: 0 8px;
           }
-
         }
 
         .btn-group {
@@ -501,11 +497,8 @@ span {
           gap: 0;
           margin-bottom: 7px;
         }
-
       }
     }
-
-
   }
 }
 
@@ -533,19 +526,19 @@ span {
     input[type="checkbox"] {
       display: none;
 
-      +label {
+      + label {
         &::before {
           position: relative;
           display: inline-block;
           top: 0;
           left: 0;
-          content: '';
+          content: "";
           width: 30px;
           height: 30px;
           background-image: url("../img/bbs/img_checkbox_check.png");
           background-repeat: no-repeat;
           background-position: center center;
-          transition: all .2s linear 0s;
+          transition: all 0.2s linear 0s;
         }
 
         &::after {
@@ -554,18 +547,18 @@ span {
           top: 0;
           left: 0;
           opacity: 0;
-          content: '';
+          content: "";
           width: 30px;
           height: 30px;
           background-image: url("../img/bbs/img_checkbox_check.png");
           background-repeat: no-repeat;
           background-position: center center;
-          transition: all .2s linear 0s;
+          transition: all 0.2s linear 0s;
         }
       }
 
       &:checked {
-        +label {
+        + label {
           &::after {
             opacity: 1;
           }
@@ -574,7 +567,6 @@ span {
     }
   }
 }
-
 
 /* 공통 */
 // .btn-primary {
