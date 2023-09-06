@@ -70,6 +70,7 @@
       }
 
       .header__search {
+        display: none;
         position: absolute;
         right: 0;
         top: 81px;
@@ -158,9 +159,38 @@
       margin-left: auto;
     }
   }
+
   .top-bar {
     width: 100%;
     background: #eee;
+
+    .wrap--top-bar {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+
+      .top-bar__content {
+        margin-left: auto;
+        display: inline-flex;
+
+        .bar {
+          position: relative;
+          width: 41px;
+
+          &::before {
+            content: "";
+            position: absolute;
+            left: 21px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 1px;
+            height: 11px;
+            background: #d4d7dc;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -168,13 +198,13 @@ main {
   width: 100%;
   max-width: 1194px;
   margin: 40px auto;
-  box-shadow: 0px 8px 6px 0px rgba(0, 0, 0, 0.2);
+  // box-shadow: 0px 8px 6px 0px rgba(0, 0, 0, 0.2);
   display: flex;
   gap: 0 30px;
 
   aside {
     width: 276px;
-    background: #888;
+    background: #f7f7f9;
   }
   article {
     width: 1194px;
