@@ -221,6 +221,9 @@ span.status-cancel:before {
 .bbs.photo .bbs-wrap.photo .form .form-control {
   position: relative;
 }
+.bbs.photo .table-default img {
+  max-width: unset;
+}
 .bbs.photo .table-default tbody td {
   border-right: none;
   border-bottom: none;
