@@ -315,6 +315,7 @@ span.status-cancel:before {
   justify-content: space-between;
   align-items: center;
   gap: 8px 0;
+  margin-top: 0;
 }
 .wrap.bbs.photo table .btn-default.compare {
   width: auto;
