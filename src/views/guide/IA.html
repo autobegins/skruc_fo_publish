@@ -23,10 +23,15 @@
             <div class="tab-wrap">
               <div class="tab">
                 <div class="tab-button-wrap">
+                  <button class="tablinks active" onclick="openCar(event, 'Status00')">공통</button>
                   <button class="tablinks" onclick="openCar(event, 'Status01')">소매몰</button>
-                  <button class="tablinks active" onclick="openCar(event, 'Status02')">수출</button>
+                  <button class="tablinks" onclick="openCar(event, 'Status02')">수출</button>
                   <button class="tablinks" onclick="openCar(event, 'Status03')">기타</button>
                 </div>
+              </div>
+
+              <div id="Status00" class="tabcontent active">
+                <div class="tabcontent-wrap" w3-include-html="common.html"></div>
               </div>
 
               <div id="Status01" class="tabcontent">
@@ -217,7 +222,7 @@
                 </div>
               </div>
 
-              <div id="Status02" class="tabcontent active"></div>
+              <div id="Status02" class="tabcontent"></div>
 
               <div id="Status03" class="tabcontent">
                 <div class="tabcontent-wrap">

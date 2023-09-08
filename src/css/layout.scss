@@ -318,7 +318,7 @@
 main {
   width: 100%;
   // max-width: 1200px;
-  margin: 40px auto;
+  margin: 0px auto;
   // box-shadow: 0px 8px 6px 0px rgba(0, 0, 0, 0.2);
   display: flex;
   gap: 0 30px;
@@ -1084,5 +1084,29 @@ footer {
 
       //border: none;
     }
+  }
+}
+
+/**************************************************************************************************
+*** contents
+**************************************************************************************************/
+article.join {
+  max-width: 800px;
+}
+
+.page-title {
+  margin-top: 80px;
+  h2 {
+    color: var(--txt-defult);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 56px;
+  }
+  p {
+    margin-top: 6px;
+    color: var(--txt-info);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
   }
 }
