@@ -679,6 +679,11 @@ span {
     padding: 22px 0 24px;
     justify-content: center;
 
+    width: 100vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
     div {
       &:first-child {
         display: flex;

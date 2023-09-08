@@ -553,6 +553,10 @@ span.status-cancel:before {
   background: #f7f7f9;
   padding: 22px 0 24px;
   justify-content: center;
+  width: 100vw;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .tab-wrap .tab-desc-wrap div:first-child {
   display: flex;
