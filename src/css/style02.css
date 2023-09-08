@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/***** BBS *****/
+/***** 공통 *****/
 .flex {
   display: flex;
 }
@@ -16,6 +16,7 @@
   text-align: center !important;
 }
 
+/***** BBS *****/
 .bbs {
   width: 100%;
   height: 100%;
@@ -583,4 +584,6 @@ span.status-cancel:before {
   width: 100%;
 }
 
-/* 공통 *//*# sourceMappingURL=style02.css.map */
+/* 공통 */
+/***** 탁송 *****/
+/***** 경매 *****//*# sourceMappingURL=style02.css.map */
