@@ -25,4 +25,8 @@
   display: inline-block;
   width: 100%;
   text-align: center;
+}
+.ia_list table tbody .path td {
+  color: #9d84c2;
+  font-size: 1.25rem;
 }/*# sourceMappingURL=guide.css.map */
