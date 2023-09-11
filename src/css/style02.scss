@@ -38,14 +38,6 @@
 
 /***** BBS *****/
 .bbs {
-  // width: 100%;
-  // height: 100%;
-  // display: flex;
-  // align-items: flex-start;
-  // justify-content: center;
-  // background: transparent;
-  // flex-direction: column;
-
   width: 100%;
   height: 100%;
   display: flex;
@@ -193,8 +185,8 @@
             content: "";
             display: inline-block;
             background: center center no-repeat;
-            background-image: url("../img/bbs/ico_status_wait.png");
-            // background-image: url("../img/bbs/ico_excel.png");
+            // background-image: url("../img/bbs/ico_status_wait.png");
+            background-image: url("../img/bbs/ico_excel.png");
             width: 20px;
             height: 20px;
             padding-right: 0;
