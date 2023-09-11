@@ -2,96 +2,31 @@
 <html lang="">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, inital-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="../../css/style.css">
-  <link rel="stylesheet" type="text/css" href="../../css/style02.css">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="../../css/style_auction.css" />
+  <link rel="stylesheet" type="text/css" href="../../css/style02.css" />
 
   <script src="../../js/include.js"></script>
 </head>
 
 <body>
+  <div class="wrap consignment">
+    <!-- headerWrap -->
+    <div class="header_wrap" w3-include-html="../include2/header.html"></div>
+    <!-- headerWrap -->
 
-  <div class="wrap">
-
-    <div class="tab-wrap">
-      <div class="tab">
-        <div class="tab-button-wrap">
-          <button class="tablinks" onclick="openCar(event, 'Status01')">내 정보 수정</button>
-          <button class="tablinks active" onclick="openCar(event, 'Status02')">찜한 차량</button>
-          <button class="tablinks" onclick="openCar(event, 'Status03')">최근 본 차량</button>
-          <button class="tablinks" onclick="openCar(event, 'Status04')">방문 예약 현황</button>
-          <button class="tablinks" onclick="openCar(event, 'Status05')">구매 예약 현황</button>
-        </div>
-      </div>
-
-      <div id="Status01" class="tabcontent">
-
-        <div class="tabcontent-wrap">
-
-          <div class="tab-desc-wrap">
-            <div>※ 찜한 차량은 <strong class="stress">최대 10개</strong>까지 저장됩니다.</div>
+    <main style="min-height: 800px">
+      <article>
+        <section>
+          <div class="title-wrap">
+            <div class="title">탁송관리</div>
+            <div class="title-desc">SK 렌터카의 탁송관리 시스템입니다.</div>
           </div>
+        </section>
 
-          <div class="form bbs">
-            <!-- bbs list -->
-            <div class="bbs-wrap">
-              <!-- table -->
-              <table class="table-default">
-                <caption>방문예약현황</caption>
-                <colgroup>
-                  <col width="*">
-                  <col width="15%">
-                  <col width="15%">
-                  <col width="15%">
-                </colgroup>
-                <thead>
-                  <tr>
-                    <th>차량정보</th>
-                    <th>방문일</th>
-                    <th>차량정보</th>
-                    <th>예약상태</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="align-left">G80 2.5 1WD</td>
-                    <td>2023-08-02</td>
-                    <td>오전 10:00</td>
-                    <td><span class="status-wait">방문예약대기</span></td>
-                  </tr>
-                  <tr>
-                    <td class="align-left">G80 2.5 1WD</td>
-                    <td>2023-08-02</td>
-                    <td>오전 10:00</td>
-                    <td><span class="status-confirm">방문예약확정</span></td>
-                  </tr>
-                  <tr>
-                    <td class="align-left">G80 2.5 1WD</td>
-                    <td>2023-08-02</td>
-                    <td>오전 10:00</td>
-                    <td><span class="status-cancel">방문예약취소</span></td>
-                  </tr>
-                </tbody>
-              </table>
-              <!-- //table -->
-            </div>
-            <!-- //bbs list -->
-          </div>
-
-        </div>
-
-      </div>
-
-      <div id="Status02" class="tabcontent active">
-
-        <div class="tabcontent-wrap">
-
-          <div class="tab-desc-wrap">
-            <div>※ 찜한 차량은 <strong class="stress">최대 10개</strong>까지 저장됩니다.</div>
-          </div>
-
+        <section>
           <div class="form bbs photo">
             <!-- bbs photo -->
             <div class="btn-wrap">
@@ -193,73 +128,23 @@
             </div>
             <!-- //bbs photo -->
           </div>
-        </div>
+        </section>
 
-      </div>
+      </article>
 
-      <div id="Status03" class="tabcontent">
+      <!-- quick -->
+      <!-- <article class="quick" w3-include-html="../include2/quick.html"></article> -->
+      <!-- //quick -->
+    </main>
 
-        <div class="tabcontent-wrap">
-          <div class="tab-desc-wrap">
-            <div>※ 찜한 차량은 <strong class="stress">최대 10개</strong>까지 저장됩니다.</div>
-          </div>
-
-          <div class="tab-cont-wrap">
-            <div>Tab 3</div>
-          </div>
-        </div>
-
-      </div>
-
-      <div id="Status04" class="tabcontent">
-
-        <div class="tabcontent-wrap">
-          <div class="tab-desc-wrap">
-            <div>※ 찜한 차량은 <strong class="stress">최대 10개</strong>까지 저장됩니다.</div>
-          </div>
-
-          <div class="tab-cont-wrap">
-            <div>Tab 4</div>
-          </div>
-        </div>
-
-      </div>
-
-      <div id="Status05" class="tabcontent">
-
-        <div class="tabcontent-wrap">
-          <div class="tab-desc-wrap">
-            <div>※ 찜한 차량은 <strong class="stress">최대 10개</strong>까지 저장됩니다.</div>
-          </div>
-
-          <div class="tab-cont-wrap">
-            <div>Tab 5</div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- <div class="copyright">Copyright SKRUC. All Rights Reserved.</div> -->
+    <!-- footer -->
+    <footer w3-include-html="../include2/footer.html"></footer>
+    <!-- //footer -->
   </div>
-
 </body>
 
 <script>
-  // Tab
-  function openCar(evt, carStatus) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(carStatus).style.display = "block";
-    evt.currentTarget.className += " active";
-  }
+  includeHTML();
 </script>
 
 </html>
