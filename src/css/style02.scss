@@ -6,7 +6,7 @@
 // @import url("memebers.css");
 // @import url("layout.css");
 
-/***** 공통2 *****/
+/***** 공통 *****/
 .flex {
   display: flex;
 }
@@ -21,10 +21,6 @@
 
 .align-center {
   text-align: center !important;
-}
-
-.disp-none {
-  display: none !important;
 }
 
 // .wrap {
@@ -45,16 +41,16 @@
   justify-content: center;
   background: transparent;
 
-  .copyright {
-    width: 100%;
-    text-align: center;
-    color: #666;
-    font-size: 11px;
-    line-height: 16px;
-    position: fixed;
-    bottom: 42px;
-    max-width: 1200px;
-  }
+  // .copyright {
+  //   width: 100%;
+  //   text-align: center;
+  //   color: #666;
+  //   font-size: 11px;
+  //   line-height: 16px;
+  //   position: fixed;
+  //   bottom: 42px;
+  //   max-width: 1200px;
+  // }
 
   .bbs-wrap {
     border-radius: 0;
@@ -593,18 +589,18 @@ span {
   }
 }
 
-.copyright {
-  width: 100vw;
-  text-align: center;
-  color: #666;
-  font-size: 11px;
-  line-height: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  bottom: 20px;
-}
+// .copyright {
+//   width: 100vw;
+//   text-align: center;
+//   color: #666;
+//   font-size: 11px;
+//   line-height: 16px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   position: fixed;
+//   bottom: 20px;
+// }
 
 /* tab */
 .tab-wrap {
@@ -684,10 +680,10 @@ span {
     padding: 22px 0 24px;
     justify-content: center;
 
-    // width: 100vw;
-    // position: absolute;
-    // left: 50%;
-    // transform: translateX(-50%);
+    width: 100vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 
     div {
       &:first-child {
