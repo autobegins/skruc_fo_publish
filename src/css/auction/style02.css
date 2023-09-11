@@ -776,6 +776,7 @@ span.status-cancel:before {
 }
 .search-wrap .forms-wrap li .form {
   display: flex;
+  justify-content: space-around;
   color: #343a40;
   font-size: 16px;
   font-style: normal;
@@ -818,6 +819,8 @@ span.status-cancel:before {
   cursor: pointer;
   background-color: #adb5b5;
   color: #fff;
+  font-size: 18px;
+  font-weight: 700;
 }
 .search-wrap .forms-wrap li.search {
   width: 100%;
@@ -828,6 +831,8 @@ span.status-cancel:before {
   cursor: pointer;
   background: linear-gradient(270deg, #ff3e3e 28.35%, #ff7a00 89.7%);
   color: #fff;
+  font-size: 18px;
+  font-weight: 700;
 }
 .search-wrap .forms-wrap li p {
   font-size: 18px;
