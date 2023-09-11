@@ -38,14 +38,6 @@
 
 /***** BBS *****/
 .bbs {
-  // width: 100%;
-  // height: 100%;
-  // display: flex;
-  // align-items: flex-start;
-  // justify-content: center;
-  // background: transparent;
-  // flex-direction: column;
-
   width: 100%;
   height: 100%;
   display: flex;
@@ -77,6 +69,7 @@
     background: transparent;
     margin-top: 0;
     margin-bottom: 30px;
+    overflow-x: scroll;
 
     .form {
       width: 100%;
@@ -179,8 +172,8 @@
             content: "";
             display: inline-block;
             background: center center no-repeat;
-            background-image: url("../img/bbs/ico_check_on.png");
-            // background-image: url("../img/bbs/ico_excel.png");
+            background-image: url("../../img/bbs/ico_check_on.png");
+            // background-image: url("../../img/bbs/ico_excel.png");
             width: 20px;
             height: 20px;
             padding-left: 0;
@@ -193,13 +186,31 @@
             content: "";
             display: inline-block;
             background: center center no-repeat;
-            background-image: url("../img/bbs/ico_status_wait.png");
-            // background-image: url("../img/bbs/ico_excel.png");
+            // background-image: url("..../img/bbs/ico_status_wait.png");
+            background-image: url("../../img/bbs/ico_excel.png");
             width: 20px;
             height: 20px;
             padding-right: 0;
             vertical-align: middle;
           }
+        }
+      }
+    }
+    span {
+      display: flex;
+      align-items: center;
+      &.num {
+        color: #868e96;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1rem;
+      }
+      strong {
+        &.stress {
+          color: #343a40;
+          font-weight: 700;
+          line-height: 1rem;
+          margin-left: 5px;
         }
       }
     }
@@ -209,7 +220,7 @@
 /* table style */
 .table-default {
   width: 100%;
-  border-top: 2px solid #000;
+  border-top: 2px solid #515959;
 
   caption {
     display: none;
@@ -217,13 +228,14 @@
 
   thead {
     th {
-      background: #f5f5f5;
+      background: #f5f6f6;
       text-align: center;
-      padding: 15px 20px;
+      padding: 14px 20px;
       font-family: "Pretendard";
-      font-size: 18px;
-      color: #50555c;
+      font-size: 14px;
+      color: #979e9e;
       font-weight: 700;
+      line-height: 1rem;
       border-left: none;
       border-bottom: 1px solid #dce5e5;
       vertical-align: middle;
@@ -234,11 +246,11 @@
         display: inline-block;
         clear: both;
         width: 1px;
-        height: 34px;
+        height: 14px;
         background: #dce5e5;
         position: absolute;
         right: 0;
-        top: 13px;
+        top: 23px;
       }
 
       &:last-child {
@@ -254,6 +266,7 @@
   }
 
   tbody {
+    white-space: nowrap;
     th {
       background: #fefcf9;
       text-align: center;
@@ -265,6 +278,7 @@
       border-right: 1px solid #dce5e5;
       border-bottom: 1px solid #dce5e5;
       vertical-align: middle;
+      min-height: 45px;
 
       &:last-child {
         border-right: none;
@@ -273,14 +287,16 @@
 
     td {
       text-align: center;
-      padding: 17px 20px;
-      color: #677272;
+      padding: 13px 7px;
+      color: #495057;
       font-family: "Pretendard";
-      font-size: 16px;
+      font-size: 14px;
+      font-weight: 400;
       letter-spacing: 0;
       border-right: 1px solid #ddd;
       border-bottom: 1px solid #ddd;
       vertical-align: middle;
+      min-height: 50px;
 
       &:last-child {
         border-right: none;
