@@ -20,6 +20,10 @@
   display: none !important;
 }
 
+.w125 {
+  width: 126px !important;
+}
+
 /***** BBS *****/
 .bbs {
   width: 100%;
@@ -86,6 +90,7 @@
   border: 1px solid #e7eaf0;
   height: 45px;
   letter-spacing: -1px;
+  position: relative;
 }
 .bbs .btn-wrap .btn-box .btn-default {
   color: #858b93;
@@ -116,25 +121,29 @@
   color: #fff;
   text-align: center;
 }
+.bbs .btn-wrap .btn-box .btn-default.excel {
+  background-color: #8b9a9a;
+  color: #fff;
+}
 .bbs .btn-wrap .btn-box .btn-default.excel::after {
   content: "";
   display: inline-block;
   background: center center no-repeat;
-  background-image: url("../../img/bbs/ico_check_on.png");
+  background-image: url("../../img/auction/ico_excel.png");
   width: 20px;
   height: 20px;
-  padding-left: 0;
-  vertical-align: middle;
+  padding-left: 5px;
+  vertical-align: top;
 }
 .bbs .btn-wrap .btn-box .btn-default.excel-sample::after {
   content: "";
   display: inline-block;
   background: center center no-repeat;
-  background-image: url("../../img/bbs/ico_excel.png");
+  background-image: url("../../img/auction/ico_excel2.png");
   width: 20px;
   height: 20px;
-  padding-right: 0;
-  vertical-align: middle;
+  padding-left: 10px;
+  vertical-align: top;
 }
 .bbs .btn-wrap span {
   display: flex;
@@ -164,7 +173,7 @@
 .table-default thead th {
   background: #f5f6f6;
   text-align: center;
-  padding: 14px 20px;
+  padding: 6px 20px;
   font-family: "Pretendard";
   font-size: 14px;
   color: #979e9e;
@@ -174,6 +183,7 @@
   border-bottom: 1px solid #dce5e5;
   vertical-align: middle;
   position: relative;
+  min-height: 45px;
 }
 .table-default thead th:after {
   content: "";
@@ -184,7 +194,7 @@
   background: #dce5e5;
   position: absolute;
   right: 0;
-  top: 23px;
+  top: 13px;
 }
 .table-default thead th:last-child:after {
   display: none;
@@ -671,6 +681,181 @@ span.status-cancel:before {
   justify-content: flex-start;
   max-width: 1200px;
   width: 100%;
+}
+
+/* search-wrap */
+.search-wrap {
+  position: relative;
+  margin-bottom: 60px;
+}
+.search-wrap .button-wrap {
+  display: flex;
+  border-radius: 8px;
+  height: 55px;
+}
+.search-wrap .button-wrap li {
+  flex: 1 1 0%;
+}
+.search-wrap .button-wrap li:first-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 8px;
+}
+.search-wrap .button-wrap li:last-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 8px;
+}
+.search-wrap .button-wrap li.reset {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #adb5b5;
+  color: #fff;
+}
+.search-wrap .button-wrap li.search {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: linear-gradient(270deg, #ff3e3e 28.35%, #ff7a00 89.7%);
+  color: #fff;
+}
+.search-wrap .button-wrap li.search p {
+  position: relative;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 33px;
+  color: rgb(58, 58, 60);
+  color: #fff;
+}
+.search-wrap .button-wrap li.search p:after {
+  content: "";
+  display: inline-block;
+  background: center center no-repeat;
+  background-image: url("../../img/auction/ico_search.png");
+  width: 20px;
+  height: 20px;
+  padding-left: 10px;
+  vertical-align: middle;
+  position: absolute;
+  top: 7px;
+}
+.search-wrap .forms-wrap {
+  display: flex;
+  padding: 15px 30px;
+  align-items: flex-start;
+  align-content: flex-start;
+  align-self: stretch;
+  flex-wrap: wrap;
+  border-radius: 8px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  min-height: 88px;
+  border: 1px solid #adb5b5;
+}
+.search-wrap .forms-box {
+  display: flex;
+  width: 100%;
+  padding: 10px 0;
+  align-items: flex-start;
+  align-content: flex-start;
+  align-self: stretch;
+  flex-wrap: wrap;
+  border-radius: 8px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: 1px solid #adb5b5;
+  gap: 10px 10px;
+}
+.search-wrap .forms-box:last-child {
+  border-bottom: none;
+}
+.search-wrap .forms-box li {
+  flex: 1 1 0%;
+}
+.search-wrap .forms-box li label.title {
+  display: inline-flex;
+  color: #343a40;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -1px;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 80px;
+  padding-right: 20px;
+}
+.search-wrap .forms-box li .form {
+  display: flex;
+  justify-content: space-around;
+  color: #343a40;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -1px;
+  gap: 0;
+}
+.search-wrap .forms-box li .form .calendar-wrap {
+  display: inline-flex;
+}
+.search-wrap .forms-box li .form .calendar-wrap input {
+  width: 130px;
+}
+.search-wrap .forms-box li .form .calendar-wrap .bar {
+  display: inline-block;
+  line-height: 2.5rem;
+  padding: 0 5px;
+}
+.search-wrap .forms-box li .form input {
+  border: 1px solid #c3caca;
+  border-radius: 5px;
+  padding: 10px;
+  min-width: 126px;
+}
+.search-wrap .forms-box li:first-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 8px;
+}
+.search-wrap .forms-box li:last-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 8px;
+}
+.search-wrap .forms-box li.reset {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #adb5b5;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+.search-wrap .forms-box li.search {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: linear-gradient(270deg, #ff3e3e 28.35%, #ff7a00 89.7%);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+.search-wrap .forms-box li p {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 33px;
+  color: rgb(58, 58, 60);
+  color: #fff;
 }
 
 /* 공통 */
