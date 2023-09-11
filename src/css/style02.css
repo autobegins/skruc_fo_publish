@@ -25,19 +25,10 @@
   width: 100%;
   height: 100%;
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
   background: transparent;
-}
-.bbs .copyright {
-  width: 100%;
-  text-align: center;
-  color: #666;
-  font-size: 11px;
-  line-height: 16px;
-  position: fixed;
-  bottom: 42px;
-  max-width: 1200px;
+  flex-direction: column;
 }
 .bbs .bbs-wrap {
   border-radius: 0;
@@ -49,13 +40,100 @@
   align-items: flex-start;
   border: none;
   background: transparent;
-  margin-top: 60px;
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 .bbs .bbs-wrap .form {
   width: 100%;
 }
 .bbs .bbs-wrap .form .form-control {
   position: relative;
+}
+.bbs .btn-wrap {
+  width: 100%;
+  display: flex;
+  gap: 0 5px;
+  margin-bottom: 15px;
+  justify-content: space-between;
+  max-width: 1200px;
+}
+.bbs .btn-wrap .btn-box {
+  width: 100%;
+  display: flex;
+  gap: 0 6px;
+  margin-top: 44px;
+  justify-content: space-between;
+}
+.bbs .btn-wrap .btn-box.left {
+  justify-content: flex-start;
+  width: 30%;
+}
+.bbs .btn-wrap .btn-box.right {
+  justify-content: flex-end;
+  width: 70%;
+}
+.bbs .btn-wrap .btn-box button {
+  width: auto;
+  padding: 11px 20px 11px 20px;
+  border-radius: 5px;
+  font-style: normal;
+  color: #858b93;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  border: 1px solid #e7eaf0;
+  height: 45px;
+  letter-spacing: -1px;
+}
+.bbs .btn-wrap .btn-box .btn-default {
+  color: #858b93;
+  background: #fff;
+  border: 1px solid #8b9a9a;
+  min-width: 88px;
+}
+.bbs .btn-wrap .btn-box .btn-default.active {
+  color: #2e3033;
+  background: #fff;
+  border-color: var(--gray-03);
+  border: 1px solid #b5b9c0;
+  font-weight: 700;
+  padding-left: 11px;
+}
+.bbs .btn-wrap .btn-box .btn-default.active::before {
+  content: "";
+  display: inline-block;
+  background: center center no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='18' viewBox='0 0 12 18' fill='none'%3E%3Cpath d='M4.5 11.25L2.625 9.375C2.41789 9.16789 2.08211 9.16789 1.875 9.375C1.66789 9.58211 1.66789 9.91789 1.875 10.125L3.79289 12.0429C4.18342 12.4334 4.81658 12.4334 5.20711 12.0429L10.125 7.125C10.3321 6.91789 10.3321 6.58211 10.125 6.375C9.91789 6.16789 9.58211 6.16789 9.375 6.375L4.5 11.25Z' fill='%232E3033' stroke='%23FA4E29' stroke-linecap='round'/%3E%3C/svg%3E");
+  width: 12px;
+  height: 18px;
+  padding-right: 2px;
+  vertical-align: middle;
+}
+.bbs .btn-wrap .btn-box .btn-default.save {
+  background-color: #4b5758;
+  color: #fff;
+  text-align: center;
+}
+.bbs .btn-wrap .btn-box .btn-default.excel::after {
+  content: "";
+  display: inline-block;
+  background: center center no-repeat;
+  background-image: url("../img/bbs/ico_check_on.png");
+  width: 20px;
+  height: 20px;
+  padding-left: 0;
+  vertical-align: middle;
+}
+.bbs .btn-wrap .btn-box .btn-default.excel-sample::after {
+  content: "";
+  display: inline-block;
+  background: center center no-repeat;
+  background-image: url("../img/bbs/ico_status_wait.png");
+  width: 20px;
+  height: 20px;
+  padding-right: 0;
+  vertical-align: middle;
 }
 
 /* table style */
@@ -218,7 +296,7 @@ span.status-cancel:before {
   align-items: flex-start;
   border: none;
   background: transparent;
-  margin-top: 23px;
+  margin-top: 0px;
 }
 .bbs.photo .bbs-wrap.photo .form {
   width: 100%;
@@ -476,19 +554,6 @@ span.status-cancel:before {
   opacity: 1;
 }
 
-.copyright {
-  width: 100vw;
-  text-align: center;
-  color: #666;
-  font-size: 11px;
-  line-height: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  bottom: 20px;
-}
-
 /* tab */
 .tab-wrap {
   position: relative;
@@ -586,4 +651,5 @@ span.status-cancel:before {
 
 /* 공통 */
 /***** 탁송 *****/
+/* 상단 nav */
 /***** 경매 *****//*# sourceMappingURL=style02.css.map */
