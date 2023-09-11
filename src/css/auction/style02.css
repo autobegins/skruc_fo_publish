@@ -25,19 +25,10 @@
   width: 100%;
   height: 100%;
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
   background: transparent;
-}
-.bbs .copyright {
-  width: 100%;
-  text-align: center;
-  color: #666;
-  font-size: 11px;
-  line-height: 16px;
-  position: fixed;
-  bottom: 42px;
-  max-width: 1200px;
+  flex-direction: column;
 }
 .bbs .bbs-wrap {
   border-radius: 0;
@@ -49,7 +40,9 @@
   align-items: flex-start;
   border: none;
   background: transparent;
-  margin-top: 60px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  overflow-x: scroll;
 }
 .bbs .bbs-wrap .form {
   width: 100%;
@@ -57,23 +50,126 @@
 .bbs .bbs-wrap .form .form-control {
   position: relative;
 }
+.bbs .btn-wrap {
+  width: 100%;
+  display: flex;
+  gap: 0 5px;
+  margin-bottom: 15px;
+  justify-content: space-between;
+  max-width: 1200px;
+}
+.bbs .btn-wrap .btn-box {
+  width: 100%;
+  display: flex;
+  gap: 0 6px;
+  margin-top: 44px;
+  justify-content: space-between;
+}
+.bbs .btn-wrap .btn-box.left {
+  justify-content: flex-start;
+  width: 30%;
+}
+.bbs .btn-wrap .btn-box.right {
+  justify-content: flex-end;
+  width: 70%;
+}
+.bbs .btn-wrap .btn-box button {
+  width: auto;
+  padding: 11px 20px 11px 20px;
+  border-radius: 5px;
+  font-style: normal;
+  color: #858b93;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  border: 1px solid #e7eaf0;
+  height: 45px;
+  letter-spacing: -1px;
+}
+.bbs .btn-wrap .btn-box .btn-default {
+  color: #858b93;
+  background: #fff;
+  border: 1px solid #8b9a9a;
+  min-width: 88px;
+}
+.bbs .btn-wrap .btn-box .btn-default.active {
+  color: #2e3033;
+  background: #fff;
+  border-color: var(--gray-03);
+  border: 1px solid #b5b9c0;
+  font-weight: 700;
+  padding-left: 11px;
+}
+.bbs .btn-wrap .btn-box .btn-default.active::before {
+  content: "";
+  display: inline-block;
+  background: center center no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='18' viewBox='0 0 12 18' fill='none'%3E%3Cpath d='M4.5 11.25L2.625 9.375C2.41789 9.16789 2.08211 9.16789 1.875 9.375C1.66789 9.58211 1.66789 9.91789 1.875 10.125L3.79289 12.0429C4.18342 12.4334 4.81658 12.4334 5.20711 12.0429L10.125 7.125C10.3321 6.91789 10.3321 6.58211 10.125 6.375C9.91789 6.16789 9.58211 6.16789 9.375 6.375L4.5 11.25Z' fill='%232E3033' stroke='%23FA4E29' stroke-linecap='round'/%3E%3C/svg%3E");
+  width: 12px;
+  height: 18px;
+  padding-right: 2px;
+  vertical-align: middle;
+}
+.bbs .btn-wrap .btn-box .btn-default.save {
+  background-color: #4b5758;
+  color: #fff;
+  text-align: center;
+}
+.bbs .btn-wrap .btn-box .btn-default.excel::after {
+  content: "";
+  display: inline-block;
+  background: center center no-repeat;
+  background-image: url("../../img/bbs/ico_check_on.png");
+  width: 20px;
+  height: 20px;
+  padding-left: 0;
+  vertical-align: middle;
+}
+.bbs .btn-wrap .btn-box .btn-default.excel-sample::after {
+  content: "";
+  display: inline-block;
+  background: center center no-repeat;
+  background-image: url("../../img/bbs/ico_excel.png");
+  width: 20px;
+  height: 20px;
+  padding-right: 0;
+  vertical-align: middle;
+}
+.bbs .btn-wrap span {
+  display: flex;
+  align-items: center;
+}
+.bbs .btn-wrap span.num {
+  color: #868e96;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1rem;
+}
+.bbs .btn-wrap span strong.stress {
+  color: #343a40;
+  font-weight: 700;
+  line-height: 1rem;
+  margin-left: 5px;
+}
 
 /* table style */
 .table-default {
   width: 100%;
-  border-top: 2px solid #000;
+  border-top: 2px solid #515959;
 }
 .table-default caption {
   display: none;
 }
 .table-default thead th {
-  background: #f5f5f5;
+  background: #f5f6f6;
   text-align: center;
-  padding: 15px 20px;
+  padding: 14px 20px;
   font-family: "Pretendard";
-  font-size: 18px;
-  color: #50555c;
+  font-size: 14px;
+  color: #979e9e;
   font-weight: 700;
+  line-height: 1rem;
   border-left: none;
   border-bottom: 1px solid #dce5e5;
   vertical-align: middle;
@@ -84,11 +180,11 @@
   display: inline-block;
   clear: both;
   width: 1px;
-  height: 34px;
+  height: 14px;
   background: #dce5e5;
   position: absolute;
   right: 0;
-  top: 13px;
+  top: 23px;
 }
 .table-default thead th:last-child:after {
   display: none;
@@ -96,10 +192,13 @@
 .table-default thead th:first-child {
   border-left: none;
 }
+.table-default tbody {
+  white-space: nowrap;
+}
 .table-default tbody th {
   background: #fefcf9;
   text-align: center;
-  padding: 15px 20px;
+  padding: 7px 20px;
   font-family: "Pretendard";
   font-size: 16px;
   color: #677272;
@@ -107,20 +206,23 @@
   border-right: 1px solid #dce5e5;
   border-bottom: 1px solid #dce5e5;
   vertical-align: middle;
+  min-height: 45px;
 }
 .table-default tbody th:last-child {
   border-right: none;
 }
 .table-default tbody td {
   text-align: center;
-  padding: 17px 20px;
-  color: #677272;
+  padding: 7px 20px;
+  color: #495057;
   font-family: "Pretendard";
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 400;
   letter-spacing: 0;
   border-right: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   vertical-align: middle;
+  min-height: 50px;
 }
 .table-default tbody td:last-child {
   border-right: none;
@@ -218,7 +320,7 @@ span.status-cancel:before {
   align-items: flex-start;
   border: none;
   background: transparent;
-  margin-top: 23px;
+  margin-top: 0px;
 }
 .bbs.photo .bbs-wrap.photo .form {
   width: 100%;
@@ -453,7 +555,7 @@ span.status-cancel:before {
   content: "";
   width: 30px;
   height: 30px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30' fill='none'%3E%3Crect x='0.5' y='0.5' width='29' height='29' rx='3.5' fill='white' stroke='%23D4D7DC'/%3E%3Cpath d='M21.6022 12.2077C22.029 11.7907 22.029 11.1145 21.6022 10.6974C21.1753 10.2804 20.4832 10.2804 20.0563 10.6974L12.4765 18.1025L10.0229 15.1062C9.64577 14.6457 8.95788 14.571 8.48646 14.9394C8.01504 15.3079 7.93861 15.9799 8.31575 16.4405L11.5323 20.3685C11.7265 20.6057 12.0149 20.7508 12.3254 20.7676C12.6358 20.7844 12.9389 20.6713 13.1588 20.4565L21.6022 12.2077Z' fill='%23A7A9AD'/%3E%3C/svg%3E");
+  background-image: url("../../img/auction/ico_checkbox.png");
   background-repeat: no-repeat;
   background-position: center center;
   transition: all 0.2s linear 0s;
@@ -467,26 +569,13 @@ span.status-cancel:before {
   content: "";
   width: 30px;
   height: 30px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30' fill='none'%3E%3Crect x='0.5' y='0.5' width='29' height='29' rx='3.5' fill='white' stroke='%23D4D7DC'/%3E%3Cpath d='M21.6022 12.2077C22.029 11.7907 22.029 11.1145 21.6022 10.6974C21.1753 10.2804 20.4832 10.2804 20.0563 10.6974L12.4765 18.1025L10.0229 15.1062C9.64577 14.6457 8.95788 14.571 8.48646 14.9394C8.01504 15.3079 7.93861 15.9799 8.31575 16.4405L11.5323 20.3685C11.7265 20.6057 12.0149 20.7508 12.3254 20.7676C12.6358 20.7844 12.9389 20.6713 13.1588 20.4565L21.6022 12.2077Z' fill='%23A7A9AD'/%3E%3C/svg%3E");
+  background-image: url("../../img/auction/ico_checkbox_on.png");
   background-repeat: no-repeat;
   background-position: center center;
   transition: all 0.2s linear 0s;
 }
 .checkbox-wrap span input[type=checkbox]:checked + label::after {
   opacity: 1;
-}
-
-.copyright {
-  width: 100vw;
-  text-align: center;
-  color: #666;
-  font-size: 11px;
-  line-height: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  bottom: 20px;
 }
 
 /* tab */
@@ -586,4 +675,5 @@ span.status-cancel:before {
 
 /* 공통 */
 /***** 탁송 *****/
-/***** 경매 *****//*# sourceMappingURL=style02 copy.css.map */
+/* 상단 nav */
+/***** 경매 *****//*# sourceMappingURL=style02.css.map */
