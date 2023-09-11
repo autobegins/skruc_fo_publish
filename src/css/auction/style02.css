@@ -198,7 +198,7 @@
 .table-default tbody th {
   background: #fefcf9;
   text-align: center;
-  padding: 15px 20px;
+  padding: 7px 20px;
   font-family: "Pretendard";
   font-size: 16px;
   color: #677272;
@@ -213,7 +213,7 @@
 }
 .table-default tbody td {
   text-align: center;
-  padding: 13px 7px;
+  padding: 7px 20px;
   color: #495057;
   font-family: "Pretendard";
   font-size: 14px;
@@ -555,7 +555,7 @@ span.status-cancel:before {
   content: "";
   width: 30px;
   height: 30px;
-  background-image: url("../../img/auction/ico_check2.png");
+  background-image: url("../../img/auction/ico_checkbox.png");
   background-repeat: no-repeat;
   background-position: center center;
   transition: all 0.2s linear 0s;
@@ -569,7 +569,7 @@ span.status-cancel:before {
   content: "";
   width: 30px;
   height: 30px;
-  background-image: url("../../img/auction/ico_check2_on.png");
+  background-image: url("../../img/auction/ico_checkbox_on.png");
   background-repeat: no-repeat;
   background-position: center center;
   transition: all 0.2s linear 0s;
