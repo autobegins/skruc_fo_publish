@@ -317,12 +317,10 @@
 
 main {
   width: 100%;
-  // max-width: 1200px;
+  min-height: calc(100vh - 116px);
   margin: 0px auto;
-  // box-shadow: 0px 8px 6px 0px rgba(0, 0, 0, 0.2);
   display: flex;
   gap: 0 30px;
-  // background: #adadfd;
   justify-content: center;
 
   aside {
@@ -1097,6 +1095,7 @@ article.join {
 
 .page-title {
   margin-top: 80px;
+  margin-bottom: 70px;
   h2 {
     color: var(--txt-defult);
     font-size: 40px;
