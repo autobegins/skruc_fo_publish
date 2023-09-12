@@ -13,7 +13,7 @@
   flex-wrap: wrap;
   background: #fff;
   border-bottom: 1px solid #ccc;
-  z-index: 1000;
+  z-index: 0;
 }
 .header_wrap header {
   display: flex;
@@ -614,7 +614,7 @@ footer {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 400px;
+  width: 720px;
   max-height: 85vh;
   border-radius: 16px;
   overflow: hidden;
