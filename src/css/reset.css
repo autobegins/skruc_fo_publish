@@ -176,11 +176,11 @@ b {
 * {
   /*outline-color: rgb(0 114 255 / 20%);outline-width: 0;*/
   outline: none !important;
-} /* APETQA-6740 210820 lju02 */ /* APETQA-7063 210913 lju02 */
+}
 *:focus {
   /*outline: -webkit-focus-ring-color auto 0px;*/
   outline: none !important;
-} /* APETQA-6360 210715 lju02 */ /* APETQA-6740 210820 lju02 */ /* APETQA-7063 210913 lju02 */
+}
 ::-ms-clear {
   display: none;
 }
@@ -215,7 +215,7 @@ button {
   background: none;
   border: none;
   color: inherit;
-} /* APETQA-7211 211008 lju02 - ios15 이후 safari 에서 기본으로 주는 애플 컬러 방지 */
+} /* ios15 이후 safari 에서 기본으로 주는 애플 컬러 방지 */
 
 /* clears the 'X' from Internet Explorer */
 input[type="search"]::-ms-clear {
@@ -278,8 +278,6 @@ div {
   -webkit-tap-highlight-color: transparent;
 }
 
-/*button:focus {outline: -webkit-focus-ring-color auto 0px;}*/ /* APETQA-6360 210715 lju02 */ /* APETQA-6744 210824 lju02 */
-
 a.disabled {
   pointer-events: none;
   cursor: default;
@@ -288,11 +286,8 @@ a.disabled {
 /* display */
 .dspNone {
   display: none !important;
-} /* 2021617 APET-1164 lju02 */
-.flex {
-  display: flex;
-  align-items: center;
-} /* APET-1227 210730 lju02 */
+}
+
 .hide_txt {
   position: absolute;
   width: 1px;
@@ -300,6 +295,17 @@ a.disabled {
   margin: -1px;
   overflow: hidden;
   clip-path: polygon(0 0, 0 0, 0 0);
+  border: 0;
+}
+.hide-txt {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 /* flex */
@@ -311,11 +317,6 @@ a.disabled {
 }
 .f-left {
   margin-right: auto;
-}
-
-/* border */
-.bd0 {
-  border: 0 !important;
 }
 
 /* margin-top */
@@ -1559,7 +1560,6 @@ a.disabled {
 }
 
 /*** font ***/
-/* 21.05.11 align style */
 .alg_c {
   text-align: center !important;
 }
@@ -1576,7 +1576,7 @@ a.disabled {
 /* color */
 .fc_blue {
   color: #669aff;
-} /* APET-1258 210803 lju02 */
+}
 .fc_black {
   color: #000 !important;
 }
@@ -1609,51 +1609,4 @@ a.disabled {
 }
 .fw_k {
   font-weight: 900 !important;
-}
-
-/* svg 이미지 - 퍼블코드 개선시 common이나 svg 만들어서 정리하기 */
-/* 기본이미지/ 배경이미지 */
-.img_default_profile {
-  background-image: url("../../_images/common/img_default_profile.svg");
-}
-
-/* 아이콘 */
-.icon {
-  width: 48px;
-  height: 48px;
-  background: center center no-repeat;
-}
-.icon_log_thumnail_image {
-  background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cfilter x='-36.1%25' y='-36.1%25' width='172.2%25' height='172.2%25' filterUnits='objectBoundingBox' id='a'%3E%3CfeOffset in='SourceAlpha' result='shadowOffsetOuter1'/%3E%3CfeGaussianBlur stdDeviation='1.5' in='shadowOffsetOuter1' result='shadowBlurOuter1'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.27 0' in='shadowBlurOuter1' result='shadowMatrixOuter1'/%3E%3CfeMerge%3E%3CfeMergeNode in='shadowMatrixOuter1'/%3E%3CfeMergeNode in='SourceGraphic'/%3E%3C/feMerge%3E%3C/filter%3E%3C/defs%3E%3Cg filter='url(%23a)' fill='none' fill-rule='evenodd'%3E%3Cpath d='M0 0h18v18H0z'/%3E%3Crect fill='%23FFF' x='1.5' y='1.5' width='12' height='12' rx='2'/%3E%3Cpath d='M4.781 15.75h9.188c.98 0 1.781-.802 1.781-1.781V4.78' stroke='%23FFF' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E");
-}
-.icon_thumnail_video {
-  background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m4.673 1.454 10.29 6.174a1.6 1.6 0 0 1 0 2.744l-10.29 6.174a1.6 1.6 0 0 1-2.423-1.372V2.826a1.6 1.6 0 0 1 2.423-1.372z' fill='%23FFF' fill-rule='evenodd'/%3E%3C/svg%3E");
-}
-.icon_bar_shop {
-  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.596 1c1.142 0 2.114.842 2.293 1.985l2.082 13.291c.201 1.285-.663 2.49-1.929 2.695-.12.02-.242.029-.364.029H3.322C2.039 19 1 17.946 1 16.646c0-.124.01-.247.029-.37L3.11 2.985A2.332 2.332 0 0 1 5.404 1h9.192zm0 1.121H5.404a1.22 1.22 0 0 0-1.175.914l-.027.126-2.081 13.291a1.227 1.227 0 0 0 1.069 1.42l.132.007h13.356a1.23 1.23 0 0 0 1.215-1.293l-.014-.134-2.082-13.291a1.224 1.224 0 0 0-1.074-1.033l-.127-.007zM13.29 5.757c.293.087.46.399.374.696-.433 1.485-1.94 2.52-3.663 2.52-1.723 0-3.23-1.035-3.663-2.52a.562.562 0 0 1 .374-.696c.293-.088.6.081.686.378.288.987 1.35 1.716 2.603 1.716 1.252 0 2.315-.729 2.602-1.716a.552.552 0 0 1 .687-.378z' fill-rule='evenodd'/%3E%3C/svg%3E");
-}
-.icon_play_log {
-  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3Cfilter x='-8.8%25' y='-1.9%25' width='109.1%25' height='103.8%25' filterUnits='objectBoundingBox' id='a'%3E%3CfeOffset in='SourceAlpha' result='shadowOffsetOuter1'/%3E%3CfeGaussianBlur stdDeviation='1' in='shadowOffsetOuter1' result='shadowBlurOuter1'/%3E%3CfeComposite in='shadowBlurOuter1' in2='SourceAlpha' operator='out' result='shadowBlurOuter1'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.221263112 0' in='shadowBlurOuter1'/%3E%3C/filter%3E%3Cpath d='m9.521 2.66 25.083 14.754a3 3 0 0 1 0 5.172L9.521 37.34A3 3 0 0 1 5 34.755V5.245A3 3 0 0 1 9.521 2.66z' id='b'/%3E%3C/defs%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cuse fill='%23000' filter='url(%23a)' xlink:href='%23b'/%3E%3Cuse fill-opacity='.85' fill='%23FFF' xlink:href='%23b'/%3E%3C/g%3E%3C/svg%3E");
-}
-.icon_bar_save {
-  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.385 1.496H4.615C3.605 1.496 3 2.399 3 3.15v14.262a1.125 1.125 0 0 0 1.742.941L10 14.91l5.258 3.445a1.125 1.125 0 0 0 1.742-.94V3.15c0-1.038-.682-1.655-1.615-1.655z' stroke='%23666' stroke-width='1.2' fill='none'/%3E%3C/svg%3E");
-}
-.icon_bar_save.on {
-  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='M15.385 1.496H4.615C3.605 1.496 3 2.399 3 3.15v14.262a1.125 1.125 0 0 0 1.742.941L10 14.91l5.258 3.445a1.125 1.125 0 0 0 1.742-.94V3.15c0-1.038-.682-1.655-1.615-1.655z' stroke='%23669AFF' stroke-width='1.2' fill='%23669AFF' fill-rule='nonzero'/%3E%3Cpath d='M7.503 9.654S8.7 7.667 10.477 8.218c1.426.443 2.816 2.587 1.711 3.547-1.336 1.16-2.005-.17-2.786.32-.98.616-1.859.167-2.25-.57-.389-.736.35-1.86.35-1.86zM5.956 6.588c.438-.177 1.002.177 1.258.789.256.612.108 1.252-.33 1.428-.438.176-1.002-.177-1.258-.789-.257-.612-.109-1.252.33-1.428zm6.85.721c.315-.579.907-.872 1.322-.655.414.217.495.862.18 1.441-.315.579-.908.872-1.322.655-.413-.216-.495-.862-.18-1.44zm-4.25-2.807c.53-.038 1 .53 1.053 1.268.054.737-.332 1.365-.86 1.401-.527.037-.998-.53-1.052-1.268-.053-.738.333-1.365.86-1.401zm2.983.017.103.016c.516.119.792.8.617 1.519-.174.719-.733 1.205-1.248 1.084-.515-.12-.79-.8-.617-1.519.175-.719.734-1.204 1.248-1.084z' fill='%23FFF'/%3E%3C/g%3E%3C/svg%3E");
-}
-.icon_bar_shop {
-  background-image: url("data:image/svg+xml,%3Csvg width='21' height='20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.863 1c1.141 0 2.114.842 2.293 1.985l2.082 13.291c.2 1.285-.663 2.49-1.93 2.695-.12.02-.241.029-.363.029H3.588c-1.282 0-2.321-1.054-2.321-2.354 0-.124.01-.247.028-.37L3.377 2.985A2.332 2.332 0 0 1 5.67 1h9.193zm0 1.121H5.67a1.22 1.22 0 0 0-1.175.914l-.026.126-2.082 13.291a1.227 1.227 0 0 0 1.069 1.42l.132.007h13.357a1.23 1.23 0 0 0 1.215-1.293l-.014-.134-2.082-13.291a1.224 1.224 0 0 0-1.075-1.033l-.126-.007zm-1.307 3.636c.292.087.46.399.373.696-.432 1.485-1.94 2.52-3.663 2.52-1.722 0-3.23-1.035-3.662-2.52a.562.562 0 0 1 .373-.696c.293-.088.6.081.687.378.288.987 1.35 1.716 2.602 1.716 1.253 0 2.315-.729 2.603-1.716a.552.552 0 0 1 .687-.378z' fill-rule='evenodd'/%3E%3C/svg%3E");
-}
-
-/* guide */
-.container {
-  width: 100%;
-  max-width: 68.75rem;
-  margin: 0 auto;
-}
-
-.guide .title {
-  width: 100%;
-  font-size: 1.4rem;
-  margin-top: 2.5rem;
 }
