@@ -214,6 +214,7 @@ button {
   display: flex;
   gap: 0 10px;
   margin-top: 40px;
+  justify-content: center;
 }
 .btn-box button {
   width: inherit;
