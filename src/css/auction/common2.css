@@ -217,9 +217,10 @@ button {
 }
 .btn-box button {
   width: inherit;
-  padding: 14px 15px;
+  padding: 11px 20px 11px 20px;
   color: var(--color-text);
   text-align: center;
+  width: auto;
 }
 .btn-box button:disabled {
   background: #d4d7dc !important;
