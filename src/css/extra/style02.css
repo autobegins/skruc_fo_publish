@@ -604,11 +604,16 @@ button {
   align-self: stretch;
   position: relative;
 }
-.form .form-control .form-control-container .form-control-input.number::-moz-placeholder {
-  color: red;
+.form .form-control .form-control-container .form-control-input.number input {
+  text-align: right;
 }
-.form .form-control .form-control-container .form-control-input.number::placeholder {
+.form .form-control .form-control-container .form-control-input.number input::-moz-placeholder {
   color: red;
+  text-align: right;
+}
+.form .form-control .form-control-container .form-control-input.number input::placeholder {
+  color: red;
+  text-align: right;
 }
 .form .form-control .form-control-container .form-control-input input::-ms-clear,
 .form .form-control .form-control-container .form-control-input input::-ms-reveal {
@@ -1071,7 +1076,7 @@ button {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  background: transparent;
+  background: #fff;
   margin-top: 0;
   margin-bottom: 10px;
   overflow-x: auto;
@@ -1677,6 +1682,10 @@ button {
 
 .disp-none {
   display: none !important;
+}
+
+.w50 {
+  width: 50px !important;
 }
 
 .w80 {
