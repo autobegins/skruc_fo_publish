@@ -49,9 +49,6 @@
 }
 
 /*** reset ***/
-input::-moz-placeholder, select::-moz-placeholder, textarea::-moz-placeholder {
-  color: var(--form-placeholder-text);
-}
 input::placeholder,
 select::placeholder,
 textarea::placeholder {

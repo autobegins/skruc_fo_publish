@@ -948,6 +948,30 @@ article.join {
   max-width: 800px;
 }
 
+.title-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 100px 30px 50px;
+}
+.title-wrap .title {
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+  margin-bottom: 10px;
+  color: #2e3033;
+  letter-spacing: -1px;
+}
+.title-wrap .title-desc {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  color: #858b93;
+}
+
 .page-title {
   margin-top: 80px;
   margin-bottom: 70px;
