@@ -20,7 +20,7 @@
   border: none;
   background: transparent;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 0;
   overflow-x: auto;
 }
 .bbs .bbs-wrap .form {
@@ -31,12 +31,6 @@
 }
 
 /* table default style */
-.bbs table tr > th:first-child,
-.bbs table tr > td:first-child {
-  position: sticky;
-  left: 0;
-}
-
 .table-default {
   width: 100%;
   border-top: 2px solid #515959;
@@ -47,7 +41,7 @@
 .table-default thead th {
   background: #f5f6f6;
   text-align: center;
-  padding: 6px 20px;
+  padding: 6px 10px;
   font-family: "Pretendard";
   font-size: 14px;
   color: #979e9e;
@@ -69,7 +63,7 @@
   background: #dce5e5;
   position: absolute;
   right: 0;
-  top: 13px;
+  top: 15px;
 }
 .table-default thead th:last-child:after {
   display: none;
@@ -83,7 +77,7 @@
 .table-default tbody th {
   background: #fefcf9;
   text-align: center;
-  padding: 7px 20px;
+  padding: 7px 10px;
   font-family: "Pretendard";
   font-size: 16px;
   color: #677272;
@@ -1441,7 +1435,7 @@ button {
   border: none;
   background: transparent;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 0;
   overflow-x: auto;
 }
 .bbs .bbs-wrap input[type=checkbox] + label:before {
@@ -1654,7 +1648,7 @@ button {
 
 /* paging-wrap */
 .paging-wrap {
-  margin-top: 0px;
+  margin-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
