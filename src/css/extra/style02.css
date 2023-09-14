@@ -235,7 +235,7 @@ span.status-cancel:before {
   width: 100%;
   display: flex;
   gap: 0 6px;
-  margin-top: 44px;
+  margin-top: 36px;
   justify-content: space-between;
 }
 .bbs.photo .btn-wrap .btn-box.left {
@@ -396,6 +396,7 @@ span.status-cancel:before {
   font-weight: 600;
   line-height: 20px;
   padding: 0 8px;
+  height: 20px;
 }
 .bbs.photo table .btn-group {
   width: 100%;
@@ -1825,4 +1826,8 @@ button {
 
 .f-w480 {
   flex: 0 0 480px !important;
+}
+
+.mt60 {
+  margin-top: 60px !important;
 }/*# sourceMappingURL=style02.css.map */
