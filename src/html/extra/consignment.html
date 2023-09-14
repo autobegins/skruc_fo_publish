@@ -36,7 +36,6 @@
                     <div class="form-control">
                       <div class="form-control-label w80">
                         <span>요청일</span>
-                        <span class="req">필수입력값</span>
                       </div>
                       <div class="form-control-container flex-start w480">
                         <div class="form-control-content">
@@ -53,7 +52,7 @@
                 <li>
                   <div class="form">
                     <div class="form-control">
-                      <div class="form-control-label w110">
+                      <div class="form-control-label w100">
                         <span>차량번호</span>
                       </div>
                       <div class="form-control-container">
@@ -70,7 +69,7 @@
                 <li>
                   <div class="form">
                     <div class="form-control">
-                      <div class="form-control-label w110">
+                      <div class="form-control-label w100">
                         <span>차명</span>
                       </div>
                       <div class="form-control-container">
@@ -89,7 +88,7 @@
                 <li>
                   <div class="form">
                     <div class="form-control">
-                      <div class="form-control-label w110">
+                      <div class="form-control-label w100">
                         <span>탁송방식</span>
                         <span class="req">필수입력값</span>
                       </div>
@@ -107,8 +106,8 @@
                 <li>
                   <div class="form">
                     <div class="form-control">
-                      <div class="form-control-label w110">
-                        <span>출발지</span>
+                      <div class="form-control-label w100">
+                        <span>출발시간</span>
                       </div>
                       <div class="form-control-container">
                         <div class="form-control-content">
@@ -124,8 +123,8 @@
                 <li>
                   <div class="form">
                     <div class="form-control">
-                      <div class="form-control-label w110">
-                        <span>목적지</span>
+                      <div class="form-control-label w100">
+                        <span>도착예정</span>
                       </div>
                       <div class="form-control-container">
                         <div class="form-control-content">
@@ -141,8 +140,8 @@
                 <li>
                   <div class="form">
                     <div class="form-control">
-                      <div class="form-control-label w110">
-                        <span>상태</span>
+                      <div class="form-control-label w100">
+                        <span>주유비</span>
                       </div>
                       <div class="form-control-container">
                         <div class="form-control-content">
@@ -170,7 +169,7 @@
         </section>
 
         <section>
-          <div class="form bbs">
+          <div class="form status">
 
             <!-- btn-wrap -->
             <div class="btn-wrap">
@@ -180,19 +179,191 @@
                 </span>
               </div>
               <div class="btn-box right">
-                <button class="btn-default">출품상태 일괄선택</button>
-                <button class="btn-default excel-sample">엑셀 샘플 다운로드</button>
-                <button class="btn-default excel">엑셀 업로드</button>
-                <button class="btn-default excel">엑셀 다운로드</button>
+                <button class="btn-default">전체선택</button>
+                <button class="btn-default all">일괄 출발</button>
+                <button class="btn-default all">일괄 TP배정</button>
                 <button class="btn-default save">저장</button>
               </div>
             </div>
             <!-- //btn-wrap -->
 
-            <!-- bbs list -->
-            <div class="bbs-wrap">
+            <!-- status-wrap -->
+            <div class="status-wrap">
+              <!-- status-box -->
+              <div class="status-box">
+                <!-- checkbox-wrap -->
+                <div class="checkbox-wrap">
+                  <div class="check-radio">
+                    <input type="checkbox" id="checkbox1">
+                    <label for="checkbox1"></label>
+                  </div>
+                </div>
+                <!-- //checkbox-wrap -->
+                <!-- status-view -->
+                <div class="status-view">
+                  <div class="badge-wrap">
+                    <span class="badge type03">출발</span>
+                    <span class="car-num">134허2366</span>
+                    <span class="car-num-old">(구: 123허2455)</span>
+                    <span class="car-name">쏘나타</span>
+                  </div>
+                  <div class="data-wrap">
+                    <span class="title">출발지</span>
+                    <span class="cont">안성통합매매센터</span>
+                    <span class="title">목적지</span>
+                    <span class="cont">SK인천수출단지 (서울시 성동구 여의도동 23-1 234)</span>
+                    <span class="title">인수자</span>
+                    <span class="cont">홍길동 (010-0000-0000)</span>
+                    <span class="title">탁송요청일</span>
+                    <span class="cont">2023.07.23</span>
+                  </div>
+                </div>
+                <!-- //status-view -->
+                <!-- btn-wrap -->
+                <div class="btn-wrap">
+                  <button class="btn-primary">출발</button>
+                </div>
+                <!-- //btn-wrap -->
+              </div>
+              <!-- //status-box -->
+
+              <!-- forms-wrap -->
+              <div class="forms-wrap">
+                <ul class="forms-box">
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>탁송방식</span>
+                          <span class="req">필수입력값</span>
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content">
+                            <div class="form-control-input">
+                              <input type="search" placeholder="" />
+                              <button class="btnClear"></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>출발시간</span>
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content">
+                            <div class="form-control-input">
+                              <input type="search" placeholder="" />
+                              <button class="btnClear"></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>도착예정</span>
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content">
+                            <div class="form-control-input">
+                              <input class="w126" type="search" placeholder="" />
+                              <button class="btnClear"></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>주유비</span>
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content">
+                            <div class="form-control-input number">
+                              <input type="search" placeholder="30,000" />
+                              <button class="btnClear"></button>
+                            </div>
+                          </div>
+                        </div>
+                        <span class="unit">원</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="forms-box">
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>탁송기사</span>
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content">
+                            <div class="form-control-input">
+                              <input type="search" placeholder="" />
+                              <button class="btnClear"></button>
+                            </div>
+                            <!-- <div class="form-control-input">
+                              <input type="search" placeholder="" />
+                              <button class="btnClear"></button>
+                            </div> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label w80">
+                          <span>비고</span>
+                        </div>
+                        <div class="form-control-container flex-start">
+                          <div class="form-control-content">
+                            <div class="form-control-input w419">
+                              <input type="search" placeholder="" />
+                              <button class="btnClear"></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>탁송비</span>
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content">
+                            <div class="form-control-input number">
+                              <input class="w126" type="search" placeholder="30,000" />
+                              <button class="btnClear"></button>
+                            </div>
+                          </div>
+                        </div>
+                        <span class="unit">원</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- //forms-wrap -->
+
               <!-- table -->
-              <table class="table-default">
+              <!-- <table class="table-default">
                 <caption>방문예약현황</caption>
                 <colgroup>
                   <col width="20px">
@@ -455,7 +626,819 @@
                     <td>12,000,000</td>
                   </tr>
                 </tbody>
-              </table>
+              </table> -->
+              <!-- //table -->
+            </div>
+            <!-- //status-wrap -->
+
+            <!-- status-wrap -->
+            <div class="status-wrap">
+              <!-- status-box -->
+              <div class="status-box">
+                <!-- checkbox-wrap -->
+                <div class="checkbox-wrap">
+                  <div class="check-radio">
+                    <input type="checkbox" id="checkbox1">
+                    <label for="checkbox1"></label>
+                  </div>
+                </div>
+                <!-- //checkbox-wrap -->
+                <!-- status-view -->
+                <div class="status-view">
+                  <div class="badge-wrap">
+                    <span class="badge type01">요청</span>
+                    <span class="car-num">134허2366</span>
+                    <span class="car-num-old">(구: 123허2455)</span>
+                    <span class="car-name">쏘나타</span>
+                  </div>
+                  <div class="data-wrap">
+                    <span class="title">출발지</span>
+                    <span class="cont">안성통합매매센터</span>
+                    <span class="title">목적지</span>
+                    <span class="cont">SK인천수출단지 (서울시 성동구 여의도동 23-1 234)</span>
+                    <span class="title">인수자</span>
+                    <span class="cont">홍길동 (010-0000-0000)</span>
+                    <span class="title">탁송요청일</span>
+                    <span class="cont">2023.07.23</span>
+                  </div>
+                </div>
+                <!-- //status-view -->
+                <!-- btn-wrap -->
+                <div class="btn-wrap">
+                  <button class="btn-primary" disabled>도착완료</button>
+                </div>
+                <!-- //btn-wrap -->
+              </div>
+              <!-- //status-box -->
+
+              <!-- forms-wrap -->
+              <div class="forms-wrap">
+                <ul class="forms-box">
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>탁송방식</span>
+                          <span class="req">필수입력값</span>
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content">
+                            <div class="form-control-input">
+                              <input type="search" placeholder="" />
+                              <button class="btnClear"></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>출발시간</span>
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content">
+                            <div class="form-control-input">
+                              <input type="search" placeholder="" />
+                              <button class="btnClear"></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>도착예정</span>
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content">
+                            <div class="form-control-input">
+                              <input class="w126" type="search" placeholder="" />
+                              <button class="btnClear"></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>주유비</span>
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content">
+                            <div class="form-control-input number">
+                              <input type="search" placeholder="30,000" />
+                              <button class="btnClear"></button>
+                            </div>
+                          </div>
+                        </div>
+                        <span class="unit">원</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="forms-box">
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>탁송기사</span>
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content">
+                            <div class="form-control-input">
+                              <input type="search" placeholder="" />
+                              <button class="btnClear"></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label w80">
+                          <span>비고</span>
+                        </div>
+                        <div class="form-control-container flex-start">
+                          <div class="form-control-content">
+                            <div class="form-control-input w419">
+                              <input type="search" placeholder="" />
+                              <button class="btnClear"></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>탁송비</span>
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content">
+                            <div class="form-control-input number">
+                              <input class="w126" type="search" placeholder="30,000" />
+                              <button class="btnClear"></button>
+                            </div>
+                          </div>
+                        </div>
+                        <span class="unit">원</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- //forms-wrap -->
+            </div>
+            <!-- //status-wrap -->
+
+            <!-- status-wrap -->
+            <div class="status-wrap">
+              <!-- status-box -->
+              <div class="status-box">
+                <!-- checkbox-wrap -->
+                <div class="checkbox-wrap">
+                  <div class="check-radio">
+                    <input type="checkbox" id="checkbox1">
+                    <label for="checkbox1"></label>
+                  </div>
+                </div>
+                <!-- //checkbox-wrap -->
+                <!-- status-view -->
+                <div class="status-view">
+                  <div class="badge-wrap">
+                    <span class="badge type04">도착</span>
+                    <span class="car-num">134허2366</span>
+                    <span class="car-num-old">(구: 123허2455)</span>
+                    <span class="car-name">쏘나타</span>
+                  </div>
+                  <div class="data-wrap">
+                    <span class="title">출발지</span>
+                    <span class="cont">안성통합매매센터</span>
+                    <span class="title">목적지</span>
+                    <span class="cont">SK인천수출단지 (서울시 성동구 여의도동 23-1 234)</span>
+                    <span class="title">인수자</span>
+                    <span class="cont">홍길동 (010-0000-0000)</span>
+                    <span class="title">탁송요청일</span>
+                    <span class="cont">2023.07.23</span>
+                  </div>
+                </div>
+                <!-- //status-view -->
+                <!-- btn-wrap -->
+                <div class="btn-wrap">
+                  <button class="btn-primary" disabled>도착</button>
+                </div>
+                <!-- //btn-wrap -->
+              </div>
+              <!-- //status-box -->
+
+              <!-- forms-wrap -->
+              <div class="forms-wrap">
+                <ul class="forms-box">
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>탁송방식</span>
+                          <span class="req">필수입력값</span>
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content">
+                            <div class="form-control-input">
+                              <input type="search" placeholder="" />
+                              <button class="btnClear"></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>출발시간</span>
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content">
+                            <div class="form-control-input">
+                              <input type="search" placeholder="" />
+                              <button class="btnClear"></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>도착예정</span>
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content">
+                            <div class="form-control-input">
+                              <input class="w126" type="search" placeholder="" />
+                              <button class="btnClear"></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>주유비</span>
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content">
+                            <div class="form-control-input number">
+                              <input type="search" placeholder="30,000" />
+                              <button class="btnClear"></button>
+                            </div>
+                          </div>
+                        </div>
+                        <span class="unit">원</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="forms-box">
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>탁송기사</span>
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content">
+                            <div class="form-control-input">
+                              <input type="search" placeholder="" />
+                              <button class="btnClear"></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label w80">
+                          <span>비고</span>
+                        </div>
+                        <div class="form-control-container flex-start">
+                          <div class="form-control-content">
+                            <div class="form-control-input w419">
+                              <input type="search" placeholder="" />
+                              <button class="btnClear"></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>탁송비</span>
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content">
+                            <div class="form-control-input number">
+                              <input class="w126" type="search" placeholder="30,000" />
+                              <button class="btnClear"></button>
+                            </div>
+                          </div>
+                        </div>
+                        <span class="unit">원</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- //forms-wrap -->
+            </div>
+            <!-- //status-wrap -->
+
+            <!-- status-wrap -->
+            <div class="status-wrap">
+              <!-- status-box -->
+              <div class="status-box">
+                <!-- checkbox-wrap -->
+                <div class="checkbox-wrap">
+                  <div class="check-radio">
+                    <input type="checkbox" id="checkbox1">
+                    <label for="checkbox1"></label>
+                  </div>
+                </div>
+                <!-- //checkbox-wrap -->
+                <!-- status-view -->
+                <div class="status-view">
+                  <div class="badge-wrap">
+                    <span class="badge type02">배정</span>
+                    <span class="car-num">134허2366</span>
+                    <span class="car-num-old">(구: 123허2455)</span>
+                    <span class="car-name">쏘나타</span>
+                  </div>
+                  <div class="data-wrap">
+                    <span class="title">출발지</span>
+                    <span class="cont">안성통합매매센터</span>
+                    <span class="title">목적지</span>
+                    <span class="cont">SK인천수출단지 (서울시 성동구 여의도동 23-1 234)</span>
+                    <span class="title">인수자</span>
+                    <span class="cont">홍길동 (010-0000-0000)</span>
+                    <span class="title">탁송요청일</span>
+                    <span class="cont">2023.07.23</span>
+                  </div>
+                </div>
+                <!-- //status-view -->
+                <!-- btn-wrap -->
+                <div class="btn-wrap">
+                  <button class="btn-primary">출발</button>
+                </div>
+                <!-- //btn-wrap -->
+              </div>
+              <!-- //status-box -->
+
+              <!-- forms-wrap -->
+              <div class="forms-wrap">
+                <ul class="forms-box">
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>탁송방식</span>
+                          <span class="req">필수입력값</span>
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content">
+                            <div class="form-control-input">
+                              <input type="search" placeholder="" />
+                              <button class="btnClear"></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>출발시간</span>
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content">
+                            <div class="form-control-input">
+                              <input type="search" placeholder="" />
+                              <button class="btnClear"></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>도착예정</span>
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content">
+                            <div class="form-control-input">
+                              <input class="w126" type="search" placeholder="" />
+                              <button class="btnClear"></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>주유비</span>
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content">
+                            <div class="form-control-input number">
+                              <input type="search" placeholder="30,000" />
+                              <button class="btnClear"></button>
+                            </div>
+                          </div>
+                        </div>
+                        <span class="unit">원</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="forms-box">
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>탁송기사</span>
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content">
+                            <div class="form-control-input">
+                              <input type="search" placeholder="" />
+                              <button class="btnClear"></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label w80">
+                          <span>비고</span>
+                        </div>
+                        <div class="form-control-container flex-start">
+                          <div class="form-control-content">
+                            <div class="form-control-input w419">
+                              <input type="search" placeholder="" />
+                              <button class="btnClear"></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="form">
+                      <div class="form-control">
+                        <div class="form-control-label">
+                          <span>탁송비</span>
+                        </div>
+                        <div class="form-control-container">
+                          <div class="form-control-content">
+                            <div class="form-control-input number">
+                              <input class="w126" type="search" placeholder="30,000" />
+                              <button class="btnClear"></button>
+                            </div>
+                          </div>
+                        </div>
+                        <span class="unit">원</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- //forms-wrap -->
+            </div>
+            <!-- //status-wrap -->
+
+          </div>
+        </section>
+
+        <section>
+          <div class="form bbs">
+
+            <!-- btn-wrap -->
+            <!-- <div class="btn-wrap">
+              <div class="btn-box left">
+                <span class="num">총 조회
+                  <strong class="stress">3</strong>건
+                </span>
+              </div>
+              <div class="btn-box right">
+                <button class="btn-default">전체선택</button>
+                <button class="btn-default all">일괄 출발</button>
+                <button class="btn-default all">일괄 TP배정</button>
+                <button class="btn-default save">저장</button>
+              </div>
+            </div> -->
+            <!-- //btn-wrap -->
+
+            <!-- bbs list -->
+            <div class="bbs-wrap">
+              <!-- table -->
+              <!-- <table class="table-default">
+                <caption>방문예약현황</caption>
+                <colgroup>
+                  <col width="20px">
+                  <col width="60px">
+                  <col width="40px">
+                  <col width="100px">
+                  <col width="170px">
+                  <col width="90px">
+                  <col width="60px">
+                  <col width="90px">
+                  <col width="120px">
+                  <col width="170px">
+                  <col width="100px">
+                  <col width="100px">
+                  <col width="*">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>
+                      <div class="checkbox-wrap">
+                        <div class="check-radio">
+                          <input type="checkbox" id="checkbox1">
+                          <label for="checkbox1"></label>
+                        </div>
+                      </div>
+                    </th>
+                    <th>번호</th>
+                    <th>구분</th>
+                    <th>채널배정일</th>
+                    <th>차량정보</th>
+                    <th>차량번호</th>
+                    <th>년식</th>
+                    <th>출품번호</th>
+                    <th>출품자ID</th>
+                    <th>출품자명</th>
+                    <th>시작가</th>
+                    <th>희망가</th>
+                    <th>경매결과</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="checkbox-wrap">
+                        <div class="check-radio">
+                          <input type="checkbox" id="checkbox2">
+                          <label for="checkbox2"></label>
+                        </div>
+                      </div>
+                    </td>
+                    <td>10</td>
+                    <td>리스</td>
+                    <td>2023.10.22</td>
+                    <td>344가1235</td>
+                    <td>344가1235</td>
+                    <td>2021</td>
+                    <td>-</td>
+                    <td>23879679</td>
+                    <td>11890768789</td>
+                    <td>에스에이렌터카 주식회사</td>
+                    <td>THE NEW 아반떼AD 1.6(LPI)</td>
+                    <td>12,000,000</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="checkbox-wrap">
+                        <div class="check-radio">
+                          <input type="checkbox" id="checkbox3">
+                          <label for="checkbox3"></label>
+                        </div>
+                      </div>
+                    </td>
+                    <td>9</td>
+                    <td>리스</td>
+                    <td>2023.10.22</td>
+                    <td>344가1235</td>
+                    <td>344가1235</td>
+                    <td>2021</td>
+                    <td>-</td>
+                    <td>23879679</td>
+                    <td>11890768789</td>
+                    <td>에스에이렌터카 주식회사</td>
+                    <td>THE NEW 아반떼AD 1.6(LPI)</td>
+                    <td>12,000,000</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="checkbox-wrap">
+                        <div class="check-radio">
+                          <input type="checkbox" id="checkbox4">
+                          <label for="checkbox4"></label>
+                        </div>
+                      </div>
+                    </td>
+                    <td>8</td>
+                    <td>리스</td>
+                    <td>2023.10.22</td>
+                    <td>344가1235</td>
+                    <td>344가1235</td>
+                    <td>2021</td>
+                    <td>-</td>
+                    <td>23879679</td>
+                    <td>11890768789</td>
+                    <td>에스에이렌터카 주식회사</td>
+                    <td>THE NEW 아반떼AD 1.6(LPI)</td>
+                    <td>12,000,000</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="checkbox-wrap">
+                        <div class="check-radio">
+                          <input type="checkbox" id="checkbox5">
+                          <label for="checkbox5"></label>
+                        </div>
+                      </div>
+                    </td>
+                    <td>7</td>
+                    <td>리스</td>
+                    <td>2023.10.22</td>
+                    <td>344가1235</td>
+                    <td>344가1235</td>
+                    <td>2021</td>
+                    <td>-</td>
+                    <td>23879679</td>
+                    <td>11890768789</td>
+                    <td>에스에이렌터카 주식회사</td>
+                    <td>THE NEW 아반떼AD 1.6(LPI)</td>
+                    <td>12,000,000</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="checkbox-wrap">
+                        <div class="check-radio">
+                          <input type="checkbox" id="checkbox6">
+                          <label for="checkbox6"></label>
+                        </div>
+                      </div>
+                    </td>
+                    <td>6</td>
+                    <td>리스</td>
+                    <td>2023.10.22</td>
+                    <td>344가1235</td>
+                    <td>344가1235</td>
+                    <td>2021</td>
+                    <td>-</td>
+                    <td>23879679</td>
+                    <td>11890768789</td>
+                    <td>에스에이렌터카 주식회사</td>
+                    <td>THE NEW 아반떼AD 1.6(LPI)</td>
+                    <td>12,000,000</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="checkbox-wrap">
+                        <div class="check-radio">
+                          <input type="checkbox" id="checkbox7">
+                          <label for="checkbox7"></label>
+                        </div>
+                      </div>
+                    </td>
+                    <td>5</td>
+                    <td>리스</td>
+                    <td>2023.10.22</td>
+                    <td>344가1235</td>
+                    <td>344가1235</td>
+                    <td>2021</td>
+                    <td>-</td>
+                    <td>23879679</td>
+                    <td>11890768789</td>
+                    <td>에스에이렌터카 주식회사</td>
+                    <td>THE NEW 아반떼AD 1.6(LPI)</td>
+                    <td>12,000,000</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="checkbox-wrap">
+                        <div class="check-radio">
+                          <input type="checkbox" id="checkbox8">
+                          <label for="checkbox8"></label>
+                        </div>
+                      </div>
+                    </td>
+                    <td>4</td>
+                    <td>리스</td>
+                    <td>2023.10.22</td>
+                    <td>344가1235</td>
+                    <td>344가1235</td>
+                    <td>2021</td>
+                    <td>-</td>
+                    <td>23879679</td>
+                    <td>11890768789</td>
+                    <td>에스에이렌터카 주식회사</td>
+                    <td>THE NEW 아반떼AD 1.6(LPI)</td>
+                    <td>12,000,000</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="checkbox-wrap">
+                        <div class="check-radio">
+                          <input type="checkbox" id="checkbox9">
+                          <label for="checkbox9"></label>
+                        </div>
+                      </div>
+                    </td>
+                    <td>3</td>
+                    <td>리스</td>
+                    <td>2023.10.22</td>
+                    <td>344가1235</td>
+                    <td>344가1235</td>
+                    <td>2021</td>
+                    <td>-</td>
+                    <td>23879679</td>
+                    <td>11890768789</td>
+                    <td>에스에이렌터카 주식회사</td>
+                    <td>THE NEW 아반떼AD 1.6(LPI)</td>
+                    <td>12,000,000</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="checkbox-wrap">
+                        <div class="check-radio">
+                          <input type="checkbox" id="checkbox10">
+                          <label for="checkbox10"></label>
+                        </div>
+                      </div>
+                    </td>
+                    <td>2</td>
+                    <td>리스</td>
+                    <td>2023.10.22</td>
+                    <td>344가1235</td>
+                    <td>344가1235</td>
+                    <td>2021</td>
+                    <td>-</td>
+                    <td>23879679</td>
+                    <td>11890768789</td>
+                    <td>에스에이렌터카 주식회사</td>
+                    <td>THE NEW 아반떼AD 1.6(LPI)</td>
+                    <td>12,000,000</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="checkbox-wrap">
+                        <div class="check-radio">
+                          <input type="checkbox" id="checkbox11">
+                          <label for="checkbox11"></label>
+                        </div>
+                      </div>
+                    </td>
+                    <td>1</td>
+                    <td>리스</td>
+                    <td>2023.10.22</td>
+                    <td>344가1235</td>
+                    <td>344가1235</td>
+                    <td>2021</td>
+                    <td>-</td>
+                    <td>23879679</td>
+                    <td>11890768789</td>
+                    <td>에스에이렌터카 주식회사</td>
+                    <td>THE NEW 아반떼AD 1.6(LPI)</td>
+                    <td>12,000,000</td>
+                  </tr>
+                </tbody>
+              </table> -->
               <!-- //table -->
             </div>
             <!-- //bbs list -->
