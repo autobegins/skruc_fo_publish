@@ -93,10 +93,16 @@
                         <span class="req">필수입력값</span>
                       </div>
                       <div class="form-control-container">
-                        <div class="form-control-content">
-                          <div class="form-control-input">
-                            <input type="search" placeholder="" />
-                            <button class="btnClear"></button>
+                        <div class="form-control-content flex select-group">
+                          <div class="select-wrap">
+                            <div class="selectbox w190">
+                              <label for="ex_select">선택</label>
+                              <select id="ex_select">
+                                <option selected>00</option>
+                                <option>14</option>
+                                <option>30</option>
+                              </select>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -107,13 +113,19 @@
                   <div class="form">
                     <div class="form-control">
                       <div class="form-control-label">
-                        <span>출발시간</span>
+                        <span>출발지</span>
                       </div>
                       <div class="form-control-container">
-                        <div class="form-control-content">
-                          <div class="form-control-input">
-                            <input type="search" placeholder="" />
-                            <button class="btnClear"></button>
+                        <div class="form-control-content flex select-group">
+                          <div class="select-wrap">
+                            <div class="selectbox w190">
+                              <label for="ex_select"></label>
+                              <select id="ex_select">
+                                <option selected>00</option>
+                                <option>14</option>
+                                <option>30</option>
+                              </select>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -124,13 +136,19 @@
                   <div class="form">
                     <div class="form-control">
                       <div class="form-control-label">
-                        <span>도착예정</span>
+                        <span>목적지</span>
                       </div>
                       <div class="form-control-container">
-                        <div class="form-control-content">
-                          <div class="form-control-input">
-                            <input class="w126" type="search" placeholder="" />
-                            <button class="btnClear"></button>
+                        <div class="form-control-content flex select-group">
+                          <div class="select-wrap">
+                            <div class="selectbox w190">
+                              <label for="ex_select"></label>
+                              <select id="ex_select">
+                                <option selected>00</option>
+                                <option>14</option>
+                                <option>30</option>
+                              </select>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -141,7 +159,7 @@
                   <div class="form">
                     <div class="form-control">
                       <div class="form-control-label">
-                        <span>주유비</span>
+                        <span>상태</span>
                       </div>
                       <div class="form-control-container">
                         <div class="form-control-content">
@@ -238,10 +256,16 @@
                           <!-- <span class="req">필수입력값</span> -->
                         </div>
                         <div class="form-control-container">
-                          <div class="form-control-content">
-                            <div class="form-control-input">
-                              <input type="search" placeholder="" />
-                              <button class="btnClear"></button>
+                          <div class="form-control-content flex select-group">
+                            <div class="select-wrap">
+                              <div class="selectbox w160">
+                                <label for="ex_select">선택</label>
+                                <select id="ex_select">
+                                  <option selected>00</option>
+                                  <option>14</option>
+                                  <option>30</option>
+                                </select>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -255,10 +279,25 @@
                           <span>출발시간</span>
                         </div>
                         <div class="form-control-container">
-                          <div class="form-control-content">
-                            <div class="form-control-input">
-                              <input type="search" placeholder="" />
-                              <button class="btnClear"></button>
+                          <div class="form-control-content flex date-group">
+                            <div class="select-wrap date">
+                              <div class="selectbox w65">
+                                <label for="ex_select">00</label>
+                                <select id="ex_select">
+                                  <option selected>00</option>
+                                  <option>14</option>
+                                  <option>30</option>
+                                </select>
+                              </div>
+                              <span class="date-bar">:</span>
+                              <div class="selectbox w65">
+                                <label for="ex_select">00</label>
+                                <select id="ex_select">
+                                  <option selected>00</option>
+                                  <option>14</option>
+                                  <option>30</option>
+                                </select>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -272,10 +311,25 @@
                           <span>도착예정</span>
                         </div>
                         <div class="form-control-container">
-                          <div class="form-control-content">
-                            <div class="form-control-input">
-                              <input class="w126" type="search" placeholder="" />
-                              <button class="btnClear"></button>
+                          <div class="form-control-content flex date-group">
+                            <div class="select-wrap date">
+                              <div class="selectbox w65">
+                                <label for="ex_select">00</label>
+                                <select id="ex_select">
+                                  <option selected>00</option>
+                                  <option>14</option>
+                                  <option>30</option>
+                                </select>
+                              </div>
+                              <span class="date-bar">:</span>
+                              <div class="selectbox w65">
+                                <label for="ex_select">00</label>
+                                <select id="ex_select">
+                                  <option selected>00</option>
+                                  <option>14</option>
+                                  <option>30</option>
+                                </select>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -309,15 +363,15 @@
                           <span>탁송기사</span>
                         </div>
                         <div class="form-control-container">
-                          <div class="form-control-content">
+                          <div class="form-control-content flex name-group">
                             <div class="form-control-input">
-                              <input type="search" placeholder="" />
+                              <input type="search" placeholder="이름" class="w50" />
                               <button class="btnClear"></button>
                             </div>
-                            <!-- <div class="form-control-input">
-                              <input type="search" placeholder="" />
+                            <div class="form-control-input">
+                              <input type="search" placeholder="연락처" class="w80" />
                               <button class="btnClear"></button>
-                            </div> -->
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -682,10 +736,16 @@
                           <span class="req">필수입력값</span>
                         </div>
                         <div class="form-control-container">
-                          <div class="form-control-content">
-                            <div class="form-control-input">
-                              <input type="search" placeholder="" />
-                              <button class="btnClear"></button>
+                          <div class="form-control-content flex select-group">
+                            <div class="select-wrap">
+                              <div class="selectbox w160">
+                                <label for="ex_select">선택</label>
+                                <select id="ex_select">
+                                  <option selected>00</option>
+                                  <option>14</option>
+                                  <option>30</option>
+                                </select>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -699,10 +759,25 @@
                           <span>출발시간</span>
                         </div>
                         <div class="form-control-container">
-                          <div class="form-control-content">
-                            <div class="form-control-input">
-                              <input type="search" placeholder="" />
-                              <button class="btnClear"></button>
+                          <div class="form-control-content flex date-group">
+                            <div class="select-wrap date">
+                              <div class="selectbox w65">
+                                <label for="ex_select">00</label>
+                                <select id="ex_select">
+                                  <option selected>00</option>
+                                  <option>14</option>
+                                  <option>30</option>
+                                </select>
+                              </div>
+                              <span class="date-bar">:</span>
+                              <div class="selectbox w65">
+                                <label for="ex_select">00</label>
+                                <select id="ex_select">
+                                  <option selected>00</option>
+                                  <option>14</option>
+                                  <option>30</option>
+                                </select>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -716,10 +791,25 @@
                           <span>도착예정</span>
                         </div>
                         <div class="form-control-container">
-                          <div class="form-control-content">
-                            <div class="form-control-input">
-                              <input class="w126" type="search" placeholder="" />
-                              <button class="btnClear"></button>
+                          <div class="form-control-content flex date-group">
+                            <div class="select-wrap date">
+                              <div class="selectbox w65">
+                                <label for="ex_select">00</label>
+                                <select id="ex_select">
+                                  <option selected>00</option>
+                                  <option>14</option>
+                                  <option>30</option>
+                                </select>
+                              </div>
+                              <span class="date-bar">:</span>
+                              <div class="selectbox w65">
+                                <label for="ex_select">00</label>
+                                <select id="ex_select">
+                                  <option selected>00</option>
+                                  <option>14</option>
+                                  <option>30</option>
+                                </select>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -753,9 +843,13 @@
                           <span>탁송기사</span>
                         </div>
                         <div class="form-control-container">
-                          <div class="form-control-content">
+                          <div class="form-control-content flex name-group">
                             <div class="form-control-input">
-                              <input type="search" placeholder="" />
+                              <input type="search" placeholder="이름" class="w50" />
+                              <button class="btnClear"></button>
+                            </div>
+                            <div class="form-control-input">
+                              <input type="search" placeholder="연락처" class="w80" />
                               <button class="btnClear"></button>
                             </div>
                           </div>
@@ -855,10 +949,16 @@
                           <span class="req">필수입력값</span>
                         </div>
                         <div class="form-control-container">
-                          <div class="form-control-content">
-                            <div class="form-control-input">
-                              <input type="search" placeholder="" />
-                              <button class="btnClear"></button>
+                          <div class="form-control-content flex select-group">
+                            <div class="select-wrap">
+                              <div class="selectbox w160">
+                                <label for="ex_select">선택</label>
+                                <select id="ex_select">
+                                  <option selected>00</option>
+                                  <option>14</option>
+                                  <option>30</option>
+                                </select>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -872,10 +972,25 @@
                           <span>출발시간</span>
                         </div>
                         <div class="form-control-container">
-                          <div class="form-control-content">
-                            <div class="form-control-input">
-                              <input type="search" placeholder="" />
-                              <button class="btnClear"></button>
+                          <div class="form-control-content flex date-group">
+                            <div class="select-wrap date">
+                              <div class="selectbox w65">
+                                <label for="ex_select">00</label>
+                                <select id="ex_select">
+                                  <option selected>00</option>
+                                  <option>14</option>
+                                  <option>30</option>
+                                </select>
+                              </div>
+                              <span class="date-bar">:</span>
+                              <div class="selectbox w65">
+                                <label for="ex_select">00</label>
+                                <select id="ex_select">
+                                  <option selected>00</option>
+                                  <option>14</option>
+                                  <option>30</option>
+                                </select>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -889,10 +1004,25 @@
                           <span>도착예정</span>
                         </div>
                         <div class="form-control-container">
-                          <div class="form-control-content">
-                            <div class="form-control-input">
-                              <input class="w126" type="search" placeholder="" />
-                              <button class="btnClear"></button>
+                          <div class="form-control-content flex date-group">
+                            <div class="select-wrap date">
+                              <div class="selectbox w65">
+                                <label for="ex_select">00</label>
+                                <select id="ex_select">
+                                  <option selected>00</option>
+                                  <option>14</option>
+                                  <option>30</option>
+                                </select>
+                              </div>
+                              <span class="date-bar">:</span>
+                              <div class="selectbox w65">
+                                <label for="ex_select">00</label>
+                                <select id="ex_select">
+                                  <option selected>00</option>
+                                  <option>14</option>
+                                  <option>30</option>
+                                </select>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -926,9 +1056,13 @@
                           <span>탁송기사</span>
                         </div>
                         <div class="form-control-container">
-                          <div class="form-control-content">
+                          <div class="form-control-content flex name-group">
                             <div class="form-control-input">
-                              <input type="search" placeholder="" />
+                              <input type="search" placeholder="이름" class="w50" />
+                              <button class="btnClear"></button>
+                            </div>
+                            <div class="form-control-input">
+                              <input type="search" placeholder="연락처" class="w80" />
                               <button class="btnClear"></button>
                             </div>
                           </div>
@@ -1028,10 +1162,16 @@
                           <span class="req">필수입력값</span>
                         </div>
                         <div class="form-control-container">
-                          <div class="form-control-content">
-                            <div class="form-control-input">
-                              <input type="search" placeholder="" />
-                              <button class="btnClear"></button>
+                          <div class="form-control-content flex select-group">
+                            <div class="select-wrap">
+                              <div class="selectbox w160">
+                                <label for="ex_select">선택</label>
+                                <select id="ex_select">
+                                  <option selected>00</option>
+                                  <option>14</option>
+                                  <option>30</option>
+                                </select>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -1045,10 +1185,25 @@
                           <span>출발시간</span>
                         </div>
                         <div class="form-control-container">
-                          <div class="form-control-content">
-                            <div class="form-control-input">
-                              <input type="search" placeholder="" />
-                              <button class="btnClear"></button>
+                          <div class="form-control-content flex date-group">
+                            <div class="select-wrap date">
+                              <div class="selectbox w65">
+                                <label for="ex_select">00</label>
+                                <select id="ex_select">
+                                  <option selected>00</option>
+                                  <option>14</option>
+                                  <option>30</option>
+                                </select>
+                              </div>
+                              <span class="date-bar">:</span>
+                              <div class="selectbox w65">
+                                <label for="ex_select">00</label>
+                                <select id="ex_select">
+                                  <option selected>00</option>
+                                  <option>14</option>
+                                  <option>30</option>
+                                </select>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -1062,10 +1217,25 @@
                           <span>도착예정</span>
                         </div>
                         <div class="form-control-container">
-                          <div class="form-control-content">
-                            <div class="form-control-input">
-                              <input class="w126" type="search" placeholder="" />
-                              <button class="btnClear"></button>
+                          <div class="form-control-content flex date-group">
+                            <div class="select-wrap date">
+                              <div class="selectbox w65">
+                                <label for="ex_select">00</label>
+                                <select id="ex_select">
+                                  <option selected>00</option>
+                                  <option>14</option>
+                                  <option>30</option>
+                                </select>
+                              </div>
+                              <span class="date-bar">:</span>
+                              <div class="selectbox w65">
+                                <label for="ex_select">00</label>
+                                <select id="ex_select">
+                                  <option selected>00</option>
+                                  <option>14</option>
+                                  <option>30</option>
+                                </select>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -1099,9 +1269,13 @@
                           <span>탁송기사</span>
                         </div>
                         <div class="form-control-container">
-                          <div class="form-control-content">
+                          <div class="form-control-content flex name-group">
                             <div class="form-control-input">
-                              <input type="search" placeholder="" />
+                              <input type="search" placeholder="이름" class="w50" />
+                              <button class="btnClear"></button>
+                            </div>
+                            <div class="form-control-input">
+                              <input type="search" placeholder="연락처" class="w80" />
                               <button class="btnClear"></button>
                             </div>
                           </div>
