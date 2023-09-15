@@ -102,6 +102,7 @@
   border-bottom: 1px solid #dce5e5;
   vertical-align: middle;
   min-height: 50px;
+  height: 50px;
 }
 .table-default tbody td:last-child {
   border-right: none;
@@ -256,6 +257,7 @@ span.status-cancel:before {
   line-height: 1rem;
   border: 1px solid #e7eaf0;
   height: 32px;
+  word-wrap: normal;
 }
 .bbs.photo .btn-wrap .btn-box .btn-default {
   color: #858b93;
@@ -440,10 +442,11 @@ span.status-cancel:before {
   text-align: center;
   font-size: 16px;
   font-weight: 700;
-  line-height: 22px;
+  line-height: 1rem;
   border: 1px solid #8b9a9a;
   height: 45px;
   position: relative;
+  word-wrap: normal;
 }
 .btn-wrap span {
   display: flex;
@@ -1609,7 +1612,7 @@ h3 {
   font-weight: 700;
   line-height: 20px;
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 h3::before {
   content: "";
@@ -1631,7 +1634,7 @@ h3 span.desc {
   padding: 30px 50px;
   border-radius: 0 0 16px 16px;
   background-color: #fff;
-  height: calc(100% - 140px);
+  min-height: 200px;
   overflow-y: auto;
 }
 .pop-box.pop-header {
@@ -1691,6 +1694,16 @@ h3 span.desc {
   display: flex;
   margin-bottom: 30px;
   padding: 0;
+}
+.car.input-wrap.type_b {
+  background: #f5f6f6;
+  padding: 15px 30px;
+}
+.car.input-wrap.type_b .form-control {
+  gap: 0 8px;
+}
+.car.input-wrap.type_b .form-control .form-control-container {
+  justify-content: flex-start;
 }
 .car.input-wrap ul {
   display: flex;
@@ -1940,6 +1953,10 @@ h3 span.desc {
   width: 419px !important;
 }
 
+.w452 {
+  width: 452px !important;
+}
+
 .w480 {
   width: 480px !important;
 }
@@ -1990,4 +2007,47 @@ h3 span.desc {
 
 .mt60 {
   margin-top: 60px !important;
+}
+
+.form-control-label.w50 {
+  flex: 0 0 50px !important;
+}
+.form-control-label.w60 {
+  flex: 0 0 60px !important;
+}
+.form-control-label.w70 {
+  flex: 0 0 70px !important;
+}
+.form-control-label.w80 {
+  flex: 0 0 80px !important;
+}
+.form-control-label.w90 {
+  flex: 0 0 90px !important;
+}
+.form-control-label.w100 {
+  flex: 0 0 100px !important;
+}
+.form-control-label.w110 {
+  flex: 0 0 110px !important;
+}
+.form-control-label.w120 {
+  flex: 0 0 120px !important;
+}
+.form-control-label.w130 {
+  flex: 0 0 130px !important;
+}
+.form-control-label.w140 {
+  flex: 0 0 140px !important;
+}
+.form-control-label.w150 {
+  flex: 0 0 150px !important;
+}
+.form-control-label.w160 {
+  flex: 0 0 160px !important;
+}
+.form-control-label.w170 {
+  flex: 0 0 160px !important;
+}
+.form-control-label.w452 {
+  flex: 0 0 452px !important;
 }/*# sourceMappingURL=style02.css.map */
