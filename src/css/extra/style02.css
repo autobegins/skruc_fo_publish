@@ -442,7 +442,7 @@ span.status-cancel:before {
   text-align: center;
   font-size: 16px;
   font-weight: 700;
-  line-height: 1rem;
+  line-height: 1.2rem;
   border: 1px solid #8b9a9a;
   height: 45px;
   position: relative;
@@ -644,10 +644,14 @@ button {
   border: 1px solid #50555c;
 }
 .form .form-control .form-control-container .form-control-input input::-moz-placeholder {
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1rem;
 }
 .form .form-control .form-control-container .form-control-input input::placeholder {
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1rem;
 }
 .form .form-control .form-control-container .form-control-input input[type=password] {
   color: #555e6a;
@@ -1385,10 +1389,14 @@ button {
   border: 1px solid #50555c;
 }
 .status-wrap .form-control .form-control-container .form-control-input input::-moz-placeholder {
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1rem;
 }
 .status-wrap .form-control .form-control-container .form-control-input input::placeholder {
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1rem;
 }
 .status-wrap .form-control .form-control-container .form-control-input input[type=password] {
   color: #555e6a;
@@ -1706,10 +1714,12 @@ h3 span.desc {
 .pop-box .form-control-input input::-moz-placeholder {
   font-size: 14px;
   font-weight: 400;
+  line-height: 1rem;
 }
 .pop-box .form-control-input input::placeholder {
   font-size: 14px;
   font-weight: 400;
+  line-height: 1rem;
 }
 .pop-box .form-control-input.number input::-moz-placeholder {
   font-size: 16px;
@@ -1770,18 +1780,32 @@ h3 span.desc {
 .car.input-wrap .form-control-input input::-moz-placeholder {
   font-size: 14px;
   font-weight: 400;
+  line-height: 1rem;
+  position: absolute;
+  top: 8px;
 }
 .car.input-wrap .form-control-input input::placeholder {
   font-size: 14px;
   font-weight: 400;
+  line-height: 1rem;
+  position: absolute;
+  top: 8px;
 }
 .car.input-wrap .form-control-input.number input::-moz-placeholder {
   font-size: 16px;
   font-weight: 700;
+  line-height: 1rem;
+  position: absolute;
+  top: 8px;
+  right: 10px;
 }
 .car.input-wrap .form-control-input.number input::placeholder {
   font-size: 16px;
   font-weight: 700;
+  line-height: 1rem;
+  position: absolute;
+  top: 8px;
+  right: 10px;
 }
 .car.input-wrap .form-control-label {
   color: #868e96;

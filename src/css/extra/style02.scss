@@ -565,7 +565,7 @@ span {
       text-align: center;
       font-size: 16px;
       font-weight: 700;
-      line-height: 1rem;
+      line-height: 1.2rem;
       border: 1px solid #8b9a9a;
       height: 45px;
       position: relative;
@@ -918,7 +918,9 @@ button {
             border: 1px solid #50555c;
           }
           &::placeholder {
-            font-size: 16px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1rem;
           }
         }
 
@@ -1818,7 +1820,9 @@ button {
             border: 1px solid #50555c;
           }
           &::placeholder {
-            font-size: 16px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1rem;
           }
         }
 
@@ -2379,6 +2383,7 @@ h3 {
       &::placeholder {
         font-size: 14px;
         font-weight: 400;
+        line-height: 1rem;
       }
     }
     &.number {
@@ -2448,6 +2453,9 @@ h3 {
       &::placeholder {
         font-size: 14px;
         font-weight: 400;
+        line-height: 1rem;
+        position: absolute;
+        top: 8px;
       }
     }
     &.number {
@@ -2455,6 +2463,10 @@ h3 {
         &::placeholder {
           font-size: 16px;
           font-weight: 700;
+          line-height: 1rem;
+          position: absolute;
+          top: 8px;
+          right: 10px;
         }
       }
     }
