@@ -2296,6 +2296,13 @@ h3 {
 
 /* popup */
 .pop-box {
+  .btn-wrap {
+    span {
+      &.num {
+        font-size: 13px !important;
+      }
+    }
+  }
   .pop-content {
     padding: 30px 50px;
     border-radius: 0 0 16px 16px;
