@@ -9,6 +9,11 @@
   <link rel="stylesheet" type="text/css" href="../../css/extra/style02.css" />
 
   <script src="../../js/include.js"></script>
+  <style>
+    .form .form-control .form-control-container {
+      justify-content: flex-start;
+    }
+  </style>
 </head>
 
 <body>
@@ -912,7 +917,7 @@
 </body>
 
 <!-- 탁송 팝업 -->
-<div class="popup-wrap pop-members out-member consignment" style="display: block">
+<div class="popup-wrap pop-members out-member consignment person2" style="display: block">
   <div class="pop-box">
     <div class="pop-header">
       <div class="box-header">
@@ -923,7 +928,116 @@
     </div>
 
     <div class="pop-content">
-      <p class="title">회원탈퇴 안내</p>
+
+      <h3>일괄 TP배정 <span class="desc">( 총 5대 )</span></h3>
+
+      <div class="car info-wrap">
+        <ul class="car info-block">
+          <li>134허2366<span class="desc">(구: 123허2455)</span></li>
+          <li>134허2366<span class="desc">(구: 123허2455)</span></li>
+          <li>134허2366<span class="desc">(구: 123허2455)</span></li>
+          <li>134허2366<span class="desc">(구: 123허2455)</span></li>
+          <li>134허2366<span class="desc">(구: 123허2455)</span></li>
+        </ul>
+      </div>
+
+      <h3>TP 배정정보</h3>
+
+      <div class="car input-wrap">
+        <ul class="car input-block">
+          <li>
+            <div class="form">
+              <div class="form-control">
+                <div class="form-control-label">
+                  <span>탁송기사</span>
+                  <span class="req">필수입력값</span>
+                </div>
+                <div class="form-control-container">
+                  <div class="form-control-content">
+                    <div class="form-control-input">
+                      <input type="search" placeholder="" />
+                      <button class="btnClear"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="title">탁송기사</div>
+            <div class="input-box">(구: 123허2455)</div> -->
+          </li>
+          <li>
+            <div class="form">
+              <div class="form-control">
+                <div class="form-control-label">
+                  <span>탁송비</span>
+                </div>
+                <div class="form-control-container">
+                  <div class="form-control-content">
+                    <div class="form-control-input">
+                      <input type="search" placeholder="" />
+                      <button class="btnClear"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="form">
+              <div class="form-control">
+                <div class="form-control-label">
+                  <span>출발시간</span>
+                </div>
+                <div class="form-control-container">
+                  <div class="form-control-content">
+                    <div class="form-control-input">
+                      <input type="search" placeholder="" />
+                      <button class="btnClear"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="form">
+              <div class="form-control">
+                <div class="form-control-label">
+                  <span>도착예정</span>
+                  <span class="req">필수입력값</span>
+                </div>
+                <div class="form-control-container">
+                  <div class="form-control-content">
+                    <div class="form-control-input">
+                      <input type="search" placeholder="" />
+                      <button class="btnClear"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="form">
+              <div class="form-control">
+                <div class="form-control-label">
+                  <span>비고</span>
+                </div>
+                <div class="form-control-container">
+                  <div class="form-control-content">
+                    <div class="form-control-input">
+                      <input type="search" placeholder="" />
+                      <button class="btnClear"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- <p class="title">회원탈퇴 안내</p>
 
       <p class="summary">
         고객님께서 회원탈퇴를 원하신다니 매우 아쉬운 마음입니다. 그동안 SK렌터카와 함께해 주셔서 감사합니다.<br /><br />혹시 불편하셨던 점이나 불만사항을 알려주시면, 적극 반영하여 고객님의 불편함을
@@ -951,9 +1065,9 @@
           </div>
           <p class="txt-cnt"><span>0</span>/500</p>
         </div>
-      </div>
+      </div> -->
 
-      <div class="btn-box"><button class="btn-gray">취소</button><button class="btn-primary">탈퇴</button></div>
+      <div class="btn-box"><button class="btn-gray">취소</button><button class="btn-primary">배정등록</button></div>
     </div>
   </div>
 </div>
