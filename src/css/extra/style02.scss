@@ -2372,6 +2372,24 @@ h3 {
   .form.req {
     margin-right: 0;
   }
+  .form-control-input {
+    font-size: 14px;
+    font-weight: 400;
+    input {
+      &::placeholder {
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+    &.number {
+      input {
+        &::placeholder {
+          font-size: 16px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
 }
 
 .out-member {
@@ -2422,8 +2440,30 @@ h3 {
   display: flex;
   margin-bottom: 30px;
   padding: 0;
+
+  .form-control-input {
+    font-size: 14px;
+    font-weight: 400;
+    input {
+      &::placeholder {
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+    &.number {
+      input {
+        &::placeholder {
+          font-size: 16px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
   .form-control-label {
     color: #868e96;
+    font-size: 14px;
+    font-weight: 500;
   }
   &.type_b {
     background: #f5f6f6;

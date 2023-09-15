@@ -1699,6 +1699,26 @@ h3 span.desc {
 .pop-box .form.req {
   margin-right: 0;
 }
+.pop-box .form-control-input {
+  font-size: 14px;
+  font-weight: 400;
+}
+.pop-box .form-control-input input::-moz-placeholder {
+  font-size: 14px;
+  font-weight: 400;
+}
+.pop-box .form-control-input input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+}
+.pop-box .form-control-input.number input::-moz-placeholder {
+  font-size: 16px;
+  font-weight: 700;
+}
+.pop-box .form-control-input.number input::placeholder {
+  font-size: 16px;
+  font-weight: 700;
+}
 
 .out-member.person2 .pop-box {
   height: unset;
@@ -1743,8 +1763,30 @@ h3 span.desc {
   margin-bottom: 30px;
   padding: 0;
 }
+.car.input-wrap .form-control-input {
+  font-size: 14px;
+  font-weight: 400;
+}
+.car.input-wrap .form-control-input input::-moz-placeholder {
+  font-size: 14px;
+  font-weight: 400;
+}
+.car.input-wrap .form-control-input input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+}
+.car.input-wrap .form-control-input.number input::-moz-placeholder {
+  font-size: 16px;
+  font-weight: 700;
+}
+.car.input-wrap .form-control-input.number input::placeholder {
+  font-size: 16px;
+  font-weight: 700;
+}
 .car.input-wrap .form-control-label {
   color: #868e96;
+  font-size: 14px;
+  font-weight: 500;
 }
 .car.input-wrap.type_b {
   background: #f5f6f6;
