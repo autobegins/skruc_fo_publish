@@ -51,9 +51,6 @@
   right: 0;
   top: 15px;
 }
-.table-default thead th:first-child .check-radio {
-  width: 22px;
-}
 .table-default thead th:last-child:after {
   display: none;
 }
@@ -95,9 +92,6 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-.table-default tbody td:first-child .check-radio {
-  width: 22px;
 }
 .table-default tbody td:last-child {
   border-right: none;
@@ -599,7 +593,6 @@ button {
 }
 .form .form-control .form-control-container .form-control-input.number input {
   text-align: right;
-  position: relative;
 }
 .form .form-control .form-control-container .form-control-input.number input::-moz-placeholder {
   font-size: 16px;
@@ -612,13 +605,6 @@ button {
   color: #f65858;
   text-align: right;
   font-weight: 700;
-}
-.form .form-control .form-control-container .form-control-input.number input:before {
-  content: "원";
-  display: inline-block;
-  position: absolute;
-  right: 0;
-  bottom: 0;
 }
 .form .form-control .form-control-container .form-control-input input::-ms-clear,
 .form .form-control .form-control-container .form-control-input input::-ms-reveal {
@@ -1091,7 +1077,7 @@ button {
   background: #fff;
   margin-top: 0;
   margin-bottom: 10px;
-  overflow-x: hidden;
+  overflow-x: auto;
   max-width: 1200px;
 }
 .status-wrap span.unit {
@@ -1277,7 +1263,7 @@ button {
 }
 .status-wrap .forms-box li .form .calendar-wrap input {
   width: 130px;
-  font-size: 14px;
+  font-size: 16px;
 }
 .status-wrap .forms-box li .form .calendar-wrap .bar {
   display: inline-block;
@@ -2274,10 +2260,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
   width: 100px !important;
 }
 
-.w108 {
-  width: 108px !important;
-}
-
 .w110 {
   width: 110px !important;
 }
@@ -2288,14 +2270,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 .w125 {
   width: 125px !important;
-}
-
-.w128 {
-  width: 128px !important;
-}
-
-.w138 {
-  width: 138px !important;
 }
 
 .w150 {
@@ -2310,24 +2284,8 @@ input[type=date]::-webkit-calendar-picker-indicator {
   width: 165px !important;
 }
 
-.w170 {
-  width: 170px !important;
-}
-
-.w180 {
-  width: 180px !important;
-}
-
-.w185 {
-  width: 185px !important;
-}
-
 .w190 {
   width: 190px !important;
-}
-
-.w200 {
-  width: 200px !important;
 }
 
 .w203 {
@@ -2340,10 +2298,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 .w250 {
   width: 250px !important;
-}
-
-.w276 {
-  width: 276px !important;
 }
 
 .w419 {
@@ -2360,10 +2314,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 .w520 {
   width: 520px !important;
-}
-
-.w939 {
-  width: 939px !important;
 }
 
 .f-w80 {
