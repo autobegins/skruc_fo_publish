@@ -9,20 +9,6 @@
   background: transparent;
   flex-direction: column;
 }
-.bbs .bbs-wrap {
-  border-radius: 0;
-  padding: 0;
-  display: flex;
-  max-width: 1200px;
-  width: calc(100vw - 64px);
-  flex-wrap: wrap;
-  align-items: flex-start;
-  border: none;
-  background: transparent;
-  margin-top: 0;
-  margin-bottom: 0;
-  overflow-x: auto;
-}
 .bbs .bbs-wrap .form {
   width: 100%;
 }
@@ -103,6 +89,9 @@
   vertical-align: middle;
   min-height: 50px;
   height: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .table-default tbody td:last-child {
   border-right: none;
@@ -2083,6 +2072,115 @@ input[type=date]::-webkit-calendar-picker-indicator {
   width: 18px;
   height: 18px;
   border-width: thin;
+}
+
+/* 게시판 */
+.board {
+  width: 100%;
+  border-top: 1px solid #2e3033;
+}
+.board th {
+  padding: 23px 0;
+  border-bottom: 1px solid #b5b9c0;
+  background: #f5f5f5;
+  color: var(--txt-sub);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+}
+.board td {
+  padding: 25px 0;
+  border-bottom: 1px solid #b5b9c0;
+  background-color: #fff;
+  text-align: center;
+  color: var(--txt-info);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.board td .badge {
+  display: inline-flex;
+  padding: 0px 13px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background-color: var(--bdr-red);
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+}
+.board td a {
+  display: inline-block;
+  width: 100%;
+  color: var(--txt-sub);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+}
+.board td a .category {
+  color: inherit;
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+.board-wrap {
+  width: 100%;
+  position: relative;
+}
+.board-wrap table {
+  width: 100%;
+  border-top: 1px solid #2e3033;
+}
+.board-wrap table th {
+  padding: 23px 0;
+  border-bottom: 1px solid #b5b9c0;
+  background: #f5f5f5;
+  color: var(--txt-sub);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+}
+.board-wrap table td {
+  padding: 25px 0;
+  border-bottom: 1px solid #b5b9c0;
+  background-color: #ffffff;
+  text-align: center;
+  color: var(--txt-info);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.board-wrap table td .badge {
+  display: inline-flex;
+  padding: 0px 13px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background-color: var(--bdr-red);
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+}
+.board-wrap table td a {
+  display: inline-block;
+  width: 100%;
+  color: var(--txt-sub);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+}
+.board-wrap table td a .category {
+  color: inherit;
+  font-weight: 700;
+  margin-right: 8px;
 }
 
 /* common */
