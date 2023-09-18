@@ -702,6 +702,11 @@ span.status-cancel:before {
   width: 100%;
 }
 
+/* 팝업 */
+.pop-box {
+  width: 850px;
+}
+
 /* 공통 */
 /***** 탁송 *****/
 /* 상단 nav */
