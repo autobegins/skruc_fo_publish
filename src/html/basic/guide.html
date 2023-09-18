@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <script src="include.basic.js"></script>
+    <script>
+      include.meta();
+    </script>
+    <script>
+      include.head();
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/github.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+      label {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script>
+      include.header();
+    </script>
+    <div class="container-xxl my-md-4 bd-layout">
+      <script>
+        include.aside.menu0();
+      </script>
+      <main class="bd-main order-1">
+        <div class="bd-intro ps-lg-4">
+          <div class="d-md-flex">
+            <h1 class="bd-title" id="content">Checks and radios</h1>
+          </div>
+        </div>
+        <div class="bd-content ps-lg-4">
+          <h2 id="quick-start">Common Guide</h2>
+          <p>
+            입력요소에는 반드시 <code>label</code> 연결 또는 <code>title</code> 값을 지정할 것.<br />
+            컨트롤에 정확한 이름표 <code>label</code> 를 붙여줌으로써 시각장애인처럼 컨트롤과 그 컨트롤의 제목을 짝짓기 힘든 사람들에게 양식을 쉽게 사용할 수 있도록 함.
+          </p>
+
+          <h2 id="checks">Checks</h2>
+          <div class="bd-example">
+            <!-- example -->
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="checkDefault" />
+              <label class="form-check-label" for="checkDefault"> Default checkbox </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="checkChecked" checked />
+              <label class="form-check-label" for="checkChecked"> Checked checkbox </label>
+            </div>
+            <!-- //example -->
+          </div>
+          <div class="highlight">
+            <pre class="chroma"><code class="language-html" data-lang="html">&lt;div class="form_check"&gt;
+	&lt;input class="form_check_input" type="checkbox" value="" id="checkDefault"&gt;
+	&lt;label class="form_check_label" for="checkDefault"&gt;
+		Default checkbox
+	&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="form_check"&gt;
+	&lt;input class="form_check_input" type="checkbox" value="" id="checkChecked" checked&gt;
+	&lt;label class="form_check_label" for="checkChecked"&gt;
+		Checked checkbox
+	&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+
+          <h2 id="radios">Radios</h2>
+          <div class="bd-example">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1" />
+              <label class="form-check-label" for="radioDefault1"> Default radio </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked="" />
+              <label class="form-check-label" for="radioDefault2"> Default checked radio </label>
+            </div>
+          </div>
+          <div class="highlight">
+            <pre class="chroma"><code class="language-html" data-lang="html">&lt;div class="form_check"&gt;
+	&lt;input class="form_check_input" type="radio" name="radioDefault" id="radioDefault1"&gt;
+	&lt;label class="form_check_label" for="radioDefault1"&gt;
+		Default radio
+	&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="form_check"&gt;
+	&lt;input class="form_check_input" type="radio" name="radioDefault" id="radioDefault2" checked&gt;
+	&lt;label class="form_check_label" for="radioDefault2"&gt;
+		Default checked radio
+	&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script>
+      include.footer();
+    </script>
+    <script src="https://getbootstrap.com/docs/5.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+    <script src="https://getbootstrap.com/docs/5.0/assets/js/docs.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="ui.basic.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        showNavbarAt(1, 2, 2);
+      });
+    </script>
+  </body>
+</html>
