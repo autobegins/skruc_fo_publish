@@ -565,7 +565,6 @@ button {
   position: relative;
   display: flex;
   width: 100%;
-  gap: 0 20px;
 }
 .form .form-control .form-control-label {
   display: inline-flex;
@@ -1237,7 +1236,7 @@ button {
   padding-left: 8px;
   position: absolute;
   top: 7px;
-  right: 11px;
+  right: 21px;
 }
 .status-wrap .forms-box {
   display: flex;
@@ -1354,9 +1353,6 @@ button {
   font-weight: 500;
   line-height: 24px;
   min-width: 80px;
-}
-.status-wrap .form-control .form-control-label:first-child {
-  padding-left: 20px;
 }
 .status-wrap .form-control .form-control-container {
   position: relative;
