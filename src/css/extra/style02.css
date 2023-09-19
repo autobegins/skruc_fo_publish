@@ -2153,7 +2153,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   font-size: 14px;
   font-weight: 400;
 }
-.car.input-wrap .form-control-input input {
+.car.input-wrap .form-control-input input.stress {
   font-size: 16px !important;
   color: #f65858 !important;
   text-align: right;
@@ -2239,6 +2239,14 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 .car.input-wrap ul li:last-child {
   margin-bottom: 0;
+}
+
+input.stress {
+  font-size: 16px !important;
+  color: #f65858 !important;
+  text-align: right;
+  font-weight: 700 !important;
+  padding-right: 30px !important;
 }
 
 /** 공통 **/

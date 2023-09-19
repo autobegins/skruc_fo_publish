@@ -2905,12 +2905,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font-size: 14px;
     font-weight: 400;
     input {
-      font-size: 16px !important;
-      color: #f65858 !important;
-      text-align: right;
-      font-weight: 700 !important;
-      padding-right: 30px !important;
-
+      &.stress {
+        font-size: 16px !important;
+        color: #f65858 !important;
+        text-align: right;
+        font-weight: 700 !important;
+        padding-right: 30px !important;
+      }
       &::placeholder {
         font-size: 14px;
         font-weight: 400;
@@ -2997,6 +2998,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   }
 }
 
+input {
+  &.stress {
+    font-size: 16px !important;
+    color: #f65858 !important;
+    text-align: right;
+    font-weight: 700 !important;
+    padding-right: 30px !important;
+  }
+}
+
 /** 공통 **/
 /* scrollbar */
 ::-webkit-scrollbar {
@@ -3015,6 +3026,23 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 ::-webkit-scrollbar-track {
   background: transparent;
 }
+
+// input[type="date"]::-webkit-datetime-edit-text {
+//   -webkit-appearance: none;
+//   display: none;
+// }
+// input[type="date"]::-webkit-datetime-edit-month-field {
+//   -webkit-appearance: none;
+//   display: none;
+// }
+// input[type="date"]::-webkit-datetime-edit-day-field {
+//   -webkit-appearance: none;
+//   display: none;
+// }
+// input[type="date"]::-webkit-datetime-edit-year-field {
+//   -webkit-appearance: none;
+//   display: none;
+// }
 
 /* common */
 .flex {
