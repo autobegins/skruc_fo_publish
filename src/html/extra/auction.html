@@ -42,9 +42,13 @@
                       <div class="form-control-container">
                         <div class="form-control-content date">
                           <div class="calendar-wrap">
-                            <input class="cal" type="date" id="date" value="2023.10.16">
+                            <input class="cal" type="date" id="date" data-placeholder="" required aria-required="true"
+                              value={startDateValue} className={styles.selectDay}
+                              onChange={StartDateValueHandler}></input>
                             <span class="bar">~</span>
-                            <input class="cal" type="date" id="date" value="2023.10.16">
+                            <input class="cal" type="date" id="date" data-placeholder="" required aria-required="true"
+                              value={startDateValue} className={styles.selectDay}
+                              onChange={StartDateValueHandler}></input>
                           </div>
                         </div>
                       </div>
