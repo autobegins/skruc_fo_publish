@@ -2249,6 +2249,16 @@ input.stress {
   padding-right: 30px !important;
 }
 
+input[type=date]::before {
+  content: attr(data-placeholder);
+  width: 100%;
+}
+
+input[type=date]:focus::before,
+input[type=date]:valid::before {
+  display: none;
+}
+
 /** 공통 **/
 /* scrollbar */
 ::-webkit-scrollbar {
