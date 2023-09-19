@@ -638,7 +638,7 @@ button {
 }
 .form .form-control .form-control-container .form-control-input input {
   padding: 10px;
-  height: 40px;
+  height: 38px;
   width: 100%;
   border: 1px solid #c3caca;
   border-radius: 5px;
@@ -1040,7 +1040,7 @@ button {
   border-radius: 5px;
   padding: 10px;
   min-width: 126px;
-  height: 40px;
+  height: 38px;
 }
 .search-wrap .forms-box li:first-child {
   border-top-left-radius: 0;
@@ -1390,7 +1390,7 @@ button {
 }
 .status-wrap .form-control .form-control-container .form-control-input input {
   padding: 10px;
-  height: 40px;
+  height: 38px;
   width: 100%;
   border: 1px solid #c3caca;
   border-radius: 5px;
