@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+    <link href="/src/img/favicon.ico" rel="shortcut icon" />
+    <link rel="stylesheet" type="text/css" href="/src/comm/css/style.css" />
+
+    <script src="/src/js/include.js"></script>
+  </head>
+  <body>
+    <div class="wrap join">
+      <!-- headerWrap -->
+      <div class="header_wrap" w3-include-html="../include/header.html"></div>
+      <!-- headerWrap -->
+
+      <main>
+        <article class="join">
+          <section>
+            <div class="page-title">
+              <h2>개인정보 보호를 위해 비밀번호를 변경해주세요.</h2>
+              <p class="explain">SK렌터카에서는 회원님의 개인정보 보호와 안전한 서비스를 위해 항상 최선을 다하고 있습니다.</p>
+              <p class="explain">회원님의 소중한 개인정보 보호를 위해 주기적(최소3개월)으로 비밀번호 변경을 권장합니다. 아래 내용을 참고하시어 비밀번호를 변경해 주세요.</p>
+            </div>
+          </section>
+
+          <section>
+            <div class="box-members join">
+              <div class="box-title">
+                <div class="title"><h3>비밀번호 변경</h3></div>
+                <div class="info"><span class="req">필수입력값 표시</span>필수입력 사항</div>
+              </div>
+
+              <div class="form">
+                <div class="form-control">
+                  <div class="form-control-label">
+                    <span>현재 비밀번호</span>
+                    <span class="req">필수입력값</span>
+                  </div>
+                  <div class="form-control-container">
+                    <div class="form-control-content">
+                      <div class="form-control-input">
+                        <input type="search" placeholder="현재 비밀번호를 입력해주세요." />
+                        <button class="btnClear"></button>
+                      </div>
+                    </div>
+                    <div class="error">에러 메세지</div>
+                  </div>
+                </div>
+
+                <div class="form-control">
+                  <div class="form-control-label">
+                    <span>새 비밀번호</span>
+                    <span class="req">필수입력값</span>
+                  </div>
+                  <div class="form-control-container">
+                    <div class="form-control-content">
+                      <div class="form-control-input">
+                        <input type="search" placeholder="영문, 숫자, 특수문자 포함 10~20자 이내" />
+                        <button class="btnClear"></button>
+                      </div>
+                    </div>
+                    <div class="error on">에러 메세지</div>
+                  </div>
+                </div>
+
+                <div class="form-control">
+                  <div class="form-control-label">
+                    <span>새 비밀번호 확인</span>
+                    <span class="req">필수입력값</span>
+                  </div>
+                  <div class="form-control-container">
+                    <div class="form-control-content">
+                      <div class="form-control-input">
+                        <input type="search" placeholder="비밀번호를 다시 입력해주세요." />
+                        <button class="btnClear"></button>
+                      </div>
+                    </div>
+                    <div class="error">에러 메세지</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <form id="advanced-usage_form" autocomplete="off" novalidate="novalidate">
+                <div class="control-wrapper">
+                  <label class="input-label" for="advanced-usage_password">Password</label>
+                  <div class="input-wrapper">
+                    <input id="advanced-usage_password" class="input" autocomplete="off" type="password" placeholder="Enter password" />
+                  </div>
+                </div>
+                <div class="control-wrapper">
+                  <label class="input-label" for="advanced-usage_repeat-password">Repeat password</label>
+                  <div class="input-wrapper">
+                    <input id="advanced-usage_repeat-password" class="input" autocomplete="off" type="password" placeholder="Repeat password" />
+                  </div>
+                </div>
+                <div class="control-wrapper">
+                  <label class="input-label" for="advanced-usage_message">Message</label>
+                  <div class="input-wrapper">
+                    <textarea id="advanced-usage_message" class="input textarea" placeholder="Enter message"></textarea>
+                  </div>
+                </div>
+                <div class="control-wrapper">
+                  <label class="input-label" for="advanced-usage_favorite_animal_select">Select you favorite animal</label>
+                  <div class="input-wrapper">
+                    <select class="select minimal" id="advanced-usage_favorite_animal_select">
+                      <option value="">--Please select an option--</option>
+                      <option value="Dog">Dog</option>
+                      <option value="Cat">Cat</option>
+                      <option value="Hamster">Hamster</option>
+                      <option value="Parrot">Parrot</option>
+                      <option value="Spider">Spider</option>
+                      <option value="Goldfish">Goldfish</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="control-wrapper mb-32">
+                  <div class="label mb-8">You should give us your consent</div>
+                  <div class="control-wrapper">
+                    <div class="flex">
+                      <input type="checkbox" id="advanced-usage_consent_checkbox" class="checkbox" /><label class="input-label ml-8 pb-0" for="advanced-usage_consent_checkbox"
+                        >I agree to provide the information</label
+                      >
+                    </div>
+                    <div id="advanced-usage_consent_checkbox-errors-container"></div>
+                  </div>
+                </div>
+                <div class="control-wrapper mb-32" id="advanced-usage_communication_checkbox_group">
+                  <div class="label mb-8">Please select at least 1 option</div>
+                  <div class="control-wrapper">
+                    <div class="flex">
+                      <input type="checkbox" id="advanced-usage_communication_checkbox_group_1" class="checkbox" name="communication_checkbox_group" /><label
+                        class="input-label ml-8 pb-0"
+                        for="advanced-usage_communication_checkbox_group_1"
+                        >I'd like to receive news by email</label
+                      >
+                    </div>
+                    <div id="advanced-usage_communication_checkbox_group_1-errors-container"></div>
+                  </div>
+                  <div class="control-wrapper">
+                    <div class="flex">
+                      <input type="checkbox" id="advanced-usage_communication_checkbox_group_2" class="checkbox" name="communication_checkbox_group" /><label
+                        class="input-label ml-8 pb-0"
+                        for="advanced-usage_communication_checkbox_group_2"
+                        >I'd like to receive news by post</label
+                      >
+                    </div>
+                    <div id="advanced-usage_communication_checkbox_group_2-errors-container"></div>
+                  </div>
+                  <div class="control-wrapper">
+                    <div class="flex">
+                      <input type="checkbox" id="advanced-usage_communication_checkbox_group_3" class="checkbox" name="communication_checkbox_group" /><label
+                        class="input-label ml-8 pb-0"
+                        for="advanced-usage_communication_checkbox_group_3"
+                        >I'd like to receive news by text phone</label
+                      >
+                    </div>
+                    <div id="advanced-usage_communication_checkbox_group_3-errors-container"></div>
+                  </div>
+                </div>
+                <div class="control-wrapper mb-16">
+                  <div class="label mb-8">Please select the preferred way for communication</div>
+                  <div id="advanced-usage_communication_radio_group">
+                    <div class="control-wrapper">
+                      <label class="input-label flex"
+                        ><input type="radio" id="advanced-usage_communication_radio_group_1" class="radio" name="communication_radio_group" /> <span class="ml-8">Email</span></label
+                      >
+                    </div>
+                    <div class="control-wrapper">
+                      <label class="input-label flex"
+                        ><input type="radio" id="advanced-usage_communication_radio_group_2" class="radio" name="communication_radio_group" /> <span class="ml-8">Text message</span></label
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="control-wrapper">
+                  <label class="input-label" for="advanced-usage_input_number">Input any number</label>
+                  <div class="input-wrapper">
+                    <input id="advanced-usage_input_number" class="input" autocomplete="off" type="text" placeholder="Input any number" />
+                  </div>
+                </div>
+                <div class="control-wrapper">
+                  <label class="input-label" for="advanced-usage_input_integer_number">Input an integer number</label>
+                  <div class="input-wrapper">
+                    <input id="advanced-usage_input_integer_number" class="input" autocomplete="off" type="text" placeholder="Input an integer number" />
+                  </div>
+                </div>
+                <div class="control-wrapper">
+                  <label class="input-label" for="advanced-usage_input_number_between">Input a number between 10 and 20</label>
+                  <div class="input-wrapper">
+                    <input id="advanced-usage_input_number_between" class="input" autocomplete="off" type="text" placeholder="Input a number between 10 and 20" />
+                  </div>
+                </div>
+                <div class="control-wrapper">
+                  <button type="submit" class="button">Submit</button>
+                </div>
+              </form> -->
+
+              <div class="btn-box"><button type="submit" class="btn-gray">30일 뒤에 변경하기</button><button type="submit" class="btn-primary">변경하기</button></div>
+            </div>
+          </section>
+        </article>
+
+        <!-- quick -->
+        <article class="quick" w3-include-html="../include/quick.html"></article>
+        <!-- //quick -->
+      </main>
+
+      <!-- footer -->
+      <footer w3-include-html="../include/footer.html" class=""></footer>
+      <!-- //footer -->
+    </div>
+  </body>
+
+  <script>
+    includeHTML();
+  </script>
+</html>
