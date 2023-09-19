@@ -1749,7 +1749,7 @@ button {
         .calendar-wrap {
           display: inline-flex;
           input {
-            width: 130px;
+            width: 138px;
             font-size: 14px;
           }
           .bar {
@@ -1816,6 +1816,7 @@ button {
     position: relative;
     display: flex;
     width: 100%;
+    gap: 0 8px;
 
     .form-control-label {
       display: inline-flex;
@@ -1826,7 +1827,7 @@ button {
       font-size: 14px;
       font-weight: 500;
       line-height: 24px;
-      min-width: 80px;
+      min-width: 55px;
       // &:first-child {
       //   padding-left: 20px;
       // }
@@ -1929,10 +1930,6 @@ button {
 
 .calendar-wrap {
   display: inline-flex;
-  input {
-    width: 130px;
-    font-size: 14px;
-  }
   .bar {
     display: inline-block;
     line-height: 2.5rem;
@@ -1944,6 +1941,8 @@ button {
     padding: 10px;
     // min-width: 126px;
     height: 40px;
+    width: 130px;
+    font-size: 14px;
   }
 }
 
@@ -3143,6 +3142,9 @@ input[type="date"]::-webkit-datetime-edit-year-field {
 .w120 {
   width: 120px !important;
 }
+.w122 {
+  width: 122px !important;
+}
 .w125 {
   width: 125px !important;
 }
@@ -3203,6 +3205,15 @@ input[type="date"]::-webkit-datetime-edit-year-field {
 .w277 {
   width: 277px !important;
 }
+.w292 {
+  width: 292px !important;
+}
+.w293 {
+  width: 293px !important;
+}
+.w294 {
+  width: 294px !important;
+}
 .w419 {
   width: 419px !important;
 }
@@ -3221,6 +3232,9 @@ input[type="date"]::-webkit-datetime-edit-year-field {
 .w470 {
   width: 470px !important;
 }
+.w477 {
+  width: 477px !important;
+}
 .w480 {
   width: 480px !important;
 }
@@ -3238,6 +3252,9 @@ input[type="date"]::-webkit-datetime-edit-year-field {
 }
 .w939 {
   width: 939px !important;
+}
+.w955 {
+  width: 955px !important;
 }
 
 .f-w80 {
