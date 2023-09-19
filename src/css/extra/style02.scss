@@ -180,6 +180,7 @@
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
+      background-color: #fff;
 
       &:first-child {
         .check-radio {
@@ -1256,7 +1257,7 @@ button {
 .search-wrap {
   position: relative;
   margin-bottom: 60px;
-  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+  // box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
   // .form-control {
   //   padding-left: 20px;
   // }
