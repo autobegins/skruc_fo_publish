@@ -677,7 +677,7 @@ span {
     &.num {
       color: #868e96;
       font-size: 18px;
-      font-weight: 700;
+      font-weight: 400;
       line-height: 1rem;
     }
     strong {
@@ -738,6 +738,7 @@ button {
     background-color: #4b5758;
     color: #fff !important;
     text-align: center;
+    border: 1px solid #4b5758 !important;
   }
 
   &.all {
@@ -2403,7 +2404,8 @@ h3 {
   font-weight: 700;
   line-height: 20px;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  height: 34px;
   &::before {
     content: "";
     display: inline-block;
@@ -2796,13 +2798,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     min-height: 200px;
     overflow-y: auto;
   }
-  &.pop-header {
+  .pop-header {
     width: 100%;
     display: flex;
-    padding: 18px 18px 18px 20px;
+    padding: 14px 18px 15px 20px;
     border-bottom: 1px solid #eceef0;
     border-radius: 16px 16px 0 0;
     background: #fff;
+    height: 60px;
   }
   .info-block {
     .form-control-container {
@@ -2882,10 +2885,32 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   margin-bottom: 30px;
   padding: 0;
 
+  // .number {
+  //   input {
+  //     font-size: 16px !important;
+  //     color: #f65858 !important;
+  //     text-align: right;
+  //     font-weight: 700 !important;
+  //     padding-right: 30px;
+  //   }
+  // }
+
+  span.unit {
+    position: absolute;
+    right: 25px;
+    top: 7px;
+  }
+
   .form-control-input {
     font-size: 14px;
     font-weight: 400;
     input {
+      font-size: 16px !important;
+      color: #f65858 !important;
+      text-align: right;
+      font-weight: 700 !important;
+      padding-right: 30px !important;
+
       &::placeholder {
         font-size: 14px;
         font-weight: 400;
@@ -2927,7 +2952,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display: flex;
     padding: 20px;
     width: 100%;
-    padding: 10px 0;
+    padding: 0 0 10px;
     align-items: flex-start;
     align-content: flex-start;
     align-self: stretch;
