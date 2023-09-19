@@ -10,31 +10,36 @@
     <script src="/src/js/include.js"></script>
   </head>
   <body>
-    <div class="wrap">
+    <div class="wrap join">
       <!-- headerWrap -->
       <div class="header_wrap" w3-include-html="../include/header.html"></div>
       <!-- headerWrap -->
 
       <main>
-        <aside w3-include-html="../include/aside.html"></aside>
-
         <article>
-          <section>ssdfsddf</section>
+          <section class="join_complete__wrap">
+            <div class="join_complete">
+              <p class="title">회원가입이 완료되었습니다.</p>
+              <p class="title-sub">SK 렌터카 가입을 진심으로 환영합니다!</p>
 
-          <section>section</section>
+              <div class="btn-box">
+                <button class="btn-primary">메인으로</button>
+              </div>
+            </div>
+          </section>
         </article>
 
         <!-- quick -->
-        <article class="quick" w3-include-html="../include/quick.html"></article>
+        <!-- <article class="quick" w3-include-html="../include/quick.html"></article> -->
         <!-- //quick -->
       </main>
 
       <!-- footer -->
-      <footer w3-include-html="../include/footer.html"></footer>
+      <footer w3-include-html="../include/footer.html" class="solid"></footer>
       <!-- //footer -->
     </div>
   </body>
-  <script type="text/javascript" src="/src/js/ui.js"></script>
+
   <script>
     includeHTML();
   </script>

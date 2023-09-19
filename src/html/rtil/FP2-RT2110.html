@@ -16,12 +16,8 @@
       <!-- headerWrap -->
 
       <main>
-        <aside w3-include-html="../include/aside.html"></aside>
-
         <article>
-          <section>ssdfsddf</section>
-
-          <section>section</section>
+          <section></section>
         </article>
 
         <!-- quick -->
@@ -34,7 +30,31 @@
       <!-- //footer -->
     </div>
   </body>
-  <script type="text/javascript" src="/src/js/ui.js"></script>
+  <!-- 아이디찾기 -->
+  <div class="popup-wrap pop-members find-id" style="display: block">
+    <div class="pop-box">
+      <div class="pop-header">
+        <h2><span class="hide-txt">아이디 찾기</span></h2>
+        <button class="pop-close"><span class="hide-txt">팝업닫기</span></button>
+      </div>
+
+      <div class="pop-content">
+        <p class="title">회원님의<br />아이디를 찾았어요!</p>
+        <p class="summary">2023년 7월 21일에 가입하였어요.</p>
+
+        <div class="find-info">
+          <p>아이디 정보</p>
+          <div class="fine-outcome">hongildong1234</div>
+        </div>
+
+        <div class="btn-box">
+          <button class="btn-gray">비밀번호 재설정</button>
+          <button class="btn-primary">로그인</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //아이디찾기 -->
   <script>
     includeHTML();
   </script>
