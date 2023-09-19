@@ -2153,7 +2153,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 .car.input-wrap span.unit {
   position: absolute;
-  right: 25px;
+  right: 20px;
   top: 7px;
 }
 .car.input-wrap .form-control-input {
@@ -2490,6 +2490,10 @@ input[type=date]::-webkit-datetime-edit-year-field {
 
 .w460 {
   width: 460px !important;
+}
+
+.w469 {
+  width: 469px !important;
 }
 
 .w480 {

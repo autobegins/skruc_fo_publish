@@ -2917,7 +2917,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
   span.unit {
     position: absolute;
-    right: 25px;
+    right: 20px;
     top: 7px;
   }
 
@@ -3213,6 +3213,9 @@ input[type="date"]::-webkit-datetime-edit-year-field {
 }
 .w460 {
   width: 460px !important;
+}
+.w469 {
+  width: 469px !important;
 }
 .w480 {
   width: 480px !important;
