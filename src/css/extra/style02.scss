@@ -1682,6 +1682,9 @@ button {
       color: #868e96;
       align-items: center;
       padding-left: 8px;
+      position: absolute;
+      top: 7px;
+      right: 11px;
     }
   }
 
@@ -1858,6 +1861,7 @@ button {
           // color: var(--txt-sub);
           color: #343a40;
           // min-width: 126px;
+          padding-right: 30px;
           &:focus {
             border: 1px solid #50555c;
           }
