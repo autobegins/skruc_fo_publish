@@ -2530,7 +2530,7 @@ h3 {
   }
   ol {
     display: flex;
-    gap: 0 19px;
+    gap: 0 22px;
     padding: 0 20px;
 
     .page-btn {
@@ -2995,6 +2995,25 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       // }
     }
   }
+}
+
+/** 공통 **/
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  background-color: #9da6a6;
+
+  &:hover {
+    background-color: #9da6a6;
+  }
+}
+::-webkit-scrollbar-track {
+  background: transparent;
 }
 
 /* common */
