@@ -251,7 +251,7 @@ span.status-cancel:before {
   font-size: 14px;
   font-weight: 400;
   line-height: 1rem;
-  border: 1px solid #e7eaf0;
+  border: 1px solid #8b9a9a;
   height: 32px;
   word-wrap: normal;
 }
@@ -434,7 +434,7 @@ span.status-cancel:before {
   padding: 11px 20px 11px 20px;
   border-radius: 5px;
   font-style: normal;
-  color: #858b93;
+  color: #8b9a9a;
   text-align: center;
   font-size: 16px;
   font-weight: 700;
@@ -901,6 +901,7 @@ button {
 .search-wrap {
   position: relative;
   margin-bottom: 60px;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
 }
 .search-wrap .button-wrap {
   display: flex;
@@ -970,7 +971,7 @@ button {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   min-height: 88px;
-  border: 1px solid #adb5b5;
+  border: 1px solid #dee2e6;
   background: #fff;
 }
 .search-wrap .forms-box {
