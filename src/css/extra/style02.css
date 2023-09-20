@@ -2464,6 +2464,10 @@ input[type=date]::-webkit-datetime-edit-year-field {
   width: 203px !important;
 }
 
+.w210 {
+  width: 210px !important;
+}
+
 .w215 {
   width: 215px !important;
 }
