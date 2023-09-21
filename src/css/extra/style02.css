@@ -566,6 +566,7 @@ button {
   position: relative;
   display: flex;
   width: 100%;
+  gap: 0 20px;
 }
 .form .form-control .form-control-label {
   display: inline-flex;
@@ -1102,6 +1103,15 @@ button {
   overflow-x: hidden;
   max-width: 1200px;
 }
+.status-wrap .form .form-control .form-control-container .form-control-input input {
+  height: 35px;
+}
+.status-wrap .calendar-wrap input {
+  height: 35px;
+}
+.status-wrap .select-wrap .selectbox select {
+  height: 35px;
+}
 .status-wrap span.unit {
   display: inline-block;
   font-size: 14px;
@@ -1354,7 +1364,7 @@ button {
   font-size: 14px;
   font-weight: 500;
   line-height: 24px;
-  min-width: 55px;
+  min-width: 50px;
 }
 .status-wrap .form-control .form-control-container {
   position: relative;
@@ -1865,6 +1875,9 @@ span.unit {
   width: 10px;
 }
 
+.form-control-content {
+  flex: 0 0 100%;
+}
 .form-control-content.flex {
   gap: 0 8px;
 }
@@ -2054,6 +2067,12 @@ input[type=date]::-webkit-calendar-picker-indicator {
   justify-content: flex-start;
 }
 
+.pop-box .select-wrap {
+  height: 36px;
+}
+.pop-box .select-wrap .selectbox:before {
+  top: -4px;
+}
 .pop-box .form-control-label {
   min-width: 70px !important;
 }
@@ -2151,10 +2170,19 @@ input[type=date]::-webkit-calendar-picker-indicator {
   margin-bottom: 30px;
   padding: 0;
 }
+.car.input-wrap .form .form-control .form-control-container .form-control-input input {
+  height: 35px;
+}
+.car.input-wrap .calendar-wrap input {
+  height: 35px;
+}
+.car.input-wrap .select-wrap .selectbox select {
+  height: 35px;
+}
 .car.input-wrap span.unit {
   position: absolute;
-  right: 20px;
   top: 7px;
+  right: 11px;
 }
 .car.input-wrap .form-control-input {
   font-size: 14px;
@@ -2201,6 +2229,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   color: #868e96;
   font-size: 14px;
   font-weight: 500;
+  min-width: 50px !important;
 }
 .car.input-wrap.type_b {
   background: #f5f6f6;
@@ -2384,6 +2413,10 @@ input[type=date]::-webkit-datetime-edit-year-field {
   width: 100px !important;
 }
 
+.w104 {
+  width: 104px !important;
+}
+
 .w108 {
   width: 108px !important;
 }
@@ -2414,6 +2447,10 @@ input[type=date]::-webkit-datetime-edit-year-field {
 
 .w138 {
   width: 138px !important;
+}
+
+.w146 {
+  width: 146px !important;
 }
 
 .w150 {
@@ -2450,6 +2487,10 @@ input[type=date]::-webkit-datetime-edit-year-field {
 
 .w185 {
   width: 185px !important;
+}
+
+.w186 {
+  width: 186px !important;
 }
 
 .w190 {
@@ -2494,6 +2535,10 @@ input[type=date]::-webkit-datetime-edit-year-field {
 
 .w294 {
   width: 294px !important;
+}
+
+.w304 {
+  width: 304px !important;
 }
 
 .w419 {
