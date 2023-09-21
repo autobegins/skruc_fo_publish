@@ -986,7 +986,7 @@ button {
   border-radius: 8px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  border-bottom: 1px solid #adb5b5;
+  border-bottom: 1px solid #edf0f2;
   gap: 10px 20px;
 }
 .search-wrap .forms-box:last-child {
@@ -1511,7 +1511,7 @@ button {
 /* table style */
 .status .table-default {
   width: 100%;
-  border-top: 2px solid #515959;
+  border-top: 1px solid #515959;
 }
 .status .table-default caption {
   display: none;
