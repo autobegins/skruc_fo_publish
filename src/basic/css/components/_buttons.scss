@@ -1,0 +1,57 @@
+/**************************************************************************************************
+*** button
+**************************************************************************************************/
+
+button {
+  --color-text: #50555c;
+  --color-line: #50555c;
+  --color-bg: #50555c;
+
+  --color-primary-text: #50555c;
+  --color-primary--line: #50555c;
+  --color-primary--bg: #50555c;
+}
+
+.btn-wrap {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px 10px;
+  margin-top: 40px;
+  .btn-box {
+    width: 400px;
+    display: flex;
+    gap: 0 10px;
+
+    button,
+    [class^="btn-"] {
+      width: inherit;
+      padding: 14px 15px;
+      border-radius: 12px;
+      border-width: 1px;
+      border-style: solid;
+      color: var(--color-text);
+      text-align: center;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 28px;
+
+      &:disabled {
+        background: #d4d7dc !important;
+      }
+    }
+
+    .btn-primary {
+      background: linear-gradient(70deg, #ff7d00 -1%, #f35b5b 37%, #fe532d 116.61%);
+      color: #fff;
+    }
+    .btn-gray {
+      background-color: var(--bg-gray);
+    }
+
+    .btn-line {
+      background-color: #fff;
+      border-color: #b5b9c0;
+    }
+  }
+}

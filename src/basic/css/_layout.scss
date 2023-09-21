@@ -387,8 +387,10 @@
 
 main {
   width: 100%;
-  min-height: calc(100vh - 116px);
+  min-height: calc(100vh - 318px);
   margin: 0px auto;
+  padding-top: 60px;
+  padding-bottom: 120px;
   display: flex;
   gap: 0 30px;
   justify-content: center;
@@ -445,7 +447,6 @@ main {
 footer {
   width: 100vw;
   background-color: #eceef0;
-  margin-top: 120px;
   padding: 64px 0 50px;
 
   .footer_logo {
@@ -746,73 +747,6 @@ footer.solid {
       font-weight: 400;
       line-height: 16px;
     }
-  }
-}
-/*** modal popup ***/
-.popup-wrap {
-  position: absolute;
-  z-index: 1000;
-  display: none;
-  &::before {
-    content: "";
-    display: block;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    left: 0;
-    top: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-  }
-}
-
-.pop-box {
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 400px;
-  max-height: 85vh;
-  border-radius: 16px;
-  overflow: hidden;
-  .pop-header {
-    width: 100%;
-    display: flex;
-    padding: 20px 30px 20px 24px;
-    border-bottom: 1px solid #eceef0;
-    border-radius: 16px 16px 0 0;
-    background: #fff;
-
-    h2 {
-      color: var(--txt-defult);
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 28px;
-    }
-
-    h6 {
-      margin-top: 6px;
-      color: var(--txt-sub);
-      font-size: 12px;
-      font-weight: 400;
-      line-height: 18px; /* 150% */
-      letter-spacing: -0.4px;
-    }
-
-    .pop-close {
-      width: 24px;
-      height: 24px;
-      margin-left: auto;
-      margin-top: 6px;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M18 6L6 18M18 18L6 6' stroke='%2350555C' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-    }
-  }
-
-  .pop-content {
-    padding: 30px 40px 40px;
-    border-radius: 0 0 16px 16px;
-    background-color: #fff;
-    height: calc(100% - 140px);
-    overflow-y: auto;
   }
 }
 
@@ -1215,7 +1149,7 @@ article.join {
 
 .page-title {
   margin-top: 80px;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
   h2 {
     color: var(--txt-defult);
     font-size: 40px;
@@ -1223,10 +1157,9 @@ article.join {
     line-height: 56px;
   }
   p {
-    margin-top: 6px;
+    margin-top: 20px;
     color: var(--txt-info);
     font-size: 20px;
-    font-weight: 400;
     line-height: 30px;
   }
 }
