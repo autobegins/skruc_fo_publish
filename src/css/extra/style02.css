@@ -2296,6 +2296,22 @@ input[type=date]:valid::before {
   display: none;
 }
 
+/*** modal popup ***/
+.popup-wrap {
+  z-index: 1000;
+  display: none;
+}
+.popup-wrap::before {
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 /** 공통 **/
 /* scrollbar */
 ::-webkit-scrollbar {
