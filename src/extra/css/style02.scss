@@ -1658,7 +1658,7 @@ button {
   .forms-box {
     display: flex;
     width: 100%;
-    padding: 10px 0 0;
+    padding: 5px 0 0;
     align-items: flex-start;
     align-content: flex-start;
     align-self: stretch;
@@ -1667,7 +1667,7 @@ button {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     border-bottom: none;
-    gap: 10px 20px;
+    gap: 5px 20px;
     &:last-child {
       border-bottom: none;
     }
@@ -2729,6 +2729,7 @@ span.unit {
   justify-content: flex-start;
   flex-direction: row;
   gap: 0 8px;
+  height: 38px;
   .date-bar {
     display: inline-flex;
     align-items: center;
