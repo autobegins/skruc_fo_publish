@@ -509,11 +509,13 @@ button {
   color: #fff !important;
   text-align: center;
   border: 1px solid #4b5758 !important;
+  padding: 11px 30px 11px 30px;
 }
 .btn-default.all {
   background-color: #8b9a9a;
   color: #fff !important;
   text-align: center;
+  padding: 11px 30px 11px 30px;
 }
 .btn-default.excel {
   background-color: #8b9a9a;
