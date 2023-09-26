@@ -74,7 +74,7 @@
 
 .table-default {
   width: 100%;
-  border-top: 2px solid #515959;
+  border-top: 1px solid #515959;
 
   caption {
     display: none;
@@ -118,6 +118,7 @@
       }
 
       &:first-child {
+        border-left: none;
         .check-radio {
           width: 22px;
         }
@@ -172,6 +173,7 @@
       font-size: 14px;
       font-weight: 400;
       letter-spacing: 0;
+      border-left: none;
       border-right: none;
       border-bottom: 1px solid #dce5e5;
       vertical-align: middle;
@@ -885,7 +887,7 @@ button {
       color: #343a40;
       font-size: 16px;
       font-weight: 400;
-      line-height: 24px;
+      line-height: 100%;
       min-width: 80px;
       // min-width: 100px;
     }
@@ -2444,7 +2446,8 @@ h3 {
     &.desc {
       font-size: 14px;
       color: var(--Text-Gray);
-      color: var(#868e96);
+      color: #868e96;
+      font-weight: 400;
     }
   }
 }
@@ -2467,7 +2470,7 @@ h3 {
     font-weight: 700;
   }
   .btn-primary {
-    background-color: linear-gradient(270deg, #ff3e3e 28.35%, #ff7a00 89.7%);
+    background: var(--Button-Impact, linear-gradient(270deg, #ff3e3e 28.35%, #ff7a00 89.7%)) !important;
     color: #fff;
   }
   .btn-gray {
@@ -2655,6 +2658,7 @@ span.unit {
     z-index: -1;
     font-size: 14px;
     font-weight: 400;
+    // line-height: 100%;
   }
   .selectbox select {
     position: relative;
@@ -2963,6 +2967,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         text-align: right;
         font-weight: 700 !important;
         padding-right: 30px !important;
+        line-height: 100%;
       }
       &::placeholder {
         font-size: 14px;

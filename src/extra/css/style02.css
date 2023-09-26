@@ -19,7 +19,7 @@
 /* table default style */
 .table-default {
   width: 100%;
-  border-top: 2px solid #515959;
+  border-top: 1px solid #515959;
 }
 .table-default caption {
   display: none;
@@ -911,6 +911,14 @@ button {
   background-color: #adb5b5;
   color: #fff;
   font-weight: 700;
+  font-size: 18px;
+}
+.search-wrap .button-wrap li.reset p {
+  position: relative;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 33px;
+  color: #fff;
 }
 .search-wrap .button-wrap li.search {
   width: 100%;
@@ -921,20 +929,21 @@ button {
   cursor: pointer;
   background: linear-gradient(270deg, #ff3e3e 28.35%, #ff7a00 89.7%);
   color: #fff;
+  font-weight: 700;
+  font-size: 18px;
 }
 .search-wrap .button-wrap li.search p {
   position: relative;
   font-size: 18px;
   font-weight: 700;
   line-height: 33px;
-  color: rgb(58, 58, 60);
   color: #fff;
 }
 .search-wrap .button-wrap li.search p:after {
   content: "";
   display: inline-block;
   background: center center no-repeat;
-  background-image: url("../../img/extra/ico_search.png");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='21' viewBox='0 0 20 21' fill='none'%3E%3Cpath d='M17.8399 16.9606L14.1646 13.2852C15.0494 12.1072 15.5271 10.6733 15.5255 9.20003C15.5255 5.43675 12.4638 2.37503 8.70049 2.37503C4.93721 2.37503 1.87549 5.43675 1.87549 9.20003C1.87549 12.9633 4.93721 16.025 8.70049 16.025C10.1738 16.0266 11.6077 15.549 12.7856 14.6641L16.461 18.3395C16.6471 18.5058 16.8897 18.5946 17.1392 18.5876C17.3886 18.5806 17.6259 18.4784 17.8024 18.3019C17.9789 18.1255 18.0811 17.8882 18.0881 17.6387C18.095 17.3893 18.0063 17.1466 17.8399 16.9606ZM3.82549 9.20003C3.82549 8.23585 4.1114 7.29332 4.64707 6.49163C5.18275 5.68994 5.94412 5.0651 6.83491 4.69612C7.7257 4.32714 8.7059 4.2306 9.65156 4.4187C10.5972 4.60681 11.4659 5.0711 12.1476 5.75289C12.8294 6.43467 13.2937 7.30331 13.4818 8.24897C13.6699 9.19462 13.5734 10.1748 13.2044 11.0656C12.8354 11.9564 12.2106 12.7178 11.4089 13.2534C10.6072 13.7891 9.66467 14.075 8.70049 14.075C7.40803 14.0735 6.16896 13.5594 5.25506 12.6455C4.34115 11.7316 3.82704 10.4925 3.82549 9.20003Z' fill='white'/%3E%3C/svg%3E");
   width: 20px;
   height: 20px;
   padding-left: 10px;
@@ -1681,6 +1690,9 @@ h3 span.desc {
   background-color: #fff;
   min-height: 200px;
   overflow-y: auto;
+}
+.pop-box .pop-content .car.input-wrap.type_b {
+  margin-bottom: 12px;
 }
 .pop-box.pop-header {
   width: 100%;
