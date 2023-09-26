@@ -756,10 +756,10 @@ button {
   height: 20px;
   text-align: center;
   background-position: 50% 50%;
-  background-image: url("../../img/extra/ico_checkbox.png");
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_25_4999)'%3E%3Crect x='0.5' y='0.5' width='19' height='19' fill='white'/%3E%3Crect x='0.5' y='0.5' width='19' height='19' stroke='%23C3CACA'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_25_4999'%3E%3Crect width='20' height='20' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
 }
 .check-radio input[type=checkbox]:checked + label:before {
-  background-image: url("../../img/extra/ico_checkbox_on.png");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21' height='20' viewBox='0 0 21 20' fill='none'%3E%3Cg clip-path='url(%23clip0_472_3096)'%3E%3Crect x='1' y='0.5' width='19' height='19' fill='%23F65858'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15.1631 6.17063C15.3449 6.32974 15.3634 6.60614 15.2043 6.78798L9.07925 13.788C8.99952 13.8791 8.88558 13.9331 8.76456 13.9371C8.64354 13.9412 8.52626 13.8949 8.44064 13.8092L5.81564 11.1842C5.64479 11.0134 5.64479 10.7364 5.81564 10.5655C5.9865 10.3947 6.2635 10.3947 6.43436 10.5655L8.72869 12.8599L14.5457 6.21179C14.7049 6.02995 14.9813 6.01152 15.1631 6.17063Z' fill='white' stroke='white' stroke-width='0.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Crect x='1' y='0.5' width='19' height='19' stroke='%23F65858'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_472_3096'%3E%3Crect width='20' height='20' fill='white' transform='translate(0.5)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
 }
 .check-radio input[type=radio] {
   position: absolute;
@@ -2512,6 +2512,10 @@ input[type=date]::-webkit-datetime-edit-year-field {
   width: 186px !important;
 }
 
+.w180 {
+  width: 180px !important;
+}
+
 .w190 {
   width: 190px !important;
 }
@@ -2532,8 +2536,24 @@ input[type=date]::-webkit-datetime-edit-year-field {
   width: 215px !important;
 }
 
+.w220 {
+  width: 220px !important;
+}
+
+.w230 {
+  width: 230px !important;
+}
+
+.w240 {
+  width: 240px !important;
+}
+
 .w250 {
   width: 250px !important;
+}
+
+.w260 {
+  width: 260px !important;
 }
 
 .w276 {
@@ -2542,6 +2562,18 @@ input[type=date]::-webkit-datetime-edit-year-field {
 
 .w277 {
   width: 277px !important;
+}
+
+.w270 {
+  width: 270px !important;
+}
+
+.w280 {
+  width: 280px !important;
+}
+
+.w290 {
+  width: 290px !important;
 }
 
 .w292 {
@@ -2554,6 +2586,14 @@ input[type=date]::-webkit-datetime-edit-year-field {
 
 .w294 {
   width: 294px !important;
+}
+
+.w295 {
+  width: 295px !important;
+}
+
+.w300 {
+  width: 300px !important;
 }
 
 .w304 {

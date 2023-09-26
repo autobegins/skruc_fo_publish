@@ -1067,16 +1067,10 @@ button {
     height: 20px;
     text-align: center;
     background-position: 50% 50%;
-    background-image: url("../../img/extra/ico_checkbox.png");
-    // background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30' fill='none'%3E%3Crect x='0.5' y='0.5' width='29' height='29' rx='3.5' fill='white' stroke='%23D4D7DC'/%3E%3Cpath d='M21.6022 12.2077C22.029 11.7907 22.029 11.1145 21.6022 10.6974C21.1753 10.2804 20.4832 10.2804 20.0563 10.6974L12.4765 18.1025L10.0229 15.1062C9.64577 14.6457 8.95788 14.571 8.48646 14.9394C8.01504 15.3079 7.93861 15.9799 8.31575 16.4405L11.5323 20.3685C11.7265 20.6057 12.0149 20.7508 12.3254 20.7676C12.6358 20.7844 12.9389 20.6713 13.1588 20.4565L21.6022 12.2077Z' fill='%23A7A9AD'/%3E%3C/svg%3E");
-    // background-image: url("../img/extra/ico_checkbox.png");
-    // background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28' fill='none'%3E%3Cpath d='M19.4364 11.1605C19.7879 10.8091 19.7879 10.2392 19.4364 9.88775C19.0849 9.53628 18.5151 9.53628 18.1636 9.88775L11.9229 16.1285L9.90278 13.6033C9.59227 13.2152 9.02591 13.1522 8.63777 13.4627C8.24964 13.7733 8.18671 14.3396 8.49722 14.7278L11.1455 18.0381C11.3054 18.238 11.5429 18.3603 11.7985 18.3745C12.0541 18.3886 12.3037 18.2933 12.4847 18.1123L19.4364 11.1605Z' fill='%23B5B9C0'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M26 14C26 20.6274 20.6274 26 14 26C7.37258 26 2 20.6274 2 14C2 7.37258 7.37258 2 14 2C20.6274 2 26 7.37258 26 14ZM24.2 14C24.2 19.6333 19.6333 24.2 14 24.2C8.3667 24.2 3.8 19.6333 3.8 14C3.8 8.3667 8.3667 3.8 14 3.8C19.6333 3.8 24.2 8.3667 24.2 14Z' fill='%23B5B9C0'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_25_4999)'%3E%3Crect x='0.5' y='0.5' width='19' height='19' fill='white'/%3E%3Crect x='0.5' y='0.5' width='19' height='19' stroke='%23C3CACA'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_25_4999'%3E%3Crect width='20' height='20' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
   }
   input[type="checkbox"]:checked + label:before {
-    background-image: url("../../img/extra/ico_checkbox_on.png");
-    // background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30' fill='none'%3E%3Crect x='0.5' y='0.5' width='29' height='29' rx='3.5' fill='white' stroke='%23D4D7DC'/%3E%3Cpath d='M21.6022 12.2077C22.029 11.7907 22.029 11.1145 21.6022 10.6974C21.1753 10.2804 20.4832 10.2804 20.0563 10.6974L12.4765 18.1025L10.0229 15.1062C9.64577 14.6457 8.95788 14.571 8.48646 14.9394C8.01504 15.3079 7.93861 15.9799 8.31575 16.4405L11.5323 20.3685C11.7265 20.6057 12.0149 20.7508 12.3254 20.7676C12.6358 20.7844 12.9389 20.6713 13.1588 20.4565L21.6022 12.2077Z' fill='%23A7A9AD'/%3E%3C/svg%3E");
-    // background-image: url("../img/extra/ico_checkbox_on.png");
-    // background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28' fill='none'%3E%3Cpath d='M19.4364 11.1605C19.7879 10.8091 19.7879 10.2392 19.4364 9.88775C19.0849 9.53628 18.5151 9.53628 18.1636 9.88775L11.9229 16.1285L9.90278 13.6033C9.59227 13.2152 9.02591 13.1522 8.63777 13.4627C8.24964 13.7733 8.18671 14.3396 8.49722 14.7278L11.1455 18.0381C11.3054 18.238 11.5429 18.3603 11.7985 18.3745C12.0541 18.3887 12.3037 18.2933 12.4847 18.1123L19.4364 11.1605Z' fill='%2350555C'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M26 14C26 20.6274 20.6274 26 14 26C7.37258 26 2 20.6274 2 14C2 7.37258 7.37258 2 14 2C20.6274 2 26 7.37258 26 14Z' fill='%2350555C'/%3E%3Cpath d='M19.4372 11.1604C19.7887 10.8089 19.7887 10.2391 19.4372 9.88763C19.0857 9.53616 18.5159 9.53616 18.1644 9.88763L11.9237 16.1283L9.9036 13.6032C9.59309 13.215 9.02672 13.1521 8.63859 13.4626C8.25045 13.7731 8.18752 14.3395 8.49803 14.7276L11.1463 18.038C11.3062 18.2379 11.5437 18.3602 11.7993 18.3744C12.0549 18.3885 12.3045 18.2932 12.4855 18.1121L19.4372 11.1604Z' fill='%23F7F7F9'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21' height='20' viewBox='0 0 21 20' fill='none'%3E%3Cg clip-path='url(%23clip0_472_3096)'%3E%3Crect x='1' y='0.5' width='19' height='19' fill='%23F65858'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15.1631 6.17063C15.3449 6.32974 15.3634 6.60614 15.2043 6.78798L9.07925 13.788C8.99952 13.8791 8.88558 13.9331 8.76456 13.9371C8.64354 13.9412 8.52626 13.8949 8.44064 13.8092L5.81564 11.1842C5.64479 11.0134 5.64479 10.7364 5.81564 10.5655C5.9865 10.3947 6.2635 10.3947 6.43436 10.5655L8.72869 12.8599L14.5457 6.21179C14.7049 6.02995 14.9813 6.01152 15.1631 6.17063Z' fill='white' stroke='white' stroke-width='0.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Crect x='1' y='0.5' width='19' height='19' stroke='%23F65858'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_472_3096'%3E%3Crect width='20' height='20' fill='white' transform='translate(0.5)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
   }
 
   input[type="radio"] {
@@ -3247,6 +3241,9 @@ input[type="date"]::-webkit-datetime-edit-year-field {
 .w186 {
   width: 186px !important;
 }
+.w180 {
+  width: 180px !important;
+}
 .w190 {
   width: 190px !important;
 }
@@ -3262,14 +3259,35 @@ input[type="date"]::-webkit-datetime-edit-year-field {
 .w215 {
   width: 215px !important;
 }
+.w220 {
+  width: 220px !important;
+}
+.w230 {
+  width: 230px !important;
+}
+.w240 {
+  width: 240px !important;
+}
 .w250 {
   width: 250px !important;
+}
+.w260 {
+  width: 260px !important;
 }
 .w276 {
   width: 276px !important;
 }
 .w277 {
   width: 277px !important;
+}
+.w270 {
+  width: 270px !important;
+}
+.w280 {
+  width: 280px !important;
+}
+.w290 {
+  width: 290px !important;
 }
 .w292 {
   width: 292px !important;
@@ -3279,6 +3297,12 @@ input[type="date"]::-webkit-datetime-edit-year-field {
 }
 .w294 {
   width: 294px !important;
+}
+.w295 {
+  width: 295px !important;
+}
+.w300 {
+  width: 300px !important;
 }
 .w304 {
   width: 304px !important;
