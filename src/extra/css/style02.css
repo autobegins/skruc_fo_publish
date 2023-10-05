@@ -224,7 +224,7 @@ span.status-cancel:before {
 .bbs.photo .btn-wrap .btn-box {
   width: 100%;
   display: flex;
-  gap: 0 6px;
+  gap: 0 5px;
   margin-top: 36px;
   justify-content: space-between;
 }
@@ -410,7 +410,7 @@ span.status-cancel:before {
 .btn-wrap .btn-box {
   width: 100%;
   display: flex;
-  gap: 0 6px;
+  gap: 0 5px;
   margin-top: 0;
   justify-content: space-between;
 }
