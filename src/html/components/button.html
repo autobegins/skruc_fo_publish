@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+
+    <script src="../../js/include.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/go.min.js"></script>
+
+    <script>
+      hljs.highlightAll();
+    </script>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <!-- headerWrap -->
+      <div class="header_wrap" w3-include-html="../include/header.html"></div>
+      <!-- headerWrap -->
+
+      <main>
+        <article>
+          <section>
+            <div class="page-title">
+              <h2 class="title">레이아웃 샘플</h2>
+              <p class="title-desc">SK 렌터카의 새로운 소식과 정보들을 한곳에서 확인할 수 있어요.</p>
+            </div>
+          </section>
+          <section>
+            <!-- 기본버튼 구조 -->
+            <div class="btn-wrap">
+              <div class="btn-box">
+                <button class="btn-primary">버튼명</button>
+              </div>
+              <div class="btn-box">
+                <button class="btn-gray">버튼명</button>
+                <button class="btn-primary">버튼명</button>
+              </div>
+            </div>
+            <!-- //기본버튼 구조 -->
+          </section>
+          <section>
+            <pre class="theme-codepen-embed">
+              <code class="language-html">
+              <!-- html code입니다 -->
+              &#x3C;!-- &#xAE30;&#xBCF8;&#xBC84;&#xD2BC; &#xAD6C;&#xC870; --&#x3E;
+              &#x3C;div class=&#x22;btn-wrap&#x22;&#x3E;
+                &#x3C;div class=&#x22;btn-box&#x22;&#x3E;
+                  &#x3C;button class=&#x22;btn-primary&#x22;&#x3E;&#xBC84;&#xD2BC;&#xBA85;&#x3C;/button&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;btn-box&#x22;&#x3E;
+                  &#x3C;button class=&#x22;btn-gray&#x22;&#x3E;&#xBC84;&#xD2BC;&#xBA85;&#x3C;/button&#x3E;
+                  &#x3C;button class=&#x22;btn-primary&#x22;&#x3E;&#xBC84;&#xD2BC;&#xBA85;&#x3C;/button&#x3E;
+                &#x3C;/div&#x3E;
+              &#x3C;/div&#x3E;
+              &#x3C;!-- //&#xAE30;&#xBCF8;&#xBC84;&#xD2BC; &#xAD6C;&#xC870; --&#x3E;
+
+              </code>
+           </pre>
+          </section>
+        </article>
+
+        <!-- quick -->
+        <article class="quick" w3-include-html="../include/quick.html"></article>
+        <!-- //quick -->
+      </main>
+
+      <!-- footer -->
+      <footer w3-include-html="../include/footer.html"></footer>
+      <!-- //footer -->
+    </div>
+  </body>
+
+  <script>
+    includeHTML();
+  </script>
+</html>
